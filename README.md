@@ -17,11 +17,11 @@
     - Android 에서 Samsung Flow 를 설치 후, Window 환경 Store에서 Samsung Flow를 설치
     - 초반 Bluetooth 연결과정이 필수이며, 기능에 따른 Wi-Fi 연결이 필수 (파일전송, 사진전송)
     - 카카오톡의 기존 메세지를 받아오는 기능은 구현되어 있지 않음
-    - ![안드로이드 미리보기](Screenshot_20171228-170223.png)
+    - ![안드로이드 미리보기](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/Screenshot_20171228-170223.png)
     - 안드로이드의 미리보기의 데이터를 긁어와 블루투스로 연결된 PC로 데이터를 전송하는 것 같음 
-    - ![Samsung Flow 데이터 전송](2017-12-28_170126.png)
+    - ![Samsung Flow 데이터 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/2017-12-28_170126.png)
     - 일단 전송되는 데이터는 카카오톡 프로필 사진, 카카오톡 내용, 이름을 Samsung Flow 에 리스트 형식으로 뿌려줌
-    - ![]()
+    - ![Samsung Flow에서 메세지 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/Video_2017-12-28_173742.wmv_20171228_180137.gif)
     - Samsung Flow에서 메세지를 보내면 카카오톡으로 메세지가 대신 전송됨
     - 메세지가 많이 Push될 경우 Samsung Flow에서 처리하는 Delay가 존재함
 
