@@ -6,7 +6,8 @@
   ```
   스펙, 학교, 영어 큰 의미 없습니다. 
 
-  자료구조, 운영체제, 네트워크, 알고리즘을 잘 알고 있는지 봅니다. 스프링? 그런 것 묻지 않습니다. 스프링 잘하는 사람 뽑을거면 경력 사원 뽑지요.
+  자료구조, 운영체제, 네트워크, 알고리즘을 잘 알고 있는지 봅니다. 스프링? 그런 것 묻지 않습니다. 
+  스프링 잘하는 사람 뽑을거면 경력 사원 뽑지요.
   ```
 
   ​
@@ -35,11 +36,11 @@
 
     - 안드로이드의 미리보기의 데이터를 긁어와 블루투스로 연결된 PC로 데이터를 전송하는 것 같음 
 
-    - ![Samsung Flow 데이터 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/2017-12-28_170148.png)
+      ![Samsung Flow 데이터 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/2017-12-28_170148.png)
 
     - 일단 전송되는 데이터는 카카오톡 프로필 사진, 카카오톡 내용, 이름을 Samsung Flow 에 리스트 형식으로 뿌려줌
 
-    - ![Samsung Flow에서 메세지 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/Video_2017-12-28_173742.wmv_20171228_180137.gif)
+      ![Samsung Flow에서 메세지 전송](https://github.com/antaehyeon/PersonalProject_KAKAOTALK_WEB/blob/master/Image/Video_2017-12-28_173742.wmv_20171228_180137.gif)
 
     - Samsung Flow에서 메세지를 보내면 카카오톡으로 메세지가 대신 전송됨
 
@@ -92,7 +93,7 @@
 
 - # 서버
 
-  - [Node JS](https://nodejs.org/ko/)
+  - ### [Node JS](https://nodejs.org/ko/)
 
     - V8 (Google Engine)
     - event-driven (JS 개발방식)
@@ -194,15 +195,15 @@
 
     - #### 인터넷의 동작방법
 
-      ![](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2017-12-29 오후 6.17.25.png)
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-29%20%EC%98%A4%ED%9B%84%206.17.25.png)
 
       - 클라이언트는 인터넷을 통해 서버에 접속하는데, 도메인(IP)을 통해서 접속
 
-        ![](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2017-12-29 오후 6.19.50.png)
+        ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-29%20%EC%98%A4%ED%9B%84%206.19.50.png)
 
       - 서버는 다양한 서버를 가지고 있을 수 있는데 그 중 어떤 서버를 사용자에게 제공할 것인가를 결정
 
-      ![](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2017-12-29 오후 6.12.19.png)
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-29%20%EC%98%A4%ED%9B%84%206.12.19.png)
 
       - 특정 포트(80)를 웹 서버가 **Listening** 하게 한다
 
@@ -247,7 +248,7 @@
           uglifyjs pretty.js -o pretty.**min**.js -m
           ```
 
-        - npm init
+        - **npm init**
 
           ```
           package.json
@@ -267,6 +268,8 @@
           - 패키지에 대한 여러가지 정보 기록
 
           - 작업한 프로젝트를 npm에 등록하여 다른사람들도 쉽게 설치할 수 있도록 하는 초석
+
+          - 현재의 디렉토리를 npm의 디렉토리로 변경
 
           - npm install underscore —save
 
@@ -293,6 +296,286 @@
       ```
 
       - [Underscore first](http://underscorejs.org/#first)
+
+  - ### 콜백(callback) 함수 (중요하게 사용되는 개념이니 익숙해질 것)
+
+    - [JavaScript Sort](https://www.w3schools.com/jsref/jsref_sort.asp)
+
+      ![스크린샷 2017-12-29 오후 9.57.55](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2017-12-29 오후 9.57.55.png)
+
+      ```js
+      a = [3, 1, 2]; a.sort(); console.log(a);
+      [1, 2, 3]
+
+      a = [3, 1, 2]; function b(v1, v2){ return v2-v1; }; a.sort(b); console.log(a);
+      [3, 2, 1]
+
+      a = [3, 1, 2]; function b(v1, v2){ return v1-v2; }; a.sort(b); console.log(a);
+      [1, 2, 3]
+
+      a = [3, 1, 2]; function b(v1, v2){ return 0; }; a.sort(b); console.log(a);
+      [3, 1, 2]
+
+      a = [3, 1, 2]; function b(v1, v2){ console.log('c', v1, v2); return 0; }; a.sort(b); console.log(a);
+      c 3 1
+      c 1 2
+      [3, 1, 2]
+
+      a = [3, 1, 2]; a.sort(function(v1, v2){return v2-v1}); console.log(a); // 익명함수
+      [3, 2, 1]
+      ```
+
+      - 콜백함수는 function b 이며, sort라는 함수가 필요할 때 마다 내부적으로 호출함
+      - 사용자가 호출하는 함수가 아닌, 누군가에 의해서 호출당하는 함수이므로 Call-Back 함수라고 불릴수도 있지 않을까 (이고잉님 생각)
+
+  - ### 동기와 비동기 프로그래밍
+
+    - Synchronous
+
+    - **A**synchronous
+
+    - [readFIle](https://nodejs.org/dist/latest-v9.x/docs/api/fs.html#fs_fs_readfile_path_options_callback)
+
+    - [readFileSync](https://nodejs.org/dist/latest-v9.x/docs/api/fs.html#fs_fs_readfilesync_path_options)
+
+      ```js
+      data.txt
+      Hello Sync And Async
+
+      sync_async.js
+      var fs = require('fs');
+
+      // Sync
+      console.log(1);
+      var data = fs.readFileSync('data.txt', {encoding:'utf8'});
+      console.log(data); // 위에 readFileSync가 끝날 때 까지 실행되지 않음
+
+      // ASync
+      // 실행순서 2-4-3
+      console.log(2);
+      fs.readFile('data.txt', {encoding:'utf8'}, function(err, data) { 
+        console.log(3);
+        console.log(data);
+      });
+      console.log(4); // 위의 readFile이 실행되기 전에 먼저 실행되고 백그라운드에서 readFileSync가 동작함
+      ```
+
+      - node JS는 Single Thread로 동작되는 언어임
+      - 웹 애플리케이션 안에서 어떤 파일을 읽는작업이 10분이 걸린다면 10분동안 아무도 웹사이트에 접속을 못하는 상황이 발생할 수 있음
+      - 비동기적인 방식이 무엇인가에 대한 대략적인 이해는 반드시 필요
+
+  - ### 서버 측 JS - express 도입
+
+    ```Js
+    const http = require('http');
+
+    const hostname = '127.0.0.1';
+    const port = 3000;
+
+    const server = http.createServer((req, res) => {		// request, response
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/plain');
+      res.end('Hello World\n');
+    });
+
+    server.listen(port, hostname, () => {		// listen이 비동기적으로 작동되는 부분
+      console.log(`Server running at http://${hostname}:${port}/`);
+    });
+
+    ```
+
+    - 특정포트가 웹서버를 바라보고 있게 설정하면, 웹서버의 포트를 통해서 웹서버로 접근할 수 있게됨
+    - 서버는 여러개의 IP를 가지고 있을 수 있음 - 어떤 IP를 타고 들어온 사용자를 수용할 것인가
+    - listen은 여러가지 이유로 시간이 많이 걸릴 수 있는 작업이기 때문에 비동기적으로 작동됨( fucntion() { } )
+    - 어떤것을 응답할 것인가에 대해서는 응답(res)을 가지고 있는 함수에서 진행함
+
+  - ### 서버 측 JS - express 설치
+
+    - npm init
+    - npm install —save express
+      - dependencies
+        - express : "^4.16.2"
+
+  - ### 서버 측 JS - Express, 간단한 웹앱 만들기
+
+    - vim app.js
+
+      - 해당 애플리케이션을 실행시킬 때 최초로 실행되는(최초의 진입점) 애플리케이션 (main, entry)
+      - Express에서 권장하는 해당 파일을 app.js 라고 명칭한다 (개인 프로젝트 이름을 사용해도 상관 없음)
+
+      ```js
+      app.js
+      var express = require('express');
+      var app = express();
+      app.listen(3000, function() {
+              console.log('Connected 3000 port !');
+      });
+      ```
+
+      - 해당 코드를 node로 동작시킬 시, 3000번 포트가 바라보고 있기 때문에 localhost:3000 하면 접속이 됨
+        (단, 파일이 아무것도 없기 때문에 Error Page, Cannot GET / 이라는 메세지가 출력됨)
+
+      ```js
+      app.js
+      var express = require('express');
+      var app = express();
+      app.get('/');		// 사용자가 홈페이지에 접속했다 라는 것을 알려주기 위함
+      app.listen(3000, function() {
+              console.log('Connected 3000 port !');
+      });
+      ```
+
+      - 사용자가 웹서버에 접속할 때 GET/POST 방식이 존재
+      - URL을 치고 들어가는것은 GET방식으로 접속하는 것임
+      - GET방식일 경우에 app.get()을 통해서 사용자가 홈페이지에 접속했을 때 행동을 취할 수 있음
+
+      ```Js
+      var express = require('express');
+      var app = express();
+      app.get('/', function(req, res) {
+              res.send('Hello home page');
+      });
+      app.get('/login', function(req, res) {
+              res.send('<h1>Login please</h1>');
+      });
+      app.listen(3000, function() {
+              console.log('Connected 3000 port !');
+      });
+      ```
+
+      - 사용자가 어떠한 경로로 들어왔을 때, 어떤것을 실행할 것인가를 결정하는것이 get Method 가 하는 일
+      - get Method 를 Route 라고 부르며, 하는 일을 Routing 이라고 부름
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-29%20%EC%98%A4%ED%9B%84%2011.38.55.png)
+
+      - get이 하는일이 사용자의 요청과 요청에 대한 처리(Controller)를 중재하는 역할을 함
+      - **Router는 가장 중요한 것 중에 한 부분이며, 위의 코드를 무조건 숙지할 것**
+
+  - ### 서버 측 JS - 연결성
+
+    - 단어 : 의미를 전달하고 의미를 만들어내는 역할
+
+    - 하나의 단어가 여러가지 의미를 가지게 됨
+
+    - 단어 + 단어 = 문법의 규칙에 의거해 새로운 의미를 만들어 냄 (문장)
+
+    - 단어 10 = 의미 10
+
+    - 명사 10 + 동사 10 = 단어 20 …
+
+    - **무엇인가를 결합하고, 조합하는것이 대단한 것**
+
+    - JavaScript + Nodejs
+
+      - JavaScript - Nodejs [FS, HTTP, OS]
+      - Module - NPM [Express, Underscore, Jade]
+      - Router - Controller [회원가입, 홈페이지, 에러화면]
+        - 사용자의 접속(요청)을 어떤 Controller에 전송해 줄 것인가 (연결자, 전송자)
+
+      ```
+      JavaScript, NPM, Router
+      Nodejs, Module, Controller
+      ```
+
+  - ### 서버 측 JS - Express, 정적파일을 서비스하는 법
+
+    - app.use(express.static('public'));
+
+      - public/route.png 가 위치해 있어야 함
+      - public 란 디렉토리를 정적인 파일이 위치한 디렉토리로 지정하겠다
+      - 사용자에게 정적인 파일을 제공할 수 있음
+
+      ```js
+      var express = require('express');
+      var app = express();
+      app.use(express.static('public'));		// 정적인 파일이 위치한 디렉토리를 설정
+      app.get('/', function(req, res) {
+              res.send('Hello home page');
+      });
+      app.get('/route', function(req, res) {
+              res.send('Hello Router, <img src="/route.png">');
+      });
+      app.get('/login', function(req, res) {
+              res.send('<h1>Login please</h1>');
+      });
+      app.listen(3000, function() {
+              console.log('Connected 3000 port !');
+      });
+      ```
+
+      - 두번째의 app.get 처럼 함수 내에서 최상위 경로가 public 이 되는 것임 (public 내의 route)
+
+  - ### Express-웹페이지를 표현하는 방법(trade-off)
+
+    - #### 정적(최상위 경로 안에 html 파일로 구성)
+
+      - 장점
+        - 서버를 재가동 시키지 않더라도 경로에 있는 html만 바꿔주면, 내용이 바뀜
+      - 단점
+        - 프로그래밍적으로 HTML을 구성할 수 없음
+        - HTML라는 플랫폼의 한계에 갇힐 수 있음 (현재 시간들을 표현하기 힘듬)
+
+    ```js
+    app.get('/dynamic', function(req, res) {
+    	var lis = '';
+    	for (var i=0; i<5; i++) {
+    		lis = lis + '<li>coding</li>';
+    	}
+    	var time = Date();
+    	var output = `			//변수에 HTML코드를 넣기 위해서는 `` 사이에 구성함
+    	<!DOCTYPE html>
+    	<html>
+    	  <head>
+    	    <meta charset="utf-8">
+    	    <title></title>
+    	  </head>
+    	  <body>
+    	    Hello, Dynamic!
+    			<ul>
+    				${lis}		// 변수를 사용하기 위한 규격 ${}
+    			</ul>
+    			${time}
+    	  </body>
+    	</html>`;
+    	res.send(output);
+    });
+    ```
+
+    - #### 동적
+
+      - 장점
+        - 프로그래밍적으로 웹페이지를 구성할 수 있음
+        - 시간이나, 문자를 여러번 반복해서 표시하는 방법
+      - 단점
+        - 서버를 재가동 시켜야 변경된 사항이 적용됨
+
+  - ### 서버 측 JS - Express, 템플릿 엔진 1 : 소개
+
+  - ### 서버 측 JS - Express, 템플릿 엔진 2 : 사용법
+
+    - 템플릿 엔진 ? 특정한 기술, 상품을 의미하는것이 아닌 기술'들', 기술'군'을 의미
+    - views 폴더를 구성하여야 함
+
+    ```
+    app.set('view engine', 'jade');		// jade Template Engine 과 Express를 연결하는 코드
+    app.set('views', './views');		// 생략되어도 무방 (Express는 views를 기본으로 찾음)
+
+    app.get('/template', function(req, res) {
+    	res.render('temp');		// 소스코드를 가져와서 웹페이지를 만들어 내는 'render'
+    							// temp라고 하는 템플릿 파일을 render을 통해서 전달된다
+    });
+    ```
+
+    - views 폴더 안에는 .jade 파일로 구성
+
+    ```
+    temp.jade
+    html
+    ```
+
+    - 해당 파일이 views 에 위치해있고 template로 접근했을 시
+
+      ![](스크린샷 2017-12-30 오전 1.38.31.png)
 
 
 
