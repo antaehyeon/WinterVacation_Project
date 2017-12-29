@@ -1,10 +1,11 @@
 var express = require('express');
 var app = express();
+app.locals.pretty = true;
 app.set('view engine', 'jade');		// jade Template Engine 과 Express를 연결하는 코드
 app.set('views', './views');		// Express는 views를 기본으로 찾음
 app.use(express.static('public'));
 app.get('/template', function(req, res) {
-	res.render('temp');		// 소스코드를 가져와서 웹페이지를 만들어 내는 'render'
+	res.render('temp', {time:Date(), _title:'HELLO JADE :)'});		// 소스코드를 가져와서 웹페이지를 만들어 내는 'render'
 												// temp라고 하는 템플릿 파일을 render을 통해서 전달된다
 });
 app.get('/', function(req, res) {
