@@ -657,6 +657,136 @@
       - render을 통해서 jade로 흘러들어간다 라고 표현
     - [jade template Engine](http://jadelang.net/)
 
+  - ### 서버 측 JS - Express, URL을 이용한 정보의전달 1: 쿼리스트링 소개
+
+    - 사용자의 조작(사용자가 입력하는 경로)에 따라서 다른 결과를 보여준다
+      - http://a.com/topic
+      - http://a.com/home
+      - http://a.com/login
+    - 단 하나의 path에 대해서는 동일한 결과를 보여준다
+    - topic route를 가지고 있다면, 동일한 경로에서도 다양한 결과를 보여줄 수 있다 = Query String
+    - http://a.com/topic?id=1
+    - http://a.com/topic?id=2
+    - http://a.com/topic?id=3
+      - ? 뒤의 내용을 **'query string'** 이라 부른다
+      - http : 프로토콜
+      - 전체 : URL
+      - // 뒤의 내용은 **'Domain'**
+
+  - ### 서버 측 JS - Express, URL을 이용한 정보의 전달 2 : query 객체 사용법
+
+    ```js
+    app.get('/topic', function(req, res) {
+    	res.send('Hello');
+    });
+    ```
+
+    - query string 은 요청(req)이다
+
+    ```js
+    app.get('/topic', function(req, res) {
+    	res.send(req.query.id);
+    });
+    ```
+
+    - http://localhost:3000/topic?id=1000
+    - RETURN **1000**
+    - [API reference (ExpressJS) - req.query](http://expressjs.com/en/4x/api.html#req.query)
+
+    ```js
+    // GET /search?q=tobi+ferret
+    req.query.q
+    // => "tobi ferret"
+    ```
+
+    - API를 통해서 Express - Request - req.query 를 통해서 req.query.q가 search?q=tobi+ferret를
+    - 사용자에게 tobi ferret 로 보여준다는 것을 파악
+
+    ```js
+    app.get('/topic', function(req, res) {
+    	res.send(req.query.id+','+req.query.name);
+    });
+    ```
+
+    - http://localhost:3000/topic?id=1&name=hyeon
+    - RETURN **1,hyeon**
+    - application 에게 전달할 수 있는 값은 한개가 아닌 여러개가 될 수 있음
+    - 값과 값을 구분하는 구분자는 **'&'**
+
+  - ### 서버 측 JS - Express, URL을 이용한 정보의 전달 3 : query 객체의 이용
+
+    ```js
+    app.get('/topic', function(req, res) {
+    	var topics = [
+    		'Javascript is ...',
+    		'Nodejs is ...',
+    		'Express is ...'
+    	];
+    	var output = `
+    		<a href="/topic?id=0">JavaScript</a><br>
+    		<a href="/topic?id=1">Nodejs</a><br>
+    		<a href="/topic?id=2">Express</a><br><br>
+    		${topics[req.query.id]}
+    	`
+    	res.send(output);
+    });
+    ```
+
+    - query string을 express에서 다루는 방법
+    - query string은 어떤 Application에게 정보를 전달할 때 사용하는 URL이 약속되어 있는 국제적인 표준
+    - query string은 request(req) 영역
+      - req에서도 query
+        - query에서도 id를 통해서 전달
+        - 그에 대한 API reference 는 [이곳](http://expressjs.com/en/4x/api.html#req.query)을 참고
+
+  - ### 서버 측 JS - Express, URL을 이용한 정보의 전달 4 : 시멘틱 URL
+
+    - Query string 이 아닌 http://localhost:3000/topic?id=2 가 아닌 http://localhost:3000/topic/2 로 바꿔주는 것이 **시멘틱(뜻 : 의미론적) URL** 이다.
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-30%20%EC%98%A4%EC%A0%84%206.43.58.png)
+
+    - 의미에 조금 더 부합하는 URL 체계 ([Wikipedia](https://en.wikipedia.org/wiki/Semantic_URL))
+
+    ```js
+    app.get('/topic/:id', function(req, res) {
+    	var topics = [
+    		'Javascript is ...',
+    		'Nodejs is ...',
+    		'Express is ...'
+    	];
+    	var output = `
+    		<a href="/topic?id=0">JavaScript</a><br>
+    		<a href="/topic?id=1">Nodejs</a><br>
+    		<a href="/topic?id=2">Express</a><br><br>
+    		${topics[req.params.id]}
+    	`
+    	res.send(output);
+    });
+    ```
+
+    - ​	뒤의 주소를 받기 위해서는 get에서 해당 주소형식으로 받아야함
+
+      - get 에서 '/topic/:id' 로 받고
+        아래의 ${topics[req.params.id]} 에서 사용됨
+        그럼 주소 형식은 
+        http://localhost:3000/topic/1 (RETURN JavaScript)
+        http://localhost:3000/topic/2 (RETURN Nodejs)
+        http://localhost:3000/topic/3 (RETURN Express)
+        형식으로 제공됨
+
+      - 마찬가지로 Semantic URL은 복수적으로도 가능한데
+
+        ```js
+        app.get('/topic/:id/:mode', function(req, res) {
+        	res.send(req.params.id+','+req.params.mode);
+        })
+        ```
+
+        위와 같이 코드를 구성할 경우, http://localhost:3000/id/mode 형식으로 제공된다
+
+      - http://localhost:3000/1/hyeon
+        RETURN 1,hyeon
+
 
 
 - # 학습법 및 방향성에 도움되는 글
@@ -690,7 +820,8 @@
 
     ```
     스펙, 학교, 영어 큰 의미 없습니다. 
-    자료구조, 운영체제, 네트워크, 알고리즘을 잘 알고 있는지 봅니다. 스프링? 그런 것 묻지 않습니다. 스프링 잘하는 사람 뽑을거면 경력 사원 뽑지요.
+    자료구조, 운영체제, 네트워크, 알고리즘을 잘 알고 있는지 봅니다. 스프링? 그런 것 묻지 않습니다. 
+    스프링 잘하는 사람 뽑을거면 경력 사원 뽑지요.
 
     학벌 스펙 결과보다 학부생이 전공을 너무 좋아하고 욕심 내어 '교수님들이 하라는 것'만 하지 않고 B/C 학점을 맞더라도 완벽하게 100+알파% 학과 공부에 충실/치열하게 공부하는 학생들이 많아졌으면 정말 좋겠습니다.
 
@@ -715,11 +846,27 @@
 
   ​
 
-  # 일정관리
+  # 일정기록
+
+  - #### 0주차
+
+    >2017.12.28(목) ~ 2017.12.31(일)
+
+    - 2017.12.27(수) 오후 10시 : 제주도 도착
+    - 2017.12.28(목) : 자리 셋팅 및 프로젝트 기술조사
+      - 2017.12.29(금) : 기술조사 및 한웅이형에게 프로젝트에 대한 조언
+        ​				생활코딩 서버 강의 수강중 (Express-템플릿 엔진(Jade)까지 수강)
+        ​				알고리즘 (백준, 프로그래밍 대회에서 사용하는 Java) 결제 및 1강 수강
+      - 2017.12.30(토) : 
+      - 2017.12.31(일) :
 
   - #### 1주차
 
     - 2017.01.01(월) ~ 2017.01.07(일)
+
+      - 2017.01.01(월) : 새해 첫날
+
+
       - 2017.01.03(수)~2017.01.05(금) : 여행
 
   - #### 2주차
