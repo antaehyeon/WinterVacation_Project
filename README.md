@@ -65,11 +65,11 @@
 
     - #### 프로젝트에 필요한 것
 
-      - HTML, CSS
-        - 기본 레이아웃, 디자인
-        - 반응형 웹
+      - **HTML, CSS**
+        - **기본 레이아웃, 디자인**
+        - **반응형 웹**
           - 모바일 지원
-      - JS
+      - JS, Server
         - 파일관리
           - **다운로드, 업로드**
             - **Drag & Drop**
@@ -78,7 +78,7 @@
           - 검색 (알고리즘)
           - 미리보기(썸네일)
           - 뷰어 연동 (?)
-        - 회원관리
+        - 회원관리 (Server)
           - **로그인**
           - **회원정보 및 등급**
         - 권한
@@ -88,7 +88,13 @@
           - 정렬 (알고리즘)
           - 이름, 생성일, 저자
 
+  - #### 목표
 
+    - HTML, CSS, JS의 기초
+    - Server 에 대한 개념과 구현 (경험)
+    - 2월을 지나서도 꾸준하게 발전시키고 관리
+      - 그에대한 초석을 다져놓는 작업까지가 2월까지의 목표
+    - Computer Science
 
 
 - # 서버
@@ -301,7 +307,7 @@
 
     - [JavaScript Sort](https://www.w3schools.com/jsref/jsref_sort.asp)
 
-      ![스크린샷 2017-12-29 오후 9.57.55](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2017-12-29 오후 9.57.55.png)
+      ![스크린샷 2017-12-29 오후 9.57.55](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-29%20%EC%98%A4%ED%9B%84%209.57.55.png)
 
       ```js
       a = [3, 1, 2]; a.sort(); console.log(a);
@@ -575,7 +581,7 @@
 
     - 해당 파일이 views 에 위치해있고 template로 접근했을 시
 
-      ![]([스크린샷 2017-12-30 오전 1.38.31.png](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-30%20%EC%98%A4%EC%A0%84%201.38.31.png))
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202017-12-30%20%EC%98%A4%EC%A0%84%201.38.31.png)
 
   - ### 서버 측 JS - Express, 템플릿 엔진 3 : Jade의 문법
 
@@ -786,6 +792,223 @@
 
       - http://localhost:3000/1/hyeon
         RETURN 1,hyeon
+
+  - ### 서버 측 JS - Express-POST 방식을 이용한 정보의 전달
+
+    > POST방식이라는 것을 통해서 GET방식을 더 잘 이해하게 될 것
+
+    - #### GET
+
+      - 사용자들은 어떤 정보를 얻기 위해서 Application 에 접속
+
+      - Application 은 정보를 사용자에게 제공
+
+      - **사용자의 입장에서는 정보를  GET**
+
+      - query string 이나, HTTP 기본이 GET 방식
+
+        우리가 어떤 정보를 서버에게 요청해서 가져오는 것
+
+    - #### POST
+
+      - 우편물을 보낸다, 어떤 정보를 전송한다 정도로 이해
+      - Application은 **사용자의 정보를 서버로 전송**하는 기능을 가지고 있음
+        - 로그인을 하는 과정에서는 사용자의 아이디와 비밀번호(데이터)를 서버로 전송하는 것
+
+  - ### 서버 측 JS - Express, POST 방식을 이용한 정보의 전달 2 : form
+
+    - jade 에서 해당 태그의 속성을 추가하고싶다 라고 한다면 아래와 같이 진행하면 됨
+
+      ```jade
+      DOCTYPE html
+      html
+        head
+          meta(charset ='utf-8')
+        body
+      ```
+
+    - 사용자가 입력한 정보들을 서버 어디로 전송할지가 애매함 = form 태그로 묶음
+
+    - 서버의 어디로 전송될 것인가를 웹브라우저에 알려주는 것
+
+      - form(action='/form_receiver')
+
+        ```jade
+          body
+            form(action='/form_receiver')
+              p
+                input(type='text')
+              p
+                textarea
+              p
+                input(type='submit')
+        ```
+
+      - 이후 제출버튼을 클릭하게 되면 주소가
+
+      - http://localhost:3000/form 에서 http://localhost:3000/form_receiver? 으로 변경됨 (query string)
+
+      - RETURN **Cannot GET /form_receiver**
+
+      - 사용자의 정보를 /form_receiver으로 전송할 준비는 끝
+
+    - 그런데 데이터를 입력하는 필드가 여러개 있다면, 각각의 필드에 대한 ID(name)를 서버가 알 수 있어야 함
+
+      ```jade
+      DOCTYPE html
+      html
+        head
+          meta(charset ='utf-8')
+        body
+          form(action='/form_receiver')
+            p
+              input(type='text' name='title')
+            p
+              textarea(name='description')
+            p
+              input(type='submit')
+      ```
+
+      - 각 필드에 대한 name을 지정 (title, description)
+      - 그리고 제출을 클릭하면 URL은
+        http://localhost:3000/form_receiver?title=hello&description=world 로 변경됨
+
+    - 그러면, JavaScript 에서 form_receiver에 대한 get 코드를 삽입
+
+      ```jade
+      app.get('/form_receiver?', function(req, res) {
+      	var title = req.query.title;
+      	var description = req.query.description;
+
+      	res.send(title + ',' + description);
+      })
+      ```
+
+    - HTML에서 form 이라는 것은 URL을 생성해주는 작은 Application 이 되는것임
+
+    - 웹브라우저는 form 태그에 의해 입력된 데이터에 의해 적당한 URL을 자동으로 생성해서 서버에게 보내주는 역할
+
+    - 서버 (form_receiver) 은 사용자가 보낸 title, description 값을 저장할 수 있게 되는 것
+
+    - 아직까지는 GET방식
+
+      ```jade
+      form(action='/form_receiver' method='get')
+
+      form(action='/form_receiver' method='post')
+      ```
+
+      - 만약 form 태그에 method를 명시하지 않았을 경우 자동으로 설정되는 것은 get 방식임
+
+      - 그런데 method='post' 라고 명시할 경우
+
+        ```
+        http://localhost:3000/form_receiver
+
+        RETURN Cannot POST /form_receiver
+        ```
+
+        - query string이 생성되지 않으며, 내용또한 Error 을 리턴함
+
+      - 일단 서버에 데이터가 전송이 되지 않는것은 아님
+
+      - method='post' 일 경우, URL 로 전송하는 것이 아닌 우리눈에 보이지 않는 다른 방식으로 전송
+
+      - 방식의 차이 (POST는 query string 을 이용하지 않음)
+
+  - ### 서버 측 JS - Express, POST 방식을 이용한 정보의 전달 3 : POST
+
+    - 생각의 방법
+
+      - 자 우리는, 여태까지 app.js(JavaScript)에서 app뒤에 get 을 붙여
+
+        ```Js
+        app.get('/form_receiver?', function(req, res) {
+        	var title = req.query.title;
+        	var description = req.query.description;
+
+        	res.send(title + ',' + description);
+        });
+        ```
+
+        위와 같이 작성해 왔는데
+
+      - method='post' 방식이므로, app.post() 형식으로 작성하면 되지 않을까?
+
+        ```js
+        app.post('/form_receiver', function(req, res) {
+        	res.send('HELLO, POST :)');
+        });
+        ```
+
+      -  그리고 localhost:3000/form_receiver 으로 접속한다면
+
+      - HELLO, POST :) 가 정상적으로 출력됨
+
+    - Post 방식에서도 똑같이 정보를 받으면 되지 않을까
+
+      ```js
+      app.post('/form_receiver', function(req, res) {
+      	var title = req.body.title;
+      	var description = req.body.description;
+      	res.send(title + ',' + description);
+      });
+      ```
+
+      - 했지만, 'TypeError: Cannot read property 'title' of undefined' 에러를 출력함
+
+    - API 문서를 찾자
+
+      - [req.body](http://expressjs.com/en/4x/api.html#req.body)
+
+        ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-01%20%EC%98%A4%EC%A0%84%211.48.23.png)
+
+      - 기본적으로 POST방식으로 전달된 데이터는 정의되어있지 않다(Undefiend)
+        사용하고 싶다면 body-parser나 multer을 사용하세요
+
+      - [body-parser](https://www.npmjs.com/package/body-parser) 
+
+        ```js
+        npm install body-parser --save
+
+        app.js
+        var bodyParser = require('body-parser');
+        app.use(bodyParser.urlencoded({ extended: false }))
+        ```
+
+        - 해당 애플리케이션으로 들어오는 모든 요청들은 bodyParser 라는 middleware 을 거쳐 사용자가 POST방식으로 전송한 데이터를 사용할 수 있도록 하는 Module(body-parser)
+        - 사용자가 POST방식으로 전송한 데이터가 있다면, 해당 Application 안에서 request 객체 (function-req)가 원래 가지고 있지 않았던 body 라고 하는 객체를 bodyParser 가 추가함
+        - var title = req.body.title;
+          - body라는 객체 안 title 이라는 property 가 title에 담겨 최종적으로는 사용자에게 데이터를 보여줄 수 있음
+        - app.use(bodyParser.urlencoded({ extended: false }))
+          - use : **붙인다** 는 느낌으로 이해
+
+  - ### 서버 측 JS - Express, POST 방식을 이용한 정보의 전달 4 : GET과 POST 용도
+
+    - #### GET
+
+      > GET방식은, 하나의 라우터가 GET방식을 통해서 전송된 query string에 따라서 다른 데이터를 보여줄 수 있다
+
+      - 링크를 클릭했을 때, 원하는 것은 주소가 바뀌는 것
+      - 누군가에게 링크를 공유했을 때 자신이 보는 정보를 그대로 보여주고 싶다
+        URL에 모든 정보를 담고 있어야 함
+
+    - ### POST
+
+      > URL 에 데이터가 포함되지 않고 조용히 암시적으로 전송되기 때문에 불필요하게 정보가 노출되지 않는다 라는 장점, 용량이 큰 데이터를 전송하는데도 제한이 없다는 그러한 장점을 갖는다
+
+      - 로그인 했을 때 ID와 PA가 URL에 표시되므로, 보안적으로 GET보다 그나마 나음
+      - POST가 GET방식보다 보안적으로 안전하다 라는 느낌은 아님 ! (HTTPS, SSL)
+
+    - URL을 통해서 어떤 정보를 전달한다
+
+      - 굉장히 긴 글을 URL을 통해서 query string에 담아 GET 방식을 사용한다면 브라우저 자체에서 데이터를 버려버릴 수 있음
+      - 제목과 본문일 경우 데이터가 없어질 수 있으므로 POST 방식을 사용하는 것이 맞음
+
+    - #### 결론
+
+      - GET방식은 Express가 기본적으로 제공하지만 POST방식은 Express가 기본적으로 제공하는 방식이 아니기 때문에, bodyParser 라는 middleware를 Load하고 Use를 통해 붙이고, 사용자의 요청을 중간에서 function의 req 에 body 라고 하는 객체를 추가시켜주는 역할을 한다.
+        body라는 객체는 form으로 전송될 때, name의 값으로 전달된 데이터의 이름이 body 객체의 property 로 들어오기 때문에 form의 이름을 통해서 사용자가 전달한 데이터를 받을 수 있다
 
 
 

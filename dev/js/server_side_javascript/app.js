@@ -1,9 +1,33 @@
 var express = require('express');
+var bodyParser = require('body-parser');
+
 var app = express();
 app.locals.pretty = true;
 app.set('view engine', 'jade');		// jade Template Engine 과 Express를 연결하는 코드
 app.set('views', './views');		// Express는 views를 기본으로 찾음
 app.use(express.static('public'));
+// body parser
+// use : 붙인다
+// 해당 애플리케이션으로 들어오는 모든 요청들은 bodyParser 라는 middleWare 을 거치고
+// 사용자가 POST방식으로 전송한 데이터를 사용할 수 있도록 하는 Module
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// post - 1
+app.get('/form', function(req, res) {
+	 res.render('form');
+})
+
+app.get('/form_receiver?', function(req, res) {
+	var title = req.query.title;
+	var description = req.query.description;
+	res.send(title + ',' + description);
+});
+
+app.post('/form_receiver', function(req, res) {
+	var title = req.body.title;
+	var description = req.body.description;
+	res.send(title + ',' + description);
+});
 
 //query string
 app.get('/topic/:id', function(req, res) {
@@ -24,7 +48,7 @@ app.get('/topic/:id', function(req, res) {
 // Semantic URL
 app.get('/topic/:id/:mode', function(req, res) {
 	res.send(req.params.id+','+req.params.mode);
-})
+});
 
 app.get('/template', function(req, res) {
 	res.render('temp', {time:Date(), _title:'HELLO JADE :)'});		// 소스코드를 가져와서 웹페이지를 만들어 내는 'render'
