@@ -12,6 +12,12 @@
 
   ​
 
+  - ### 개발자 로드맵 (2018년)
+
+  - ### 2018년 계획
+
+    ​
+
   # KAKAO TALK WEB SERVICE
 
   - 기획안을 README 로 관리할 예정이며, 배운 것 들을 실시간으로 기록할 예정입니다.
@@ -61,7 +67,7 @@
 
   - 해당 기수가 활동했던 자료들이 시간이 지남에 따라 뒤섞이고, 관리가 제대로 되지 않는다는 점에 착안하였습니다.
 
-  - 각 기수마다의 자료를 그때그때 보관한다면 추후의 특정 기수뿐만 아니라 몇 기수 건너서 자료를 참고할 수 있습니다.
+  - 각 기수마다의 자료를 그때그때 보관한다면 추후의 특정 기수뿐만 아니라 몇 기수 건너서 자료를 참고할 수 있도록 제공할 예정입니다
 
     - #### 프로젝트에 필요한 것
 
@@ -69,7 +75,7 @@
         - **기본 레이아웃, 디자인**
         - **반응형 웹**
           - 모바일 지원
-      - JS, Server
+      - JS, Server, DB
         - 파일관리
           - **다운로드, 업로드**
             - **Drag & Drop**
@@ -1017,9 +1023,295 @@
     >
     >적재적소에 도구가 있을 수 밖에 없는 이유가 성숙된 순간에 도구를 만나면 눈이 맞는 것 처럼 :)
 
+    ```
+    supervisor app.js
+    ```
+
     - app.js 가 변경되었음을 감지(해당 기능을 Watcher라고 표현)하고 서버를 다시 재시작 해주는 Module
     - **supervisor을 사용하는 방법에는 여러가지가 있고, 기본적으로 되지 않을 때 document 를 항상 참고할 것!**
       **예제들을 보면서 자기에게 어떻게 적용하는지 궁리해서 스스로 알아낼 수 있어야 함 !**
+
+  - ### 서버 측 JS - 웹앱 제작 1 : 오리엔테이션
+
+    - #### 파일 (삽)
+
+      - 굉장히 간편하다
+
+    - #### 데이터베이스 (포크레인)
+
+      - 전문적으로 사용하기 위해서 배움의 과정을 거쳐야 한다
+
+    - 현재 시스템에서는 데이터베이스 보다 파일을 사용할 예정
+
+  - ### 서버 측 JS - 웹앱 제작 2 : 라우팅
+
+  - ### 서버 측 JS - 웹앱 제작 3 : 본문 저장
+
+    ```js
+    app.post('/topic', function(req, res) {
+      var title = req.body.title;
+      var description = req.body.description;
+      fs.writeFile('data/' + title, description, function(err) {
+        if(err) {
+          console.log(err);
+          res.status(500).send('Internal Server Error');
+        }
+        res.send('Success :)');
+      })
+    })
+    ```
+
+    - [body-parser Express/Connect top-level generic](https://github.com/expressjs/body-parser#expressconnect-top-level-generic)
+    - [nodejs fs module](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
+    - writeFile이 정상적으로 수행되지 않았다면 Call-back 함수의 err 변수를 통해서 에러내용을 출력할 수 있음
+      예를들어, writeFile 경로가 존재하지 않는다면('dataa/' + 라던지) if(err) 구문으로 빠지는 것
+      해당 에러의 내용(err)은 사용자에게 보여주는 것이 아닌 console.log(err); 정도로 처리 (보안 문제, 보여지는 것 문제)
+
+  - ### 서버 측 JS - 웹앱 제작 4 : 글 목록 만들기
+
+    ```js
+    app.get('/topic/new', function(req, res) {
+      res.render('new');
+    })
+    app.get('/topic', function(req, res) {
+      fs.readdir('data', function(err, files) {
+        if (err) {
+          res.status(500).send('Internal Server Error');
+        }
+        res.render('view', {topics:files});
+      })
+    })
+    ```
+
+    ```express
+    doctype html
+    html
+      head
+        meta(charset ='utf-8')
+      body
+        h1 Server Side JavaScript
+        ul
+          each topic in topics
+            li
+              a(href='/topic/'+topic)= topic
+    ```
+
+    - [fs.readdir(path[, options], callback)](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
+    - [Jade - Language Reference - iteration](http://jadelang.net/reference/iteration/)
+      ![스크린샷 2018-01-02 오후 10.18.43](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-02 오후 10.18.43.png)
+    - [res.render](http://expressjs.com/ko/api.html#res.render)![스크린샷 2018-01-02 오후 10.15.38](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-02 오후 10.15.38.png)
+      - template 파일의 이름, template 파일 안으로 주입하고자 하는 데이터를 객체에 담아 표기하면 됨
+
+  - ### 서버 측 JS - 웹앱 제작 5 : 본문 읽기
+
+    ```js
+    // get
+    app.get('/topic/new', function(req, res) {
+      res.render('new');
+    })
+    app.get('/topic', function(req, res) {
+      fs.readdir('data', function(err, files) {
+        if (err) {
+          res.status(500).send('Internal Server Error');
+        }
+        res.render('view', {topics:files});
+      })
+    })
+    app.get('/topic/:id', function(req, res) {
+      var id = req.params.id;
+      fs.readdir('data', function(err, files) {
+        if (err) {
+          res.status(500).send('Internal Server Error');
+        }
+        fs.readFile('data/'+id, 'utf8', function(err, data) {
+          if(err) {
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+          }
+          res.render('view', {topics:files, title:id, description:data});
+        })
+      })
+    })
+    ```
+
+    ```Express
+    doctype html
+    html
+      head
+        meta(charset ='utf-8')
+      body
+        h1 Server Side JavaScript
+        ul
+          each topic in topics
+            li
+              a(href='/topic/'+topic)= topic
+        article
+          h2= title
+          = description
+    ```
+
+    - 위까지 진행하면 본문에는 ii-a-href 링크들이 생성이됨
+
+    - http://localhost:3000/topic/JavaScript
+
+    - http://localhost:3000/topic/nodejs
+
+    - [fs.readFile(path[, options], callback)](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
+
+    - 순차적으로 진행되는 부분을 꼭 기억할 것
+
+      - readdir 의 Call-back 함수를 통해서
+        - if (err) 에러처리;
+        - 그리고 fs.readFile을 한번 더 처리한 후
+          - if (err) 에러처리;
+          - **res.render('view', {topics:files, title:id, description:data});**
+            - files(topics) 는 맨 처음의 readdir 의 call-back함수 인자
+            - id(title) 는 get 방식으로 받아온 사용자의 입력데이터(:id)
+            - data(description) 는 readFile의 call-back함수 인자
+
+      > 단계적으로 맨 아래에서 코드가 들어가지 않는다면, express 단에서 error 출력
+      >
+      > 변수를 찾을 수 없으므로
+
+  - ### 서버 측 JS - 웹앱 제작 6 : 코드의 개선
+
+    > 중복해서 등장하는 코드를 정리할 수 있다
+    >
+    > IMPORTANT : 중복의 제거 !
+
+    ```js
+    app.get('/topic/new', function(req, res) {
+      fs.readdir('data', function(err, files) {
+        if (err) {
+          console.log(err);
+          res.status(500).send('Internal Server Error');
+        }
+        res.render('new', {topics:files});
+      })
+    })
+    ```
+
+    ```js
+    app.get(['/topic', '/topic/:id'], function(req, res) {
+      fs.readdir('data', function(err, files) {
+        if (err) {
+          console.log(err);
+          res.status(500).send('Internal Server Error');
+        }
+        var id = req.params.id;
+        if (id) {
+          // id 값이 있을 때
+          fs.readFile('data/'+id, 'utf8', function(err, data) {
+            if(err) {
+              console.log(err);
+              res.status(500).send('Internal Server Error');
+            }
+            res.render('view', {topics:files, title:id, description:data});
+          })
+        } else {
+          // id 값이 없을 때
+          res.render('view', {topics:files, title:'Welcome :)', description:'Hello JavaScript For Server :)'});
+        }
+      })
+    });
+    ```
+
+    ```js
+    app.post('/topic', function(req, res) {
+      var title = req.body.title;
+      var description = req.body.description;
+      fs.writeFile('data/' + title, description, function(err) {
+        if(err) {
+          console.log(err);
+          res.status(500).send('Internal Server Error');
+        }
+        res.redirect('/topic/' + title);
+      })
+    })
+    ```
+
+    - express의 get은 주소를 여러개 받을 수 있음
+
+      ```js
+      app.get(['/topic', '/topic/:id'], function(req, res) {
+      ```
+
+      위와같이 배열형태로 진행해주면 됨
+
+    - 그리고 해당 주소에 대한 결과를 다르게 처리하려면
+
+      ```js
+      var id = req.params.id;
+      ```
+
+      사용자가 입력한 주소의 id를 받고
+
+      ```js
+      if (id) {
+            // id 값이 있을 때
+            fs.readFile('data/'+id, 'utf8', function(err, data) {
+              if(err) {
+                console.log(err);
+                res.status(500).send('Internal Server Error');
+              }
+              res.render('view', {topics:files, title:id, description:data});
+            })
+          } else {
+            // id 값이 없을 때
+            res.render('view', {topics:files, title:'Welcome :)', description:'Hello JavaScript For Server :)'});
+          }
+      ```
+
+      id가 존재한다면 (JavaScript에서는 값이 없을경우 FALSE 로 RETURN 됨) /topic/:id 로 접근되는 경우이므로 그에대한 코드를 작성하고
+
+      그것이 아니라면(else) /topic 으로 접근되는 경우(홈)이므로, 이에 맞는 코드를 작성하면 된다
+
+    - view.jade
+
+      ```express
+      doctype html
+      html
+        head
+          meta(charset ='utf-8')
+        body
+          h1
+            a(href='/topic') Server Side JavaScript
+          ul
+            each topic in topics
+              li
+                a(href='/topic/' + topic)= topic
+          article
+            h2= title
+            = description
+          div
+            a(href='/topic/new') new
+      ```
+
+    - new.jade
+
+      ```express
+      doctype html
+      html
+        head
+          meta(charset='utf-8')
+        body
+          h1
+            a(href='/topic') Server Side JavaScript
+          ul
+            each topic in topics
+              li
+                a(href='/topic/' + topic)= topic
+          article
+            form(action='/topic' method='post')
+              p
+                input(type='text' name='title' placeholder='title')
+              p
+                textarea(name='description')
+              p
+                input(type='submit')
+      ```
+
+      - 각각 HTML을 구성할 수 있는 Express 단을 작성해주면 됨
 
 
 
@@ -1099,9 +1391,10 @@
     - 2017.01.01(월) ~ 2017.01.07(일)
 
       - 2017.01.01(월) : 새해 첫날
+      - 2017.01.02(화) : 2018년 일정 수립
+      - 2017.01.03(수) : 여행
 
 
-      - 2017.01.03(수)~2017.01.05(금) : 여행
 
   - #### 2주차
 
