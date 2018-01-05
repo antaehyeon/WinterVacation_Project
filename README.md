@@ -1428,7 +1428,7 @@
 
     - [multer API (File information)]()
 
-      - [multer(opts)](https://github.com/expressjs/multer#multeropts)
+      - [multer(opts)](https://github.com/expressjs/multer#multeropts) , storage
 
         ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-04%20%EC%98%A4%ED%9B%84%206.00.37.png)
 
@@ -1439,13 +1439,69 @@
         var upload = multer ({ dest: 'uploads/' });
         ```
 
+        ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%201.35.54.png)
+
         기존의 dest: 'uploads'/ 코드는 
 
+        ```js
+        var multer = require('multer');
+        var storage = multer.diskStorage({
+          destination: function (req, file, cb) {
+            cb(null, '/tmp/my-uploads')
+          },
+          filename: function (req, file, cb) {
+            cb(null, file.fieldname + '-' + Date.now())
+          }
+        });
+        var upload = multer({ storage: storage });
         ```
 
+        위와같이 변경됨
+
+        - 객체 리터럴 (객체를 표현)
+          - destination (함수) : 어느 경로에 저장할 것인가
+          - filename (함수) : 파일의 이름은 무엇인가
+        - 를 쓰도록 약속되어 있는 것 (storage)
+        - multer 가 실행되면서 diskStorage 의 destination 과 filename 의 함수를 각각 참조 (Call-Back)
+
+      - 그리고 해당 [API (File information)]() 를 참조해 originalname 이 원래의 파일명을 받아오는 것이구나 라는것을 참고하여, 아래와 같이 코드를 수정
+
+        ```Js
+        var _storage = multer.diskStorage({
+          destination: function (req, file, cb) {
+            cb(null, 'uploads/')
+          },
+          filename: function (req, file, cb) {
+            cb(null, file.originalname);
+          }
+        });
         ```
 
-        ​
+      - 이후, 파일의 형식에 따라서 다른곳에 저장하게 하고 싶다면
+
+        ```js
+        var _storage = multer.diskStorage({
+          destination: function (req, file, cb) {
+            if (파일의 형식이 이미지면)
+        	    cb(null, 'uploads/')
+            else if (파일의 형식이 텍스트면)
+          },
+          filename: function (req, file, cb) {
+            if (만약 파일이 이미 존재한다면)
+        	  cb(null, file.originalname에 동일 이름의 파일중 가장 큰 숫자를 끝에 붙인다);
+            else
+              cb(null, file.originalname);
+          }
+        });
+        ```
+
+      - [Express Static File](http://expressjs.com/ko/starter/static-files.html)
+
+        ```js
+        app.use('/user', express.static('uploads'));
+        ```
+
+        위와같이 사용하게 되면 localhost:3000/user/ 에서 뒤의 파일명으로 uploads 안에 있는 파일로 접근이 가능
 
 
 

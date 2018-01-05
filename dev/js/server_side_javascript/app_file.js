@@ -2,12 +2,22 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var fs = require('fs');
+
 // File Upload
 var multer = require('multer');
-var upload = multer ({ dest: 'uploads/' });
+var _storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+var upload = multer({ storage: _storage });
 
 // use
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/user', express.static('uploads'));
 
 // setting
 app.locals.pretty = true;
