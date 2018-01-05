@@ -54,7 +54,16 @@ app.get('/topic/new', function(req, res) {
 app.get(['/topic', '/topic/:id'], function(req, res) {
   var sql = 'SELECT FROM topic';
   db.query(sql).then(function(_topics) {
-    res.render('view', {topics:_topics});
+    var id = req.params.id;
+    if(id) {
+      var sql = 'SELECT FROM topic WHERE @rid=:rid';
+      db.query(sql, {params:{rid:id}}).then(function(topic) {
+          console.log(topic[0]);
+          res.render('view', {topics: _topics, topic:topic[0]});
+      });
+    } else {
+        res.render('view', {topics:_topics});
+    }
   });
   // fs.readdir('data', function(err, files) {
   //   if (err) {
