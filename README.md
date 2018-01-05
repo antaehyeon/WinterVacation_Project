@@ -1516,79 +1516,300 @@
   - ### 서버 측 JS - 데이터베이스 - [orientdb](http://orientdb.com/orientdb/)로 웹앱제작 1 : 소개
 
     - noSQL Database
-
       - Graph Database
-
         - 관계성을 훨씬 더 잘 처리할 수 있음
         - 관계성이 중요한 시대 
           - Facebook(사람-사람), Google(사이트-사이트)
         - 관계성을 더 잘 처리하는 데이터베이스가 필요하고
         - 이러한 것을 Graph Database
-
       - Document Database
-
         - noSQL Database 가 가지고있는 중요한 특성
         - 기존의 관계형 데이터베이스들은 기존의 데이터를 **하나의 '표'**로 표현
         - 그러나 해당 데이터베이스는 하나의 **'문서(형)'**으로 표현
           - 정보를 유연하게 저장하고 유연하게 가져올 수 있음
-
       - Object-Oriented Concepts
-
         - 관계형 데이터베이스는 테이블이 끝
         - Oriented DB는 '글' 이라는 테이블이 있으면 자식으로 '댓글' 테이블이 있는 방식으로
         - 테이블이란 표현 대신 Class 라는 표현을 사용 (상속관계를 통한 재사용성)
-
       - Schema-full, Schema-less, Schema mix
-
         - 관계형 데이터베이스는 표(구조)를 먼저 작성
         - noSQL 은 구조를 아예 가지고 있지 않음
         - Orient DB는 구조를 가지고 있어도 되고, 안가지고 있어도 되는 유연함
-
       - User and Role Security, Record Level Security
-
         - 데이터베이스는 보통 사용자 인증체계를 가지고 있음 (보안기능을 제공)
         - orient DB 는 사용자 인증체계를 가지고 있으면서 **'행 단위'** 로 구분할 수 있음
         - 일반적인 데이터베이스는 테이블로 권한을 가지기 마련임
           - 테이블에 대한 모든정보를 활용할 수 있기 때문에 애플리케이션을 구현하는데 있어서
             데이터베이스가 제공하는 기본적인 사용자기능을 통해 인증을 해결하기 어려움
         - 행 단위의 Security Level을 제공하기 떄문에 하나의 테이블 안에서 여러 사용자들이 글을 작성할 경우 글을 쓴 사람이 자신이 쓴 글에 대해서만 권한을 부여할 수 있는 기능을 내재화 되어있기 때문에 사용자 인증,관리와 같은 부분을 데이터베이스에게 위임시킬 수 있는 잠재적인 기능
-
       - 일반적으로 orient DB 는 noSQL 이라고 지정함
-
         - 그러나 SQL 구문도 지원하기 때문에 SQL 에 익숙한 개발자들을 위해 사용될 수 있음
-
       - Relationships (Traversing)
-
         - Graph Database 의 특성 중 관계를 JOIN 할 때, 성능상의 차이가 O(1) 으로 뛰어나다라는 것을 표현
         - 데이터가 아무리 많아도 검색할 때, 동일한 성능을 제공할 수 있다
-
       - Multi-Master Replication
-
         - 데이터베이스의 규모가 커지면 여러대로 데이터베이스를 분할시키는데
         - 읽기는 크게 상관이 없지만, 쓰기일 경우 데이터가 꼬이고 얽히는 문제가 발생할 수 있음
         - 이런 것을 지원하는 기능 (보통은 쓰기 데이터베이스를 한개로 지정시켜버림)
-
       - Sharding
-
         - 처리량이 많아짐에 따라서 데이터를 어떻게 분산할 것인가
         - orientDB 는 자동으로 진행함
-
       - Elastic Scalability with Zero Configuration
-
         - 설정(Multi-Master Replication, Sharding)
-
       - Native HTTP Rest/JSON
-
         - orient DB 는 기본적으로 RestFul 한 API를 제공
         - middleWare가 없이 Java Script 를 통해서 직접 접근해 조회,수정,삭제 등을 진행할 수 있음
-
       - Commercial Friendly License
-
         - 자유로운 라이센스를 지향함
 
-        ​
+  - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 2 : 설치
+
+    - [orient DB Download Page](http://orientdb.com/download-2/)
+
+    - bin 폴더 안의 server.sh 를 실행시켜주면 됨
+
+      ```js
+      sudo ./server.sh
+      ```
+
+      해당 Console에서 Listening binary connections on 주소:포트 로 접속하게 되면 (localhost:포트)
+
+      orient DB Studio로 접속할 수 있다
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%203.30.32.png)
+
+      - 해당 orient DB Studio 에서 New DB 를 통해 새 DB를 만든다
+      - DB Name : o2
+
+  - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 2 : 기본 사용법
+
+    ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%203.45.33.png)
+
+    - make Class(Table) = 구조를 만든다
+
+      - ex. topic
+      - Properties = Table Field ( Column )
+        - Name, Type
+          - title, STRING
+          - description, STRING
+        - Mandatory : 필수로 입력하는 ( 강제적인 )
+
+    - 테이블의 구조를 정의하는 방식
+
+    - 구조를 정의한다면 (정보만을 입력한다면) 구조를 완전하게 사용한다 : Schema-full
+
+    - 구조가 없이 데이터를 넣는대로 넣고싶다 ( 어떤행에는 있고 어떤행에는 있고 ) : Schema-less
+
+    - 구조를 조합해서 사용 (어떤 Column은 반드시 Schema를 지키고, 어떤것은 없고) : Schema-mix
+
+    - #### NEW SCHEMA
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%203.48.57.png)
+
+      아까 추가했던 Properties(Field, Column)에 따라서 title(*) 과 description 의 데이터를 추가할 수 있음
+
+      - ADD FIELD 를 통해서 현재 있던 구조의 다른 구조를 임시적으로도 추가할 수 있음 (author)
+
+      ```sql
+      SELECT * FROM topic;
+      ```
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%203.51.31.png)
+
+      위와같이 데이터들이 출력되고 author의 Properties가 임시적으로 추가된것을 확인할 수 있음
+
+    - 관계성(Graph Database)
+
+      - Logout 후, Main Console(orientDB Studio)에서 orientDB가 기본적으로 제공하는 GratefulDeadConcerts 로 접속한다
+
+        - 데이터베이스에 샘플데이터가 구성되어 있음
+
+      - Graph
+
+        ```sql
+        SELECT FROM V
+        ```
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%203.51.31.png)
+
+      - 점 하나는 Table의 행 하나
+      - song Table과 artist Table 이 written_by 에 의해서 연결되어 있음
+        - 즉, 관계형 데이터베이스를 표현해줌
+
+  - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 4 : orientjs설정
+
+    - [orientdb javascript sdk node js](https://github.com/orientechnologies/orientjs)
+
+    - [INSTALL](https://github.com/orientechnologies/orientjs#installation)
+
+      ```js
+      npm install orientjs --save
+      ```
+
+    - orientDB 는 Database Server
+
+    - 우리가 만드는 Web Application 은 WEB 입장에서는 SERVER 가 되며
+
+    - Database 에게는 Client가 됨 (Web Application 입장에서 데이터를 요청하므로)
+
+    - [Initializing the Server API](http://orientdb.com/docs/last/OrientJS-Server.html#initializing-the-server-api)
+
+      ```js
+      database_orientdb.js
+      var OrientDB = require('orientjs');
+
+      var server = OrientDB({
+         host:       'localhost',
+         port:       2424,
+         username:   'root',
+         password:   'root_passwd'
+      });
+      ```
+
+      OrientDB 는 약속되어 있는 Property 를 가지고 있음
+      각각의 정보를 맞게 입력해주면 OrientDB 라는 함수가 실행되면서 객체가 전달되고 서버가 리턴되는 방식임
+
+    - [Database API](http://orientdb.com/docs/last/OrientJS-Database.html)
+
+      - 어떤 애플리케이션의 정보가 저장되어 있는 그룹
+
+      ```js
+      var db = server.use('o2');
+      console.log('Using Database:'  + db.name);
+      ```
+
+      해당 db를 통해서 o2라는 데이터베이스를 사용할 수 있게 됨
+
+    - [Record API](http://orientdb.com/docs/last/OrientJS-Record.html)
+
+      - Record : 하나의 행
+
+      ```Js
+      var rec = db.record.get('#1:1')
+       .then(
+         function(record){
+           console.log('Loaded Record:', record);
+       });
+      ```
+
+      위의 코드에서 db.record.get('#1:1') 부분 중 인자로 구성되는 부분인 '#1:1' 은 db에 접속해서 알아낼 수 있다
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%204.40.57.png)
+
+      - SELECT FROM topic 에 대한 명령어를 실행했을 때,
+        orientDB는 기본적으로 @rid 라는 유일한 데이터(KEY)를 제공함
+      - 해당 값을 위의 get() 에 넣는다면 그에 대한 행(Record)을 가져올 수 있음
+
+      ```
+      var rec = db.record.get('#21:1')
+      ```
+
+  - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 5 : SELECT
+
+    - 데이터를 입력하는 것 (CURD)
+
+      - 추가 (CREATE)
+      - 조회 (SELECT)
+
+      ```js
+      var sql = 'SELECT FROM topic';
+      db.query(sql).then(function(results){
+      	console.log(results);
+      })
+      ```
+
+      - then (promise)
+
+        ```Js
+        node database_orientdb.js
+        var sql = 'SELECT FROM topic';
+        db.query(sql).then(function(results){
+        	console.log(results);
+        })
+        ```
+
+        ```js
+        node database_orientdb.js
+        ```
+
+        ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%205.34.25.png)
+
+        - 데이터베이스에 있는 데이터가 배열 형식으로 데이터가 리턴됨
 
 
+      - 갱신 (UPDATE)
+      - 삭제 (DELETE)
+
+    - 데이터를 가져오는 것
+
+  - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 6 : INSERT&UPDATE&DELETE
+
+    - #### INSERT
+
+    ```js
+    var sql = "INSERT INTO topic (title, description) VALUES(:title, :desc)";
+    var param = {
+        params:{
+          title:'Express',
+          desc:'Express is framework for web'
+        }
+    }
+
+    db.query(sql, param).then(function(results) {
+      console.log(results);
+    });
+    ```
+
+    - 위와 같은 코드를 아래와 같이 변경할 수 있음
+
+    ```js
+    var sql = "INSERT INTO topic (title, description) VALUES(:title, :desc)";
+
+    db.query(sql, {
+        params:{
+          title:'Express',
+          desc:'Express is framework for web'
+        }
+    }).then(function(results) {
+      console.log(results);
+    });
+    ```
+
+    - INSERT 를 한 다음에 function 이 호출되면서, results로 INSERT한 Data가 출력된다
+
+    - #### Update
+
+      ```js
+      var sql = "UPDATE topic SET title=:title WHERE @rid=:rid"
+      db.query(sql, {params:{title:'Expressjs', rid:'#18:1'}}).then(function(results) {
+        console.log(results);
+      });
+      ```
+
+      - 위에서 INSERT 결과로 새로운 Properties 가 생성됨 (@rid = #18:1)
+      - 그에 대한 Update를 진행하고 다시 새로 SELECT 할 경우
+        title이 Express에서 Expressjs로 변경됨
+
+      ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%206.51.42.png)
+
+      - 업데이트된 갯수를 출력하는가 보다 라고 추측할 수 있음
+
+    - #### DELETE
+
+      ```js
+      var sql = "DELETE FROM topic WHERE @rid=:rid";
+      db.query(sql, {params:{rid:'#18:1'}}).then(function(results) {
+        console.log(results);
+      });
+      ```
+
+      - 위에서 DELETE 결과로 기존의(#18:1) Properties 가 삭제됨
+
+      ​		![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%207.00.56.png) 
+
+      - 기존의 출력문과 같이 DELETE 갯수를 출력하는가 보다 라고 추측할 수 있음 !
+
+  ​
 
 - # 학습법 및 방향성에 도움되는 글
 
