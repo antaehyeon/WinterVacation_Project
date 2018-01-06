@@ -2050,6 +2050,44 @@
               - 그리고 반환되는 results는 배열이므로 0번째 배열의 @rid 값(행)을 가져오면 됨
                 - res.send(results[0]\['@rid'])를 통해서 **배열**임을 알 수 있음
 
+    - ### Orientdb로 웹앱제작 11 : 편집 1
+
+      > 편집은 읽기를 기본적으로 포함하고 있다
+
+      ```jade
+      doctype html
+      html
+        head
+          meta(charset ='utf-8')
+        body
+          h1
+            a(href='/topic') server Side JavaScript
+          ul
+            each topic in topics
+              li
+                - rid = encodeURIComponent(topic['@rid'])
+                a(href='/topic/' + rid)= topic.title
+          article
+            if topic
+              h2= topic.title
+              = topic.description
+              div= 'by ' + topic.author
+            else
+              h2 Welcome
+              | This is server side javascript tutorial.
+          ul
+            li
+              a(href='/topic/add') add
+            if topic
+              li
+                - rid = encodeURIComponent(topic['@rid'])
+                a(href='/topic/' + rid + '/edit') edit
+      ```
+
+      - topic 에 대한 예외처리를 추가
+        글을 선택했을 때에만 edit 버튼이 제공됨
+      - 글을 선택하지 않았다면, @rid 에 대한 값이 없으므로, ERROR을 출력
+
 - # 학습법 및 방향성에 도움되는 글
 
   - ### [학습에 실패한 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html)
@@ -2156,7 +2194,8 @@
         - 데이터베이스 - Orient DB 로 웹앱제작 8 : 읽기 1 - 글목록
         - 데이터베이스 - Orient DB 로 웹앱제작 9 : 읽기 2 - 상세보기
       - 2017.01.06(토) : 서버 공부 및 휴식
-        - ​
+        - 데이터베이스 - Orient DB 로 웹앱제작 10 : 글추가
+        - 데이터베이스 - Orient DB 로 웹앱제작 11 : 편집1
 
 
 
