@@ -2192,7 +2192,7 @@
 
     - ### MySQL 소개 및 기본 사용법
 
-      - MySQL 소개
+      - [MySQL 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C)
       - MySQL 설치 - 맥 (OSX)
       - MySQL 구조
       - MySQL 사용하기
@@ -2322,6 +2322,12 @@
         - 데이터베이스 - Orient DB 로 웹앱제작 11 : 편집1
         - 데이터베이스 - Orient DB 로 웹앱제작 12 : 편집2
         - 데이터베이스 - Orient DB 로 웹앱제작 13 : 글삭제
+        - 데이터베이스 - MySQL 1 : 소개
+        - 최신표준 HTML + CSS 디자인 전체적인 내용 파악
+        - 모던웹을 위한 JavaScript jQuery 입문 전체적인 내용 파악
+        - 책 스캔 사이트 조사
+          - [스캔365](https://www.scan365.co.kr/)
+          - [이지북스캔](http://ezbookscan.co.kr/Default.aspx)
 
 
 
