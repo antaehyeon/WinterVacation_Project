@@ -8,12 +8,15 @@ html
     ul
       each topic in topics
         li
-          a(href='/topic/' + topic)= topic
+          - rid = encodeURIComponent(topic['@rid'])
+          a(href='/topic/' + rid)= topic.title
     article
-      form(action='/topic' method='post')
+      form(action='/topic/add' method='post')
         p
           input(type='text' name='title' placeholder='title')
         p
-          textarea(name='description')
+          textarea(name='description' placeholder='description')
+        p
+          input(type='text' name='author' placeholder='author')
         p
           input(type='submit')

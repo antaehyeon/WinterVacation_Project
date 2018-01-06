@@ -41,13 +41,14 @@ app.listen(3000, function(){
 })
 
 // get
-app.get('/topic/new', function(req, res) {
-  fs.readdir('data', function(err, files) {
-    if (err) {
-      console.log(err);
+app.get('/topic/add', function(req, res) {
+  var sql = 'SELECT FROM topic';
+  db.query(sql).then(function(_topics) {
+    if (_topics.length == 0) {
+      console.log('There is no topic record.');
       res.status(500).send('Internal Server Error');
     }
-    res.render('new', {topics: files});
+    res.render('add', {topics: _topics});
   });
 });
 
@@ -65,26 +66,6 @@ app.get(['/topic', '/topic/:id'], function(req, res) {
         res.render('view', {topics:_topics});
     }
   });
-  // fs.readdir('data', function(err, files) {
-  //   if (err) {
-  //     console.log(err);
-  //     res.status(500).send('Internal Server Error');
-  //   }
-  //   var id = req.params.id;
-  //   if (id) {
-  //     // id 값이 있을 때
-  //     fs.readFile('data/'+id, 'utf8', function(err, data) {
-  //       if(err) {
-  //         console.log(err);
-  //         res.status(500).send('Internal Server Error');
-  //       }
-  //       res.render('view', {topics:files, title:id, description:data});
-  //     })
-  //   } else {
-  //     // id 값이 없을 때
-  //     res.render('view', {topics:files, title:'Welcome :)', description:'Hello JavaScript For Server :)'});
-  //   }
-  // })
 });
 
 app.get('/upload', function(req, res) {
@@ -92,16 +73,21 @@ app.get('/upload', function(req, res) {
 })
 
 // post
-app.post('/topic', function(req, res) {
+app.post('/topic/add', function(req, res) {
   var title = req.body.title;
   var description = req.body.description;
-  fs.writeFile('data/' + title, description, function(err) {
-    if(err) {
-      console.log(err);
-      res.status(500).send('Internal Server Error');
+  var author = req.body.author;
+  var sql = 'INSERT INTO topic (title, description, author) VALUES(:title, :desc, :author)';
+  db.query(sql, {
+    params:{
+      title: title,
+      desc: description,
+      author: author
     }
-    res.redirect('/topic/' + title);
-  })
+  }).then(function(results){
+      // res.send(results[0]['@rid']);
+      res.redirect('/topic/' + encodeURIComponent(results[0]['@rid']));
+  });
 })
 
 app.post('/upload', upload.single('userfile'), function(req, res, next) {

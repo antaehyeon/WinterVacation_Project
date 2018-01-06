@@ -1739,7 +1739,7 @@
 
       - 갱신 (UPDATE)
       - 삭제 (DELETE)
-
+    
     - 데이터를 가져오는 것
 
   - ### 서버 측 JS - 데이터베이스 - orientdb로 웹앱제작 6 : INSERT&UPDATE&DELETE
@@ -1805,7 +1805,7 @@
 
       - 위에서 DELETE 결과로 기존의(#18:1) Properties 가 삭제됨
 
-      ​		![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%207.00.56.png) 
+        ​	![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-05%20%EC%98%A4%ED%9B%84%207.00.56.png) 
 
       - 기존의 출력문과 같이 DELETE 갯수를 출력하는가 보다 라고 추측할 수 있음 !
 
@@ -2009,6 +2009,47 @@
       - 그래서 id에 대한 값을 판별하기 위해 app_orientdb.js 에서 if문으로 id를 판별함
       - 하지만 view.jade 에서도 topic의 데이터가 없기 때문에 if 문을 이용해 판별함
 
+      - ### Orientdb로 웹앱제작 10 : 글추가
+
+          - **route 의 순서**는 때에따라 중요할 수도 있음
+
+            ```js
+            app.get('/topic/add', function(req, res){})
+
+            app.get(['/topic', '/topic/:id'], function(req, res){})
+            ```
+
+            이런 코드가 있는 상태에서 add 에 대한 링크를 클릭하게 되면 app.get('/topic/add') 의 route에 걸리게됨
+
+            ```js
+            app_orientdb.js
+            app.post('/topic/add', function(req, res) {
+              var title = req.body.title;
+              var description = req.body.description;
+              var author = req.body.author;
+              var sql = 'INSERT INTO topic (title, description, author) VALUES(:title, :desc, :author)';
+              db.query(sql, {
+                params:{
+                  title: title,
+                  desc: description,
+                  author: author
+                }
+              }).then(function(results){
+                  // res.send(results[0]['@rid']);
+                  res.redirect('/topic/' + encodeURIComponent(results[0]['@rid']));
+              });
+            })
+            ```
+
+            정보를 입력하고  제출을 눌렀을 경우, **POST 방식으로 제공**되므로, app.post 에 대한 코드를 수정
+
+            - sql문 추가
+            - db.query(sql ...)
+            - res.redirect('/topic/' + encodeURIComponent(results[0]\['@rid']));
+              - 해당 부분에 대해서 **#**을 변환하기 위해 **encodeURIComponent** 를 사용
+              - 그리고 반환되는 results는 배열이므로 0번째 배열의 @rid 값(행)을 가져오면 됨
+                - res.send(results[0]\['@rid'])를 통해서 **배열**임을 알 수 있음
+
 - # 학습법 및 방향성에 도움되는 글
 
   - ### [학습에 실패한 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html)
@@ -2086,7 +2127,36 @@
 
       - 2017.01.01(월) : 새해 첫날
       - 2017.01.02(화) : 2018년 일정 수립
+        - 일주일동안 진행해보면서 나만의 일정 찾기 및 수립
+        - 피드백
+          - 서버의 기간을 정확히 파악하고, 요금에 대한 부분을 체크할 것
+            - 데이터베이스 특성상 서버의 기간이 끝난 후 파일을 옮기는데 비용이 발생할 수 있는 부분 고려
+          - github 기술 블로그
+          - 학생의 운영경험에 대한 부분을 충족할 수 있는 기회를 찾아라
+          - 사용자가 많지 않더라도 그것에 대한 경험을 기록하고 잘 관리할것
+          - 클라우드 프로젝트를 기획하면서 Module을 만드는 것으로 기획을 해볼 것
+            - 시작은 Ensharp 이지만, 어쨌든 Cloud Opensource 를 만드는 것 (최종목표)
+            - 재사용성을 기반으로 Module에 대한 부분을 생각하면서 (예: 다운로드 및 업로드) 구현해볼 것
+            - DevOps
+            - 주마다 평가할 것
+            - 벌칙은 나중에 생각
+            - 우선순위를 잘 파악할 것
       - 2017.01.03(수) : 여행
+      - 2017.01.04(목) : 여행
+      - 2017.01.05(금) : 서버 공부
+        - 파일업로드 4 : multer 심화
+        - 데이터베이스 수업 소개
+        - 데이터베이스 - Orient DB 로 웹앱제작 1 : 소개
+        - 데이터베이스 - Orient DB 로 웹앱제작 2 : 설치
+        - 데이터베이스 - Orient DB 로 웹앱제작 3 : 기본 사용법
+        - 데이터베이스 - Orient DB 로 웹앱제작 4 : orient js 설정
+        - 데이터베이스 - Orient DB 로 웹앱제작 5 : SELECT
+        - 데이터베이스 - Orient DB 로 웹앱제작 6 : INSERT & UPDATE & DELETE
+        - 데이터베이스 - Orient DB 로 웹앱제작 7 : 구현 계획
+        - 데이터베이스 - Orient DB 로 웹앱제작 8 : 읽기 1 - 글목록
+        - 데이터베이스 - Orient DB 로 웹앱제작 9 : 읽기 2 - 상세보기
+      - 2017.01.06(토) : 서버 공부 및 휴식
+        - ​
 
 
 
