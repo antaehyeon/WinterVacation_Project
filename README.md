@@ -2190,6 +2190,26 @@
          });
          ```
 
+    - ### MySQL 소개 및 기본 사용법
+
+      - MySQL 소개
+      - MySQL 설치 - 맥 (OSX)
+      - MySQL 구조
+      - MySQL 사용하기
+      - MySQL - UPDATE & DELETE
+      - node-mysql 1 : 접속
+      - node-mysql 2 : SELECT & INSERT
+      - node-mysql 3 : UPDATE & DELETE
+
+    - ### MySQL로 웹 애플리케이션 구현
+
+      - 글 목록
+      - 글 상세보기 구현
+      - 글 추가기능 구현
+      - 글 편집기능 구현 1
+      - 글 편집기능 구현 2
+      - 글 삭제 구현
+
 
 - # 학습법 및 방향성에 도움되는 글
 
@@ -2246,7 +2266,7 @@
 
   - [우아한형제들 기술블로그](http://woowabros.github.io/)
 
-  - [오마이랩 웹프론트 (경력직) 채용기준](http://htmlpreview.github.io/?https://github.com/antaehyeon/WinterVacation_Project/blob/master/%EB%A7%81%ED%81%AC%20HTML/%EC%98%A4%EB%A7%88%EC%9D%B4%EB%9E%A9%20%EC%B1%84%EC%9A%A9%EC%A1%B0%EA%B1%B4/Rec)
+  - [오마이랩 웹프론트 (경력직) 채용기준](https://htmlpreview.github.io/?https://github.com/antaehyeon/WinterVacation_Project/blob/master/%EB%A7%81%ED%81%AC%20HTML/%EC%98%A4%EB%A7%88%EC%9D%B4%EB%9E%A9%20%EC%B1%84%EC%9A%A9%EC%A1%B0%EA%B1%B4/Recruit.html)
 
 
   # 일정기록
