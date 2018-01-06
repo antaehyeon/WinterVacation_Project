@@ -2190,7 +2190,6 @@
          });
          ```
 
-         ​
 
 - # 학습법 및 방향성에 도움되는 글
 
@@ -2247,7 +2246,8 @@
 
   - [우아한형제들 기술블로그](http://woowabros.github.io/)
 
-  ​
+  - [오마이랩 웹프론트 (경력직) 채용기준](http://htmlpreview.github.io/?https://github.com/antaehyeon/WinterVacation_Project/blob/master/%EB%A7%81%ED%81%AC%20HTML/%EC%98%A4%EB%A7%88%EC%9D%B4%EB%9E%A9%20%EC%B1%84%EC%9A%A9%EC%A1%B0%EA%B1%B4/Rec)
+
 
   # 일정기록
 
