@@ -37,7 +37,7 @@ app.get('/products', function(req, res){
       <a href="/cart/${name}">${products[name].title}</a>
     </li>`;
   }
-  res.send(`<h1>Products></h1><ul>${output}</ul><a href="/cart">Cart</a>`);
+  res.send(`<h1>Products</h1><ul>${output}</ul><a href="/cart">Cart</a>`);
 })
 
 /*
@@ -60,5 +60,21 @@ app.get('/cart/:id', function(req, res) {
   cart[id] = parseInt(cart[id]) + 1;
 
   res.cookie('cart', cart);
-  res.send(cart);
+  res.redirect('/cart');
+})
+
+app.get('/cart', function(req, res) {
+  var cart = req.cookies.cart;
+  if (!cart) {
+    res.send('Empty !!');
+  } else {
+    var output = '';
+    for (var id in cart) {
+      output += `<li>${products[id].title} (${cart[id]})</li>`;
+    }
+  }
+  res.send(`
+    <h1>Cart</h1>
+    <ul>${output}</ul>
+    <a href="/products">Product List</a>`);
 })

@@ -1,4 +1,4 @@
-# Cookie 2 : counter
+# cookie 2 : counter
 
 - 기본 express node js 코드 구성
 

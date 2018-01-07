@@ -27,3 +27,4 @@
   - 만약 /cart/:id 의 값이 존재하지 않는다면, if문으로 처리
     - cart[id] = 0
   - 최종적으로 res 에 대한 redirect 를 /cart 로 처리
+    - RETURN Cannot GET /cart
