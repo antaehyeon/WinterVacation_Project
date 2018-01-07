@@ -2227,8 +2227,8 @@
     - ### Session 1
 
       - [intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C)
-      - counter 1
-      - counter 2
+      - [counter 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%202%20:%20counter%201.md)
+      - [counter 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%203%20:%20counter%202.md)
 
     - ### Session 2
 
