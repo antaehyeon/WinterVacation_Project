@@ -44,7 +44,7 @@
   - 응답할 때(res) 보내기 위해 res를 사용
   - 요청할 때(req)
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/tree/master/Image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202018-01-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.42.14.png)
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%2012.42.14.png)
 
   - **Set-Cookie 에 count=1 의 정보**가 담겨져있는 것을 확인할 수 있음
 
@@ -56,7 +56,7 @@
   res.send('COUNT : ' + req.cookies.count);
   ```
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/tree/master/Image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202018-01-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.48.45.png)
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%2012.48.45.png)
 
 - 쿠키(cookie) 는 **같은 주소**에서만 같은 cookie를 가짐
 
@@ -74,6 +74,10 @@
   })
   ```
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/tree/master/Image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202018-01-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.53.58.png)
+  - 기본적으로 req.cookies.count 의 값은 STRING (문자열) 임
+  - 그래서 Int형으로 변형시켜주는 parseInt 함수를 이용
+
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%2012.53.58.png)
 
 - 각 Request Header 와 Response Header 의 **Set-Cookie 필드와 Cookie 필드의 데이터가 다르다는 것을 확인**할 수 있음
+

@@ -39,3 +39,26 @@ app.get('/products', function(req, res){
   }
   res.send(`<h1>Products></h1><ul>${output}</ul><a href="/cart">Cart</a>`);
 })
+
+/*
+  cart = {
+    id:수량
+    1:2,
+    2:1
+}
+*/
+app.get('/cart/:id', function(req, res) {
+  var id = req.params.id;
+  if (req.cookies.cart)
+    var cart = req.cookies.cart;
+  else
+    var cart = {};
+
+  if(!cart[id])
+    cart[id] = 0;
+
+  cart[id] = parseInt(cart[id]) + 1;
+
+  res.cookie('cart', cart);
+  res.send(cart);
+})
