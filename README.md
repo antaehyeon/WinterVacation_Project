@@ -2239,7 +2239,7 @@
 
     - ### Session 3
 
-      - Session store - file
+      - [Session store - file](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%208%20:%20session%20store%20-%20file.md)
       - Session store - mysql
       - Session store - orientdb
 
