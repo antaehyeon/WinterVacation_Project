@@ -8,11 +8,11 @@
 
 - WEB BROWSER (Request) - WEB SERVER (Response)
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/tree/master/Image/스크린샷 2018-01-07 오후 12.05.59.png)
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%2012.05.59.png)
 
 - 크롬 - 페이지 오른쪽클릭 - 검사 - Network
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/tree/master/Image/스크린샷 2018-01-07 오후 12.10.15.png)
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%2012.10.15.png)
 
 - 어떤 페이지를 접속하면 웹브라우저가 **Request Headers** 를 만들어서 웹 서버에게 보냄
 
