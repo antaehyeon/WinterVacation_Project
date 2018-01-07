@@ -2222,7 +2222,7 @@
       - [shopping cart 1](https://github.com/antaehyeon/WinterVacation_Project/tree/master/README/cookie%203%20%3A%20shopping%20cart%201.md)
       - [shopping cart 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%204%20:%20shopping%20cart%202.md)
       - [shopping cart 3](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%205%20:%20shopping%20cart%203.md)
-      - cookie & Security
+      - [cookie & Security](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%206%20:%20cookie%20%26%20security.md)
 
     - ### Session 1
 

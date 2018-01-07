@@ -1,6 +1,6 @@
 # cookie 6 : cookie & security
 
-![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20[2018-01-07%20%EC%98%A4%ED%9B%84%202.17.59.png)
+![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%202.17.59.png)
 - cookie 에 민감한 내용이 포함되어 있다면, 도중에 원치않는 제 3자가 정보를 도청할 수 있음
 
 ```js
@@ -41,7 +41,7 @@ app.use(cookieParser('23123129831824912@!@#$'));
   })
   ```
 
-  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20[2018-01-07%20%EC%98%A4%ED%9B%84%202.25.22.png)
+  ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-07%20%EC%98%A4%ED%9B%84%202.25.22.png)
 
   - 쿠키에 대한 암호화가 진행된 것을 확인할 수 있음
 
