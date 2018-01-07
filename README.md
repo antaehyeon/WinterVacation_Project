@@ -2192,7 +2192,7 @@
 
     - ### MySQL 소개 및 기본 사용법
 
-      - [MySQL 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C)
+      - [MySQL 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C%EA%B0%9C.md)
       - MySQL 설치 - 맥 (OSX)
       - MySQL 구조
       - MySQL 사용하기
@@ -2209,6 +2209,128 @@
       - 글 편집기능 구현 1
       - 글 편집기능 구현 2
       - 글 삭제 구현
+
+    - ### http
+
+    - ### cookie1
+
+      - intro
+      - counter
+
+    - ### cookie2
+
+      - shopping cart 1
+      - shopping cart 2
+      - shopping cart 3
+
+    - ### Session 1
+
+      - intro
+      - counter 1
+      - counter 2
+
+    - ### Session 2
+
+      - login 1
+      - login 2
+      - login 3
+      - login 4
+
+    - ### Session 3
+
+      - Session store - file
+      - Session store - mysql
+      - Session store - orientdb
+
+    - ### Multi user (다중 사용자)
+
+      - intro
+      - register
+      - authentication
+
+    - ### Security - Password (비밀번호 보안)
+
+      - Security Password 1
+      - Security Password 2
+      - Security Password 3 : salt
+      - Security Password 4 : pbkdf2
+      - Security Password 5
+      - Security Password 6 : register
+
+    - ### Passportjs
+
+      - Passport Introduction (패스포트 소개)
+      - Configuration
+      - Route
+      - Serialize
+      - logout(로그아웃)
+      - review(복습)
+
+    - ### Federation Authentication (타사 인증)
+
+      - Intro (소개)
+      - Facebook (페이스북 연동)
+      - Route
+      - login
+      - Facebook permission (페이스북 세부 권한 설정)
+
+    - ### Auth - Orientdb
+
+      - Intro
+      - Session store
+      - Reigster (회원 등록)
+      - login
+      - federation auth (타사 인증)
+
+    - ### Auth - MySQL
+
+      - authentication MySQL 1
+      - Session store
+      - register
+      - login
+      - federation
+
+    - ### 정리 정돈의 기술
+
+      - #### jade - extends
+
+        - jade extends 1
+        - Jade extends 2
+
+      - #### 사용자 정의모듈 만들기
+
+        - Create module 1
+        - Create module 2
+
+      - ### 라우트 분리하기
+
+        - Routes separate 1
+        - Routes separate 2
+        - Routes separate 3
+
+      - #### 글작성+인증(CRUD+Auth) - MySQL 1
+
+        - CRUD + Auth - mysql 1 (Auth views)
+        - CRUD + Auth - mysql 2 (Auth route)
+        - CRUD + Auth - mysql 3 (Auth config)
+
+      - #### 글작성+인증(CRUD+Auth) - MySQL 2
+
+        - CRUD + Auth - mysql 4 (CRUD views)
+        - CRUD + Auth - mysql 5 (CRUD route)
+        - CRUD + Auth - mysql 6 
+
+      - #### 글작성+인증(CRUD+Auth) - Orient DB 1
+
+        - CRUD + Auth - Orient DB 1 (Auth views)
+        - CRUD + Auth - Orient DB 2 (Auth route)
+        - CRUD + Auth - Orient DB 3 (Auth config)
+
+      - #### 글작성+인증(CRUD+Auth) - Orient DB 2
+
+        - CRUD + Auth - Orient DB 4 (crud views)
+        - CRUD + Auth - Orient DB 5 (Crud routes)
+        - CRUD + Auth - Orient DB 6 (final)
 
 
 - # 학습법 및 방향성에 도움되는 글
