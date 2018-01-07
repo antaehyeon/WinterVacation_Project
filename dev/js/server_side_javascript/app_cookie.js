@@ -14,18 +14,18 @@ app.listen(3003, function() {
 });
 
 // use
-app.use(cookieParser());
+app.use(cookieParser('23123129831824912@!@#$'));
 
 // get
 app.get('/count', function(req, res) {
-  if (req.cookies.count)
+  if (req.signedCookies.count)
     var count = parseInt(req.cookies.count);
   else
     var count = 0;
 
   count += 1;
 
-  res.cookie('count', count);
+  res.cookie('count', count, {signed:true});
   res.send('COUNT : ' + req.cookies.count);
 })
 
@@ -49,8 +49,8 @@ app.get('/products', function(req, res){
 */
 app.get('/cart/:id', function(req, res) {
   var id = req.params.id;
-  if (req.cookies.cart)
-    var cart = req.cookies.cart;
+  if (req.signedCookies.cart)
+    var cart = req.signedCookies.cart;
   else
     var cart = {};
 
@@ -59,12 +59,12 @@ app.get('/cart/:id', function(req, res) {
 
   cart[id] = parseInt(cart[id]) + 1;
 
-  res.cookie('cart', cart);
+  res.cookie('cart', cart, {signed:true});
   res.redirect('/cart');
 })
 
 app.get('/cart', function(req, res) {
-  var cart = req.cookies.cart;
+  var cart = req.signedCookies.cart;
   if (!cart) {
     res.send('Empty !!');
   } else {
