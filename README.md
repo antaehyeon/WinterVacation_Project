@@ -2214,14 +2214,15 @@
 
     - ### cookie1
 
-      - [intro](https://github.com/antaehyeon/WinterVacation_Project/tree/master/README/cookie%201%20%2F%20intro.md)
-      - counter
+      - [intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%201%20:%20intro.md)
+      - [counter](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Cookie%202%20%3A%20counter.md)
 
     - ### cookie2
 
       - shopping cart 1
       - shopping cart 2
       - shopping cart 3
+      - cookie & Security
 
     - ### Session 1
 
@@ -2450,6 +2451,8 @@
         - 책 스캔 사이트 조사
           - [스캔365](https://www.scan365.co.kr/)
           - [이지북스캔](http://ezbookscan.co.kr/Default.aspx)
+      - 2017.01.07(일) : 서버 공부
+        - ​
 
 
 
