@@ -3,7 +3,7 @@ var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var FileStore = require('session-file-store')(session);
-var sha256 = require('sha256');
+var bkfd2Password = require("pbkdf2-password");
 var app = express();
 
 // listen
@@ -27,15 +27,9 @@ var salt = '@!3@#GDVAEfB%^%@!$';
 var users = [
   {
     username:'hyeon',
-    password:'a15fcec619698646b54b18e6497082263fed103e177ed0af925da979418942a8',
-    salt: '!@^%&!DAQEFDVA@@$',
+    password:'tL9xX3mhlfbH0yU7f7ytgBXDE3baE4WN/WI3cs+dkHRvlEXFZkyvvMhpx3uFqgYMSF5TVYTKFhr49Vzf1I7oMjZ6ItMS7ZVtGROjXqfi4oyPmVZwCqcJdhGdtfsNfQAxrQ6CP26stKZWLSgAZwV8f2wIhqrpuzH4AwJh0vbXJW4=',
+    salt: 'RzPygEXkljP8LqC5l4tz+RVosr1fMW2qJZmAxp70wTEnVexfN8lpRr3UTJ4d2mSyJHziV9j4TqWH69WKM9KiQw==',
     displayName:'HYEON'
-  },
-  {
-    username: 'test',
-    password: 'f4e7e02e6594bd24e85e904394b253ce4a99d834ec384024501539deb8e5054c',
-    salt: '!%bkqnBIQN950%@!#PQ',
-    displayName: 'TEST'
   }
 ];
 
