@@ -28,6 +28,26 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    var uname = username;
+    var pwd = password;
+    for (var i = 0; i < users.length; i++) {
+      var user = users[i];
+      if(uname === user.username) {
+        return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
+          if(hash === user.password) {
+            done(null, user);
+          } else {
+            done(null, false);
+          }
+        });
+      }
+    }
+    done(null, false);
+  }
+));
+
 // global variable
 var salt = '@!3@#GDVAEfB%^%@!$';
 var users = [
@@ -108,32 +128,35 @@ app.get('/auth/register', function(req, res) {
   res.send(output);
 })
 
-// post - login
-app.post('/auth/login', function(req, res) {
-  var uname = req.body.username;
-  var pwd = req.body.password;
-  for (var i = 0; i < users.length; i++) {
-    var user = users[i];
-    if(uname === user.username) {
-      return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
-        if(hash === user.password) {
-          req.session.displayName = user.displayName;
-          req.session.save(function() {
-            res.redirect('/welcome');
-          })
-        } else {
-          res.send('Who are you ? <a href="/auth/login">login</a>');
-        }
-      });
+app.post('/auth/login', passport.authenticate('local',
+    {
+      successRedirect: '/welcome',
+      failureRedirect: '/auth/login',
+      failureFlash: false
     }
-    // if (uname == user.username && sha256(pwd+user.salt) == user.password) {
-    //   req.session.displayName = user.displayName;
-    //   return req.session.save(function(){
-    //     res.redirect('/welcome');
-    //   });
-    // }
-  }
-})
+  )
+);
+// post - login
+// app.post('/auth/login', function(req, res) {
+//   var uname = req.body.username;
+//   var pwd = req.body.password;
+//   for (var i = 0; i < users.length; i++) {
+//     var user = users[i];
+//     if(uname === user.username) {
+//       return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
+//         if(hash === user.password) {
+//           req.session.displayName = user.displayName;
+//           req.session.save(function() {
+//             res.redirect('/welcome');
+//           })
+//         } else {
+//           res.send('Who are you ? <a href="/auth/login">login</a>');
+//         }
+//       });
+//     }
+//   }
+// })
+
 
 app.post('/auth/register', function(req, res) {
   hasher({password: req.body.password}, function(err, pass, salt, hash) {

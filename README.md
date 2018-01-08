@@ -2256,12 +2256,12 @@
       - [Security Password 3 : salt](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%203:%20salt.md)
       - [Security Password 4 : pbkdf2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%204%20:%20pbkdf2.md)
       - [Security Password 5](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%205.md)
-      - Security Password 6 : register
+      - [Security Password 6 : register](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%206%20:%20register.md)
 
     - ### Passportjs
 
-      - Passport Introduction (패스포트 소개)
-      - Configuration
+      - [Passport Introduction (패스포트 소개)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%201%20:%20intro.md)
+      - [Configuration](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%202%20:%20configure.md)
       - Route
       - Serialize
       - logout(로그아웃)
