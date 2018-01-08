@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var FileStore = require('session-file-store')(session);
 var bkfd2Password = require("pbkdf2-password");
 var hasher = bkfd2Password();
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 var app = express();
 
 // listen
@@ -21,7 +23,10 @@ app.use(session({
   store: new FileStore()
 }));
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // global variable
 var salt = '@!3@#GDVAEfB%^%@!$';
