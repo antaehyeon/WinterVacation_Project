@@ -2264,7 +2264,7 @@
       - [Configuration](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%202%20:%20configure.md)
       - [Route](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%203%20:%20route.md)
       - [Serialize](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%204%20:%20serialize.md)
-      - logout(로그아웃)
+      - [logout(로그아웃)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%205%20-%20logout.md)
       - review(복습)
 
     - ### Federation Authentication (타사 인증)
