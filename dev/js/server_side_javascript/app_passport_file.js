@@ -103,9 +103,9 @@ app.get('/auth/login', function(req, res) {
 })
 
 app.get('/welcome', function(req, res) {
-  if(req.session.displayName) {
+  if(req.user && req.user.displayName) {
     res.send(`
-      <h1>HELLO, ${req.session.displayName}</h1>
+      <h1>HELLO, ${req.user.displayName}</h1>
       <a href="/auth/logout">logout</a>
     `);
   } else {
@@ -120,8 +120,10 @@ app.get('/welcome', function(req, res) {
 });
 
 app.get('/auth/logout', function(req, res) {
-  delete req.session.displayName;
-  res.redirect('/welcome');
+  req.logout();
+  req.session.save(function() {
+    res.redirect('/welcome');
+  })
 })
 
 app.get('/auth/register', function(req, res) {
@@ -183,9 +185,10 @@ app.post('/auth/register', function(req, res) {
       displayName: req.body.displayName
     };
     users.push(user);
-    req.session.displayName = req.body.displayName;
-    req.session.save(function() {
-      res.redirect('/welcome');
+    req.login(user, function(err) {
+      req.session.save(function() {
+        res.redirect('/welcome');
+      });
     });
   });
 })
