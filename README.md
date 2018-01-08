@@ -2253,8 +2253,8 @@
 
       - [Security Password 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%201.md)
       - [Security Password 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%202.md)
-      - Security Password 3 : salt
-      - Security Password 4 : pbkdf2
+      - [Security Password 3 : salt](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%203:%20salt.md)
+      - [Security Password 4 : pbkdf2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Security%20Password%204%20:%20pbkdf2.md)
       - Security Password 5
       - Security Password 6 : register
 

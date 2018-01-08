@@ -4,6 +4,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var FileStore = require('session-file-store')(session);
 var bkfd2Password = require("pbkdf2-password");
+var hasher = bkfd2Password();
 var app = express();
 
 // listen
@@ -108,14 +109,25 @@ app.post('/auth/login', function(req, res) {
   var pwd = req.body.password;
   for (var i = 0; i < users.length; i++) {
     var user = users[i];
-    if (uname == user.username && sha256(pwd+user.salt) == user.password) {
-      req.session.displayName = user.displayName;
-      return req.session.save(function(){
-        res.redirect('/welcome');
+    if(uname === user.username) {
+      return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
+        if(hash === user.password) {
+          req.session.displayName = user.displayName;
+          req.session.save(function() {
+            res.redirect('/welcome');
+          })
+        } else {
+          res.send('Who are you ? <a href="/auth/login">login</a>');
+        }
       });
     }
+    // if (uname == user.username && sha256(pwd+user.salt) == user.password) {
+    //   req.session.displayName = user.displayName;
+    //   return req.session.save(function(){
+    //     res.redirect('/welcome');
+    //   });
+    // }
   }
-  res.send('Who are you ? <a href="/auth/login">login</a>');
 })
 
 app.post('/auth/register', function(req, res) {
