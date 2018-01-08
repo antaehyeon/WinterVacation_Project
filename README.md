@@ -2241,7 +2241,7 @@
 
       - [Session store - file](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%208%20:%20session%20store%20-%20file.md)
       - Session store - mysql
-      - Session store - orientdb
+      - [Session store - orientdb](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%209%20:%20session%20store%20-%20orientd.md)
 
     - ### Multi user (다중 사용자)
 
@@ -2394,24 +2394,30 @@
 
   # 일정기록
 
-  - #### 0주차
+  - ### 0주차
 
     >2017.12.28(목) ~ 2017.12.31(일)
 
-    - 2017.12.27(수) 오후 10시 : 제주도 도착
-    - 2017.12.28(목) : 자리 셋팅 및 프로젝트 기술조사
-      - 2017.12.29(금) : 기술조사 및 한웅이형에게 프로젝트에 대한 조언
-        ​				생활코딩 서버 강의 수강중 (Express-템플릿 엔진(Jade)까지 수강)
-        ​				알고리즘 (백준, 프로그래밍 대회에서 사용하는 Java) 결제 및 1강 수강
-      - 2017.12.30(토) : 
-      - 2017.12.31(일) : 
+    - #### 2017.12.27(수) 오후 10시 : 제주도 도착
+    - #### 2017.12.28(목) : 자리 셋팅 및 프로젝트 기술조사
 
-  - #### 1주차
+      - #### 2017.12.29(금)
 
-    - 2017.01.01(월) ~ 2017.01.07(일)
+        - 기술조사 및 한웅이형에게 프로젝트에 대한 조언
+        - 생활코딩 서버 강의 수강중 (Express-템플릿 엔진(Jade)까지 수강)
+        - 알고리즘 (백준, 프로그래밍 대회에서 사용하는 Java) 결제 및 1강 수강
 
-      - 2017.01.01(월) : 새해 첫날
-      - 2017.01.02(화) : 2018년 일정 수립
+      - 2017.12.30(토)
+
+      - 2017.12.31(일)
+
+  - ### 1주차
+
+    - #### 2017.01.01(월) ~ 2017.01.07(일)
+
+      - #### 2017.01.01(월) : 새해 첫날
+      - #### 2017.01.02(화) : 2018년 일정 수립 및 피드백
+
         - 일주일동안 진행해보면서 나만의 일정 찾기 및 수립
         - 피드백
           - 서버의 기간을 정확히 파악하고, 요금에 대한 부분을 체크할 것
@@ -2426,9 +2432,10 @@
             - 주마다 평가할 것
             - 벌칙은 나중에 생각
             - 우선순위를 잘 파악할 것
-      - 2017.01.03(수) : 여행
-      - 2017.01.04(목) : 여행
-      - 2017.01.05(금) : 서버 공부
+      - #### 2017.01.03(수) : 여행
+      - #### 2017.01.04(목) : 여행
+      - #### 2017.01.05(금) : 서버 공부
+
         - 파일업로드 4 : multer 심화
         - 데이터베이스 수업 소개
         - 데이터베이스 - Orient DB 로 웹앱제작 1 : 소개
@@ -2440,7 +2447,8 @@
         - 데이터베이스 - Orient DB 로 웹앱제작 7 : 구현 계획
         - 데이터베이스 - Orient DB 로 웹앱제작 8 : 읽기 1 - 글목록
         - 데이터베이스 - Orient DB 로 웹앱제작 9 : 읽기 2 - 상세보기
-      - 2017.01.06(토) : 서버 공부 및 휴식
+      - #### 2017.01.06(토) : 서버 공부 및 휴식
+
         - 데이터베이스 - Orient DB 로 웹앱제작 10 : 글추가
         - 데이터베이스 - Orient DB 로 웹앱제작 11 : 편집1
         - 데이터베이스 - Orient DB 로 웹앱제작 12 : 편집2
@@ -2451,14 +2459,100 @@
         - 책 스캔 사이트 조사
           - [스캔365](https://www.scan365.co.kr/)
           - [이지북스캔](http://ezbookscan.co.kr/Default.aspx)
-      - 2017.01.07(일) : 서버 공부
-        - ​
+      - #### 2017.01.07(일) : 서버 공부
+
+        - Server Side JS - http
+        - Server Side JS - cookie 1 : intro
+        - Server Side JS - cookie 2 : counter
+        - Server Side JS - cookie 3 : shopping cart 1
+        - Server Side JS - cookie 4 : shopping cart 2
+        - Server Side JS - cookie 5 : shopping cart 3
+        - Server Side JS - cookie 6 : cookie & security
+        - Server Side JavaScript - session 1 : intro
+        - Server Side JavaScript - session 2 : counter 1
+        - Server Side JavaScript - session 3 : counter 2
+        - Server Side JavaScript - session 4 : login 1
+        - Server Side JavaScript - session 5 : login 2
+        - Server Side JavaScript - session 6 : login 3
+        - Server Side JavaScript - session 7 : login 4
+        - Server Side JavaScript - session 8 : session store - file
+        - Server Side JavaScript - session 9 : session store - orientdb
 
 
 
-  - #### 2주차
+  - ### 2주차
 
-    - 2017.01.08(월) ~ 2017.01.14(일)
+    - #### 2017.01.08(월) ~ 2017.01.14(일)
+
+      - 서버 공부를 끝내는 것
+
+      - 생활 패턴 사이클을 제대로 찾는 것
+
+      - github technical blog - 이슈 관리들을 하고싶어요
+
+      - 프로젝트에 대한 템플릿을 찾는 것 - HTML 공부
+
+      - #### 2017.01.08(월) : 주간 보고 및 서버 공부
+
+        - 프로젝트 (6시간)
+          - Multi user
+          - Security - Password
+          - Passport js
+        - 알고리즘 (2시간)
+          - C++ STL
+        - CS (2시간)
+          - 운영체제
+
+      - #### 2017.01.09(화)
+
+        - 프로젝트 (6시간)
+          - Federation Authentication
+          - Auth - Orient db
+          - jade - extends
+          - 사용자 정의모듈 만들기
+        - 알고리즘 (2시간)
+          - 프대에서 사용하는 Java
+        - CS (2시간)
+
+      - #### 2017.01.10(수)
+
+        - 프로젝트 (6시간)
+          - 라우트 분리하기
+          - 글작성+인증 - Orient DB 1
+          - 글작성+인증 - Orient DB 2
+        - 알고리즘 (2시간)
+          - 프대에서 사용하는 Java
+        - CS (2시간)
+
+      - #### 2017.01.11(목)
+
+        - 프로젝트 (6시간)
+          - 서버 정리 복습
+          - HTML 템플릿
+            - HTML 코드 공부
+            - HTML 코드 파악
+        - 알고리즘 (2시간)
+          - 알고리즘 기초
+        - CS (2시간)
+
+      - #### 2017.01.12(금)
+
+        - 프로젝트 (6시간)
+          - 서버 정리 복습
+          - HTML 템플릿
+            - HTML 코드 공부
+            - HTML 코드 파악
+        - 알고리즘 (2시간)
+          - 알고리즘 기초
+        - CS (2시간)
+
+      - #### 2017.01.13(토)
+
+        - 미비했던 부분을 채울 시간
+
+      - #### 2017.01.14(일)
+
+        - 미비했던 부분을 채울 시간
 
   - #### 3주차
 
