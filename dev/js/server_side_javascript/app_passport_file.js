@@ -37,6 +37,7 @@ passport.use(new LocalStrategy(
       if(uname === user.username) {
         return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
           if(hash === user.password) {
+            console.log('LocalStrategy', user);
             done(null, user);
           } else {
             done(null, false);
@@ -47,6 +48,21 @@ passport.use(new LocalStrategy(
     done(null, false);
   }
 ));
+
+passport.serializeUser(function(user, done) {
+  console.log('serializeUser ', user);
+  done(null, user.username);
+});
+
+passport.deserializeUser(function(id, done) {
+  console.log('deserializeUser ', id);
+  for (var i = 0; i < users.length; i++) {
+    var user = users[i];
+    if(user.username === id) {
+      return done(null, user);
+    }
+  }
+});
 
 // global variable
 var salt = '@!3@#GDVAEfB%^%@!$';
@@ -67,7 +83,7 @@ app.get('/count', function(req, res) {
     req.session.count = 1;
   }
   res.send('COUNT : ' + req.session.count);
-})
+});
 
 // get - login
 app.get('/auth/login', function(req, res) {

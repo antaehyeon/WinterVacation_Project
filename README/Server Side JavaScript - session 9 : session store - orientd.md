@@ -38,7 +38,7 @@
 
 3. #### 서버 시작
 
-   ![스크린샷 2018-01-08 오전 12.18.52](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-08 오전 12.18.52.png)
+   ![스크린샷 2018-01-08 오전 12.18.52](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-08%20%EC%98%A4%EC%A0%84%2012.18.52.png)
 
    - created Session cluster
 
@@ -48,8 +48,8 @@
 
    - orient DB 에 접속해보면
 
-     ![스크린샷 2018-01-08 오전 12.26.25](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-08 오전 12.26.25.png)
-     ![스크린샷 2018-01-08 오전 12.25.09](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-08 오전 12.25.09.png)
+     ![스크린샷 2018-01-08 오전 12.26.25](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-08%20%EC%98%A4%EC%A0%84%2012.26.25.png)
+     ![스크린샷 2018-01-08 오전 12.25.09](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-08%20%EC%98%A4%EC%A0%84%2012.25.09.png)
      위와 같이 orient DB SCHEMA 부분에 Session Table (orient DB - CLASS, Data id) 가 생성되어 있음
 
 4. #### 웹페이지 접속
@@ -59,7 +59,7 @@
      - 없으면 생성
    - 새로운 session id 를 발급해서, session id 를 orient db에 저장하고
    - 동시에 사용자의 웹브라우저에게 session id 를 전송
-     ![스크린샷 2018-01-08 오전 12.34.23](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-08 오전 12.34.23.png)
+     ![스크린샷 2018-01-08 오전 12.34.23](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-08%20%EC%98%A4%EC%A0%84%2012.34.23.png)
    - 그렇게 되면 위와같이 Session Table(CLASS)에 id 값 데이터가 추가됨
 
 5. ####  기타
@@ -110,9 +110,7 @@
      })
      ```
 
-     그래서 **req.session.save(function() {});**
-
-     해당 코드(save EVENT)를 사용하게 되면 안전하게 처리할 수 있음
-
-     **session이 store에 저장이 된 후에 session이 인자로 전달된 함수가 호출됨**
-     (= session store 가 끝났다는 것을 확신할 수 있을 때 redirect이 실행됨)
+     - 그래서 **req.session.save(function() {});**
+     - 해당 코드(save EVENT)를 사용하게 되면 안전하게 처리할 수 있음
+     - **session이 store에 저장이 된 후에 session이 인자로 전달된 함수가 호출됨**
+     - (= session store 가 끝났다는 것을 확신할 수 있을 때 redirect이 실행됨)

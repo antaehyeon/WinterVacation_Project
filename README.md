@@ -2262,7 +2262,7 @@
 
       - [Passport Introduction (패스포트 소개)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%201%20:%20intro.md)
       - [Configuration](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%202%20:%20configure.md)
-      - Route
+      - [Route](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%203%20:%20route.md)
       - Serialize
       - logout(로그아웃)
       - review(복습)
