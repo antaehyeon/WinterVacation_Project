@@ -3,6 +3,7 @@ var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var FileStore = require('session-file-store')(session);
+var md5 = require('md5');
 var app = express();
 
 // listen
