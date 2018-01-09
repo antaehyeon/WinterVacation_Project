@@ -166,7 +166,7 @@ app.get('/welcome', function(req, res) {
     console.log(req.user);
     res.send(`
       <h1>HELLO, ${req.user.displayName}</h1>
-      <h1>YOUR EMAIL : ${req.user.emails}</h1>
+      <h1>YOUR EMAIL : ${req.user.email}</h1>
       <a href="/auth/logout">logout</a>
     `);
   } else {

@@ -67,13 +67,6 @@
    ```
 
    - 알고보니 email PROPERTY에 :emails 가 아닌 :email 로 되어있어서 none 값이 전달된 것
+   - h1 태그에서도 req.user.emails 가 아닌 req.user.email
 
-   > ### 결론 : 오타 죽이고 싶다
-
-   ​
-
-   ​
-
-   ​
-
-   ​
+   > ### 결론 : 로그 짱, 오타 죽이고 싶다, 컴퓨터는 거짓말을 하지 않는다
