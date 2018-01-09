@@ -2279,7 +2279,7 @@
 
       - [Intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%201.md)
       - [Session store](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%202%20session%20store.md)
-      - Reigster (회원 등록)
+      - [Reigster (회원 등록)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%203%20register.md)
       - login
       - federation auth (타사 인증)
 
