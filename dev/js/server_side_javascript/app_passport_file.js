@@ -52,14 +52,14 @@ passport.use(new LocalStrategy(
 
 passport.serializeUser(function(user, done) {
   console.log('serializeUser ', user);
-  done(null, user.username);
+  done(null, user.authId);
 });
 
 passport.deserializeUser(function(id, done) {
   console.log('deserializeUser ', id);
   for (var i = 0; i < users.length; i++) {
     var user = users[i];
-    if(user.username === id) {
+    if(user.authId === id) {
       return done(null, user);
     }
   }
@@ -71,10 +71,20 @@ passport.use(new FacebookStrategy({
     callbackURL: "/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
-    User.findOrCreate({facebookId: profile.id}, function(err, user) {
-      if (err) { return done(err); }
-      done(null, user);
-    });
+    console.log(profile);
+    var authId = 'facebook:' + profile.id;
+    for(var i=0; i<users.length; i++) {
+      var user = users[i]; 
+      if(user.authId === authId) {
+        return done(null, user);
+      }
+    }
+    var newuser = {
+      'authId': authId,
+      'displayName': profile.displayName
+    };
+    users.push(newuser);
+    done(null, newuser);
   }
 ));
 
@@ -82,6 +92,7 @@ passport.use(new FacebookStrategy({
 var salt = '@!3@#GDVAEfB%^%@!$';
 var users = [
   {
+    authId:'local:hyeon',
     username:'hyeon',
     password:'tL9xX3mhlfbH0yU7f7ytgBXDE3baE4WN/WI3cs+dkHRvlEXFZkyvvMhpx3uFqgYMSF5TVYTKFhr49Vzf1I7oMjZ6ItMS7ZVtGROjXqfi4oyPmVZwCqcJdhGdtfsNfQAxrQ6CP26stKZWLSgAZwV8f2wIhqrpuzH4AwJh0vbXJW4=',
     salt: 'RzPygEXkljP8LqC5l4tz+RVosr1fMW2qJZmAxp70wTEnVexfN8lpRr3UTJ4d2mSyJHziV9j4TqWH69WKM9KiQw==',
@@ -212,6 +223,7 @@ app.get(
 app.post('/auth/register', function(req, res) {
   hasher({password: req.body.password}, function(err, pass, salt, hash) {
     var user = {
+      authId: 'local:' + req.body.username,
       username: req.body.username,
       password: hash,
       salt: salt,
