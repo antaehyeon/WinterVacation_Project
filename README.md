@@ -2277,7 +2277,7 @@
 
     - ### Auth - Orientdb
 
-      - Intro
+      - [Intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%201.md)
       - Session store
       - Reigster (회원 등록)
       - login
