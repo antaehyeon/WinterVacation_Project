@@ -7,6 +7,7 @@ var bkfd2Password = require("pbkdf2-password");
 var hasher = bkfd2Password();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
 var app = express();
 
 // listen
@@ -64,6 +65,19 @@ passport.deserializeUser(function(id, done) {
   }
 });
 
+passport.use(new FacebookStrategy({
+    clientID: '2023046454641372',
+    clientSecret: 'afa28eae335a8fee5d66fcbc10c597a4',
+    callbackURL: "/auth/facebook/callback"
+  },
+  function(accessToken, refreshToken, profile, done) {
+    User.findOrCreate({facebookId: profile.id}, function(err, user) {
+      if (err) { return done(err); }
+      done(null, user);
+    });
+  }
+));
+
 // global variable
 var salt = '@!3@#GDVAEfB%^%@!$';
 var users = [
@@ -98,6 +112,7 @@ app.get('/auth/login', function(req, res) {
     <p>
       <input type="submit" value="SUBMIT"/>
   </form>
+  <a href="/auth/facebook">FACEBOOK</a>
   `;
   res.send(output);
 })
@@ -151,6 +166,24 @@ app.post('/auth/login', passport.authenticate('local',
       successRedirect: '/welcome',
       failureRedirect: '/auth/login',
       failureFlash: false
+    }
+  )
+);
+
+app.get( // get-facebook
+  '/auth/facebook',
+  passport.authenticate(
+      'facebook'
+    )
+  );
+
+app.get(
+  '/auth/facebook/callback',
+  passport.authenticate(
+    'facebook',
+    {
+      successRedirect: '/welcome',
+      failureRedirect: '/auth/login'
     }
   )
 );

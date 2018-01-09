@@ -2265,7 +2265,7 @@
       - [Route](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%203%20:%20route.md)
       - [Serialize](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%204%20:%20serialize.md)
       - [logout(로그아웃)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%205%20-%20logout.md)
-      - review(복습)
+      - [review(복습)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Passportjs%206%20:%20review.md)
 
     - ### Federation Authentication (타사 인증)
 
@@ -2407,9 +2407,9 @@
         - 생활코딩 서버 강의 수강중 (Express-템플릿 엔진(Jade)까지 수강)
         - 알고리즘 (백준, 프로그래밍 대회에서 사용하는 Java) 결제 및 1강 수강
 
-      - 2017.12.30(토)
+      - #### 2017.12.30(토)
 
-      - 2017.12.31(일)
+      - #### 2017.12.31(일)
 
   - ### 1주차
 
@@ -2430,7 +2430,7 @@
             - 재사용성을 기반으로 Module에 대한 부분을 생각하면서 (예: 다운로드 및 업로드) 구현해볼 것
             - DevOps
             - 주마다 평가할 것
-            - 벌칙은 나중에 생각
+            - 벌칙은 게임금지 / 음주금지
             - 우선순위를 잘 파악할 것
       - #### 2017.01.03(수) : 여행
       - #### 2017.01.04(목) : 여행
@@ -2496,10 +2496,27 @@
 
         - 프로젝트 (6시간)
           - Multi user
+            - Server Side JavaScript - Multi user 1 : intro
+            - Server Side JavaScript - Multi user 2 : register
+            - Server Side JavaScript - Multi user 3
           - Security - Password
+            - Server Side JavaScript - Security Password 1
+            - Server Side JavaScript - Security Password 2
+            - Server Side JavaScript - Security Password 3: salt
+            - Server Side JavaScript - Security Password 4 : pbkdf2
+            - Server Side JavaScript - Security Password 5
+            - Server Side JavaScript - Security Password 6 : register
           - Passport js
+            - Server Side JavaScript - Passportjs 1 : intro 
+            - Server Side JavaScript - Passportjs 2 : configure
+            - Server Side JavaScript - Passportjs 3 : route
+            - Server Side JavaScript - Passportjs 4 : serialize
+            - Server Side JavaScript - Passportjs 5 : logout
+            - Server Side JavaScript - Passportjs 6 : review
         - 알고리즘 (2시간)
-          - C++ STL
+          - 프대에서 사용하는 Java
+            - 입/출력
+            - COLLECTIONS
         - CS (2시간)
           - 운영체제
 
@@ -2511,7 +2528,9 @@
           - jade - extends
           - 사용자 정의모듈 만들기
         - 알고리즘 (2시간)
-          - 프대에서 사용하는 Java
+          - 프대에서 사용하는 Java 심화/복습
+            - 입/출력
+            - COLLECTIONS
         - CS (2시간)
 
       - #### 2017.01.10(수)
