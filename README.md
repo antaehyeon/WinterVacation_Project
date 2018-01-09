@@ -2296,7 +2296,7 @@
       - #### jade - extends
 
         - [jade extends 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20side%20javascript%20-%20jade%20extends1.md)
-        - Jade extends 2
+        - [Jade extends 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Jade%20extends%202.md)
 
       - #### 사용자 정의모듈 만들기
 
