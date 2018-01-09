@@ -41,7 +41,8 @@
    })
    ```
 
-3. Session Query ALL
+3. ### Session Query ALL
+
    ![](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-10%20%EC%98%A4%EC%A0%84%201.42.25.png)
 
    - 해당 세션 정보가 사용자가 현재 접속한 사용자의 세션정보를 가지고 있는 것

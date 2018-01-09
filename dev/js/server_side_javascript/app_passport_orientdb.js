@@ -2,12 +2,23 @@
 var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var FileStore = require('session-file-store')(session);
+var OrientoStore = require('connect-oriento')(session);
 var bkfd2Password = require("pbkdf2-password");
 var hasher = bkfd2Password();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
+
+// orientDB Initializaing
+var OrientDB = require('orientjs');
+var server = OrientDB({
+   host:       'localhost',
+   port:       2424,
+   username:   'root',
+   password:   '111111'
+});
+var db = server.use('o2');
+
 var app = express();
 
 // listen
@@ -21,7 +32,9 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false },
-  store: new FileStore()
+  store: new OrientoStore({
+  	server: "host=localhost&port=2424&username=root&password=111111&db=o2"
+  })
 }));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -235,11 +248,20 @@ app.post('/auth/register', function(req, res) {
       salt: salt,
       displayName: req.body.displayName
     };
-    users.push(user);
-    req.login(user, function(err) {
-      req.session.save(function() {
-        res.redirect('/welcome');
-      });
+    var sql = 'INSERT INTO user (authId, username, password, salt, displayName) VALUES(:authId, :username, :password, :salt, :displayName)';
+    db.query(sql, {
+      params:user
+    }).then(function(results) {
+      // push
+      res.redirect('/welcome');
+    }, function(error) {
+      console.log(error);
+      res.status(500);
     });
+    // req.login(user, function(err) {
+    //   req.session.save(function() {
+    //     res.redirect('/welcome');
+    //   });
+    // });
   });
 })
