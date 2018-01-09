@@ -91,21 +91,32 @@ passport.use(new FacebookStrategy({
     'name', 'timezone', 'updated_time', 'verified', 'displayName']
   },
   function(accessToken, refreshToken, profile, done) {
+    console.log("FACEBOOKSTRATEGY **********************");
     console.log(profile);
     var authId = 'facebook:' + profile.id;
-    for(var i=0; i<users.length; i++) {
-      var user = users[i]; 
-      if(user.authId === authId) {
-        return done(null, user);
+    var sql = 'SELECT * FROM user WHERE authId=:authId';
+    db.query(sql, {params:{authId:authId}}).then(function(results){
+      if(results.length == 0) {
+        // add user
+        var newuser = {
+          'authId': authId,
+          'displayName': profile.displayName,
+          'emails': profile.emails[0].value
+        };
+        var sql = 'INSERT INTO user (authId, displayName, email) VALUES (:authId, :displayName, :emails)';
+        db.query(sql, {params:newuser}).then(function(){
+
+        }, function(error){
+          console.log(error);
+          done('ERROR :()');
+        });
+      } else {
+        // LOGIN
+        console.log("FACEBOOKSTRATEGY ***********************");
+        console.log("ELSE ***********************************");
+        return done(null, results[0]);
       }
-    }
-    var newuser = {
-      'authId': authId,
-      'displayName': profile.displayName,
-      'emails': profile.emails[0].value
-    };
-    users.push(newuser);
-    done(null, newuser);
+    })
   }
 ));
 
@@ -151,6 +162,8 @@ app.get('/auth/login', function(req, res) {
 
 app.get('/welcome', function(req, res) {
   if(req.user && req.user.displayName) {
+    console.log("/WELCOME GET ROUTE ********************");
+    console.log(req.user);
     res.send(`
       <h1>HELLO, ${req.user.displayName}</h1>
       <h1>YOUR EMAIL : ${req.user.emails}</h1>
