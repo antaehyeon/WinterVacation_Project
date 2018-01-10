@@ -9,15 +9,8 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
 
-// orientDB Initializaing
-var OrientDB = require('orientjs');
-var server = OrientDB({
-   host:       'localhost',
-   port:       2424,
-   username:   'root',
-   password:   '111111'
-});
-var db = server.use('o2');
+var auth = require('./routes/orientdb/auth')(passport, db);
+var db = require('./config/orientdb/db')();
 
 var app = express();
 
@@ -45,6 +38,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use('/auth', auth);
 
 passport.use(new LocalStrategy(
   function(username, password, done) {
@@ -136,7 +131,7 @@ var users = [
   }
 ];
 
-// get
+// GET *************************************
 app.get('/count', function(req, res) {
   if (req.session.count) {
     req.session.count++;
@@ -145,11 +140,6 @@ app.get('/count', function(req, res) {
   }
   res.send('COUNT : ' + req.session.count);
 });
-
-// get - login
-app.get('/auth/login', function(req, res) {
-  res.render('auth/login');
-})
 
 app.get('/welcome', function(req, res) {
   if(req.user && req.user.displayName) {
@@ -170,88 +160,3 @@ app.get('/welcome', function(req, res) {
     `);
   }
 });
-
-app.get('/auth/logout', function(req, res) {
-  req.logout();
-  req.session.save(function() {
-    res.redirect('/welcome');
-  })
-})
-
-app.get('/auth/register', function(req, res) {
-  res.render('auth/register');
-})
-
-app.post('/auth/login', passport.authenticate('local',
-    {
-      successRedirect: '/welcome',
-      failureRedirect: '/auth/login',
-      failureFlash: false
-    }
-  )
-);
-
-app.get( // get-facebook
-  '/auth/facebook',
-  passport.authenticate(
-      'facebook',
-      {scope: 'email'}
-    )
-  );
-
-app.get(
-  '/auth/facebook/callback',
-  passport.authenticate(
-    'facebook',
-    {
-      successRedirect: '/welcome',
-      failureRedirect: '/auth/login'
-    }
-  )
-);
-// post - login
-// app.post('/auth/login', function(req, res) {
-//   var uname = req.body.username;
-//   var pwd = req.body.password;
-//   for (var i = 0; i < users.length; i++) {
-//     var user = users[i];
-//     if(uname === user.username) {
-//       return hasher({password:pwd, salt:user.salt}, function(err, pass, salt, hash){
-//         if(hash === user.password) {
-//           req.session.displayName = user.displayName;
-//           req.session.save(function() {
-//             res.redirect('/welcome');
-//           })
-//         } else {
-//           res.send('Who are you ? <a href="/auth/login">login</a>');
-//         }
-//       });
-//     }
-//   }
-// })
-
-
-app.post('/auth/register', function(req, res) {
-  hasher({password: req.body.password}, function(err, pass, salt, hash) {
-    var user = {
-      authId: 'local:' + req.body.username,
-      username: req.body.username,
-      password: hash,
-      salt: salt,
-      displayName: req.body.displayName
-    };
-    var sql = 'INSERT INTO user (authId, username, password, salt, displayName) VALUES(:authId, :username, :password, :salt, :displayName)';
-    db.query(sql, {
-      params:user
-    }).then(function(results) {
-      req.login(user, function(err) {
-        req.session.save(function() {
-          res.redirect('/welcome');
-        });
-      });
-    }, function(error) {
-      console.log(error);
-      res.status(500);
-    });
-  });
-})
