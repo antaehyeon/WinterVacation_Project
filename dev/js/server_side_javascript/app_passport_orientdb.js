@@ -26,6 +26,10 @@ app.listen(3003, function() {
     console.log('Connected 3003 Port :)');
 });
 
+// set
+app.set('views', './views/orientdb');
+app.set('view engine', 'jade');
+
 // use
 app.use(session({
   secret: '12941nlekfsMFSDLIQNf%!%',
@@ -144,20 +148,7 @@ app.get('/count', function(req, res) {
 
 // get - login
 app.get('/auth/login', function(req, res) {
-  var output = `
-  <form action="/auth/login" method="post">
-    <p>
-      <input type="text" name="username" placeholder="username"/>
-    </p>
-    <p>
-      <input type="password" name="password" placeholder="password"/>
-    </p>
-    <p>
-      <input type="submit" value="SUBMIT"/>
-  </form>
-  <a href="/auth/facebook">FACEBOOK</a>
-  `;
-  res.send(output);
+  res.render('auth/login');
 })
 
 app.get('/welcome', function(req, res) {
@@ -188,23 +179,7 @@ app.get('/auth/logout', function(req, res) {
 })
 
 app.get('/auth/register', function(req, res) {
-  var output = `
-    <h1>Register</h1>
-    <form action="/auth/register" method="post">
-      <p>
-        <input type="text" name="username" placeholder="username"/>
-      </p>
-      <p>
-        <input type="password" name="password" placeholder="password"/>
-      </p>
-      <p>
-        <input type="text" name="displayName" placeholder="displayName"/>
-      </p>
-      <p>
-        <input type="submit" value="SUBMIT"/>
-    </form>
-  `;
-  res.send(output);
+  res.render('auth/register');
 })
 
 app.post('/auth/login', passport.authenticate('local',

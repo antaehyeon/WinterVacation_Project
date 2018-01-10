@@ -2307,7 +2307,7 @@
 
         - [Routes separate 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Routes%20separate%201.md)
         - [Routes separate 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Routes%20separate%202.md)
-        - Routes separate 3
+        - [Routes separate 3](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Routes%20separate%203.md)
 
       - #### 글작성+인증(CRUD+Auth) - MySQL 1
 
