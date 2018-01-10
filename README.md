@@ -2301,7 +2301,7 @@
       - #### 사용자 정의모듈 만들기
 
         - [Create module 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Create%20module%201.md)
-        - Create module 2
+        - [Create module 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Create%20module%202.md)
 
       - ### 라우트 분리하기
 
@@ -2524,9 +2524,23 @@
 
         - 프로젝트 (6시간)
           - Federation Authentication
+            - Server Side JavaScript - Federation authentication 1 : intro
+            - Server Side JavaScript - Federation authentication 2 : facebook
+            - Server Side JavaScript - Federation authentication 3
+            - Server Side JavaScript - Federation authentication 4
+            - Server Side JavaScript - Federation authentication 5
           - Auth - Orient db
+            - Server Side JavaScript - Auth orientdb 1
+            - Server Side JavaScript - Auth orientdb 2 session store
+            - Server Side JavaScript - Auth orientdb 3 register
+            - Server Side JavaScript - Auth orientdb 4 login
+            - Server Side JavaScript - Auth orientdb 5 : federation
           - jade - extends
+            - Server side javascript - jade extends1
+            - Server Side JavaScript - Jade extends 2
           - 사용자 정의모듈 만들기
+            - Server Side JavaScript - Create module 1
+            - Server Side JavaScript - Create module 2
         - 알고리즘 (2시간)
           - 프대에서 사용하는 Java 심화/복습
             - 입/출력
