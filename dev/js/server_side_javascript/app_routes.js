@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-var router = express.Router();
-var p2 = express.Router();
+var p1 = require('./routes/p1');
+var p2 = require('./routes/p2');
 
 // listen
 app.listen(3003, function(){
@@ -10,19 +10,5 @@ app.listen(3003, function(){
 });
 
 // use
-app.use('/p1', router);
+app.use('/p1', p1);
 app.use('/p2', p2);
-
-// get
-router.get('/r1', function(req, res) {
-  res.send('HELLO /p1/r1 :)');
-});
-router.get('/r2', function(req, res) {
-  res.send('HELLO /p1/r2 :)');
-});
-p2.get('/r1', function(req, res) {
-  res.send('HELLO /p2/r1 :)');
-});
-p2.get('/r2', function(req, res) {
-  res.send('HELLO /p2/r2 :)');
-});

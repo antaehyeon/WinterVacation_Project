@@ -2305,7 +2305,7 @@
 
       - ### 라우트 분리하기
 
-        - Routes separate 1
+        - [Routes separate 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Routes%20separate%201.md)
         - Routes separate 2
         - Routes separate 3
 
