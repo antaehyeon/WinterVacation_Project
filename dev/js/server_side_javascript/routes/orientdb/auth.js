@@ -21,7 +21,7 @@ module.exports = function(passport) {
   })
 
   route.get( // get-facebook
-    'facebook',
+    '/facebook',
     passport.authenticate(
       'facebook',
       {scope: 'email'}
@@ -29,7 +29,7 @@ module.exports = function(passport) {
   );
 
   route.get(
-    'facebook/callback',
+    '/facebook/callback',
     passport.authenticate(
       'facebook',
       {

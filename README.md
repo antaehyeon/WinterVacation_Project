@@ -2311,8 +2311,8 @@
 
       - #### 글작성+인증(CRUD+Auth) - MySQL 1
 
-        - [CRUD + Auth - mysql 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201%20(Auth%20view.md))
-        - CRUD + Auth - mysql 2 (Auth route)
+        - [CRUD + Auth - mysql 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201%20(Auth%20view.md)
+        - [CRUD + Auth - mysql 2 (Auth route)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%202%20(Auth%20rout.md))
         - CRUD + Auth - mysql 3 (Auth config)
 
       - #### 글작성+인증(CRUD+Auth) - MySQL 2
