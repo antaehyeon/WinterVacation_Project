@@ -19,23 +19,23 @@
 
 - ### 필요한 데이터
 
-  - #### Basic
+  - ### Basic
 
-    - ##### 커밋 수
+    - ### 커밋 수
 
       ![스크린샷 2018-01-11 오후 4.50.50](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.50.50.png)
 
       - **그래프**를 **이용**해서, 한눈에 파악할 수 있도록 하기 위함
 
-    - ##### Repasitories 갯수
+    - ### Repasitories 갯수
 
       ![스크린샷 2018-01-11 오후 5.06.47](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.06.47.png)
 
-    - ##### github 사용자 정보(사진 및 프로필 데이터)
+    - ### github 사용자 정보(사진 및 프로필 데이터)
 
       ![스크린샷 2018-01-11 오후 5.07.32](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.07.32.png)
 
-    - ##### Repositories 에 대한 언어타입 (%)
+    - ### Repositories 에 대한 언어타입 (%)
 
       ![스크린샷 2018-01-11 오후 4.52.22](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.52.22.png)
 
@@ -43,13 +43,13 @@
 
       ![스크린샷 2018-01-11 오후 5.01.12](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.01.12.png)
 
-  - #### Pro
+  - ### Pro
 
     - 일단은 **about.me** 의 Pro 정책을 참고
 
       ![스크린샷 2018-01-11 오후 4.24.36](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.24.36.png)
 
-  - #### More
+  - ### More
 
     - **사용자의 입력 데이터**가 필요할 수 있음
 
@@ -72,7 +72,7 @@
       - 맨 처음에 깃허브 주소만 입력하고 나서, 깃허브 데이터로만 페이지를 구성하고
         이후, 약간 비어보이거나 사용자가 추가하고 싶은 내용들을 추가할 수 있도록
 
-- #### 개발 방식
+- ### 개발 방식
 
   - **[GitHub Developer](https://developer.github.com/)** 의 API문서를 참고해 제공받을 수 있는 데이터를 조사하는 단계필요
   - 만약, 필요한 데이터가 제공되지 않는다면 서버를 따로 구축해 **[Crawling](https://namu.wiki/w/%ED%81%AC%EB%A1%A4%EB%A7%81)** 필요
@@ -90,42 +90,42 @@
 
     - 하지만, 정보를 더 원할 수 있는 점을 고려하여 설계
 
-  - #### Intro Layout
+  - ### Intro Layout
 
-    - 초기 시안
+    - ### 초기 시안
 
       ![스크린샷 2018-01-11 오후 5.11.52](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.11.52.png)
 
-      - Background
+      - ### Background
 
         ![1월-11-2018 15-21-43](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-21-43.gif)
 
         - 동영상 (또는 GIF) 을 이용해서 Background 구성
           - 코딩이나 포트폴리오와 관련된 이미지 및 동영상(또는 GIF)
 
-      - Effect
+      - ### Effect
 
         ![1월-11-2018 15-30-54](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-30-54.gif)
 
         - 무슨 사이트인지 모션(글씨가 써지는, 지워지는)을 이용해 설명
 
 
-    - 목표 시안
+    - ### 목표 시안
 
       ![Intro시안](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/Intro%EC%8B%9C%EC%95%88.png)
 
       - 해당 시안보다는 조금 더 깔끔하게 구성할 예정
 
-  - #### After Layout
+  - ### After Layout
 
-    - ##### 목표 시안
+    - ### 목표 시안
 
       - 모든 정보를 한 스크롤을 이용해서 보여줄지
         - Template 1
         - Template 2
       - 페이지를 이동하면서 보여줄지
 
-    - ##### 더 세분화 필요
+    - ### 더 세분화 필요
 
       - 사용자의 **Commit, Repositories 에 대한 정보** 표현
 
