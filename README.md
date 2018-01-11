@@ -2311,8 +2311,8 @@
 
       - #### 글작성+인증(CRUD+Auth) - MySQL 1
 
-        - [CRUD + Auth - mysql 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201%20(Auth%20view.md)
-        - [CRUD + Auth - mysql 2 (Auth route)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%202%20(Auth%20rout.md))
+        - CRUD + Auth - mysql 1 (Auth views)
+        - CRUD + Auth - mysql 2 (Auth route)
         - CRUD + Auth - mysql 3 (Auth config)
 
       - #### 글작성+인증(CRUD+Auth) - MySQL 2
@@ -2323,9 +2323,9 @@
 
       - #### 글작성+인증(CRUD+Auth) - Orient DB 1
 
-        - CRUD + Auth - Orient DB 1 (Auth views)
-        - CRUD + Auth - Orient DB 2 (Auth route)
-        - CRUD + Auth - Orient DB 3 (Auth config)
+        - [CRUD + Auth - Orient DB 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+        - [CRUD + Auth - Orient DB 2 (Auth route)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%202.md)
+        - [CRUD + Auth - Orient DB 3 (Auth config)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%203.md)
 
       - #### 글작성+인증(CRUD+Auth) - Orient DB 2
 
@@ -2496,77 +2496,127 @@
 
         - 프로젝트 (6시간)
           - Multi user
-            - Server Side JavaScript - Multi user 1 : intro
-            - Server Side JavaScript - Multi user 2 : register
-            - Server Side JavaScript - Multi user 3
+            - [x] Server Side JavaScript - Multi user 1 : intro
+            - [x] Server Side JavaScript - Multi user 2 : register
+            - [x] Server Side JavaScript - Multi user 3
           - Security - Password
-            - Server Side JavaScript - Security Password 1
-            - Server Side JavaScript - Security Password 2
-            - Server Side JavaScript - Security Password 3: salt
-            - Server Side JavaScript - Security Password 4 : pbkdf2
-            - Server Side JavaScript - Security Password 5
-            - Server Side JavaScript - Security Password 6 : register
+            - [x] Server Side JavaScript - Security Password 1
+            - [x] Server Side JavaScript - Security Password 2
+            - [x] Server Side JavaScript - Security Password 3: salt
+            - [x] Server Side JavaScript - Security Password 4 : pbkdf2
+            - [x] Server Side JavaScript - Security Password 5
+            - [x] Server Side JavaScript - Security Password 6 : register
           - Passport js
-            - Server Side JavaScript - Passportjs 1 : intro 
-            - Server Side JavaScript - Passportjs 2 : configure
-            - Server Side JavaScript - Passportjs 3 : route
-            - Server Side JavaScript - Passportjs 4 : serialize
-            - Server Side JavaScript - Passportjs 5 : logout
-            - Server Side JavaScript - Passportjs 6 : review
+            - [x] Server Side JavaScript - Passportjs 1 : intro 
+            - [x] Server Side JavaScript - Passportjs 2 : configure
+            - [x] Server Side JavaScript - Passportjs 3 : route
+            - [x] Server Side JavaScript - Passportjs 4 : serialize
+            - [x] Server Side JavaScript - Passportjs 5 : logout
+            - [x] Server Side JavaScript - Passportjs 6 : review
         - 알고리즘 (2시간)
           - 프대에서 사용하는 Java
-            - 입/출력
-            - COLLECTIONS
+            - [x] 입/출력
+            - [x] COLLECTIONS
         - CS (2시간)
-          - 운영체제
+          - [ ] 운영체제
 
       - #### 2017.01.09(화)
 
         - 프로젝트 (6시간)
           - Federation Authentication
-            - Server Side JavaScript - Federation authentication 1 : intro
-            - Server Side JavaScript - Federation authentication 2 : facebook
-            - Server Side JavaScript - Federation authentication 3
-            - Server Side JavaScript - Federation authentication 4
-            - Server Side JavaScript - Federation authentication 5
+            - [x] Server Side JavaScript - Federation authentication 1 : intro
+
+
+            - [x] Server Side JavaScript - Federation authentication 2 : facebook
+            - [x] Server Side JavaScript - Federation authentication 3
+            - [x] Server Side JavaScript - Federation authentication 4
+            - [x] Server Side JavaScript - Federation authentication 5
           - Auth - Orient db
-            - Server Side JavaScript - Auth orientdb 1
-            - Server Side JavaScript - Auth orientdb 2 session store
-            - Server Side JavaScript - Auth orientdb 3 register
-            - Server Side JavaScript - Auth orientdb 4 login
-            - Server Side JavaScript - Auth orientdb 5 : federation
+            - [x] Server Side JavaScript - Auth orientdb 1
+            - [x] Server Side JavaScript - Auth orientdb 2 session store
+            - [x] Server Side JavaScript - Auth orientdb 3 register
+            - [x] Server Side JavaScript - Auth orientdb 4 login
+            - [x] Server Side JavaScript - Auth orientdb 5 : federation
           - jade - extends
-            - Server side javascript - jade extends1
-            - Server Side JavaScript - Jade extends 2
+            - [x] Server side javascript - jade extends1
+            - [x] Server Side JavaScript - Jade extends 2
           - 사용자 정의모듈 만들기
-            - Server Side JavaScript - Create module 1
-            - Server Side JavaScript - Create module 2
+            - [x] Server Side JavaScript - Create module 1
+            - [x] Server Side JavaScript - Create module 2
+
         - 알고리즘 (2시간)
           - 프대에서 사용하는 Java 심화/복습
-            - 입/출력
-            - COLLECTIONS
+            - [x] 입/출력
+            - [x] COLLECTIONS
+
         - CS (2시간)
+
+          - [ ] 네트워크
 
       - #### 2017.01.10(수)
 
         - 프로젝트 (6시간)
           - 라우트 분리하기
+            - [x] Server Side JavaScript - Routes separate 1
+            - [x] Server Side JavaScript - Routes separate 2
+            - [x] Server Side JavaScript - Routes separate 3
           - 글작성+인증 - Orient DB 1
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 1 (Auth views)
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 2 (Auth routes)
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 3 (Auth config)
           - 글작성+인증 - Orient DB 2
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
+            - [x] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
         - 알고리즘 (2시간)
-          - 프대에서 사용하는 Java
+          - [ ] C++ STL
         - CS (2시간)
+          - [ ] 컴퓨터 구조론
 
-      - #### 2017.01.11(목)
+      - #### 2017.01.11(목) - 일정 변경
+
+        - 프로젝트 설계
+
+          - 프로젝트 설계 툴 알아보기
+          - 기능 정리하기
+          - 레이아웃 설계하기
 
         - 프로젝트 (6시간)
-          - 서버 정리 복습
-          - HTML 템플릿
-            - HTML 코드 공부
-            - HTML 코드 파악
-        - 알고리즘 (2시간)
+
+          - ~~서버 정리 복습~~
+          - 서버강의 -  MySQL 부분
+            - Auth - MySQL
+              - [ ] authentication MySQL 1
+              - [ ] Session store
+              - [ ] register
+              - [ ] login
+              - [ ] federation
+            - 글작성+인증 - Orient DB 2 복습
+              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
+              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
+              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
+            - 글작성+인증(CRUD+Auth) - MySQL 1
+              - [ ] CRUD + Auth - mysql 1 (Auth views)
+              - [ ] CRUD + Auth - mysql 2 (Auth route)
+              - [ ] CRUD + Auth - mysql 3 (Auth config)
+            - 글작성+인증(CRUD+Auth) - MySQL 2
+              - [ ] CRUD + Auth - mysql 4 (CRUD views)
+              - [ ] CRUD + Auth - mysql 5 (CRUD route)
+              - [ ] CRUD + Auth - mysql 6 
+
+
+          - ~~HTML 템플릿~~
+            - ~~HTML 코드 공부~~
+            - ~~HTML 코드 파악~~
+
+        - 알고리즘 (15분)
           - 알고리즘 기초
-        - CS (2시간)
+            - [ ] 강의 영상+교안 정리하기
+
+        - CS (~~2시간~~ 30분)
+
+          - [ ] ~~컴퓨터구조론~~
+          - [ ] CS를 왜 해야되는가, 나를 설득할 수 있는 내용들 찾고 정리하기
 
       - #### 2017.01.12(금)
 
@@ -2576,8 +2626,9 @@
             - HTML 코드 공부
             - HTML 코드 파악
         - 알고리즘 (2시간)
-          - 알고리즘 기초
+          - C++ STL
         - CS (2시간)
+          - 코딩인터뷰 완전분석
 
       - #### 2017.01.13(토)
 
