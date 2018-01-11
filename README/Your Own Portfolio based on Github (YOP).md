@@ -23,31 +23,31 @@
 
     - ##### 커밋 수
 
-      ![스크린샷 2018-01-11 오후 4.50.50](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 4.50.50.png)
+      ![스크린샷 2018-01-11 오후 4.50.50](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.50.50.png)
 
       - **그래프**를 **이용**해서, 한눈에 파악할 수 있도록 하기 위함
 
     - ##### Repasitories 갯수
 
-      ##### ![스크린샷 2018-01-11 오후 5.06.47](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.06.47.png)
+      ![스크린샷 2018-01-11 오후 5.06.47](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.06.47.png)
 
     - ##### github 사용자 정보(사진 및 프로필 데이터)
 
-      ##### ![스크린샷 2018-01-11 오후 5.07.32](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.07.32.png)
+      ![스크린샷 2018-01-11 오후 5.07.32](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.07.32.png)
 
     - ##### Repositories 에 대한 언어타입 (%)
 
-      ![스크린샷 2018-01-11 오후 4.52.22](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 4.52.22.png)
+      ![스크린샷 2018-01-11 오후 4.52.22](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.52.22.png)
 
-      ![스크린샷 2018-01-11 오후 4.56.44](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 4.56.44.png)
+      ![스크린샷 2018-01-11 오후 4.56.44](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.56.44.png)
 
-      ![스크린샷 2018-01-11 오후 5.01.12](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.01.12.png)
+      ![스크린샷 2018-01-11 오후 5.01.12](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.01.12.png)
 
   - #### Pro
 
     - 일단은 **about.me** 의 Pro 정책을 참고
 
-      ![스크린샷 2018-01-11 오후 4.24.36](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 4.24.36.png)
+      ![스크린샷 2018-01-11 오후 4.24.36](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%204.24.36.png)
 
   - #### More
 
@@ -57,11 +57,11 @@
 
         - 자기소개, 상세정보, 일생, 수상내역, 활동사항 등
 
-        ![스크린샷 2018-01-11 오후 5.10.51](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.10.51.png)
+        ![스크린샷 2018-01-11 오후 5.10.51](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.10.51.png)
 
-        ![스크린샷 2018-01-11 오후 5.28.44](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.28.44.png)
+        ![스크린샷 2018-01-11 오후 5.28.44](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.28.44.png)
 
-        ![스크린샷 2018-01-11 오후 5.29.00](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.29.00.png)
+        ![스크린샷 2018-01-11 오후 5.29.00](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.29.00.png)
 
         ​
 
@@ -94,25 +94,25 @@
 
     - 초기 시안
 
-      ![스크린샷 2018-01-11 오후 5.11.52](/Users/hyeon/WinterVacation_Project/Image/스크린샷 2018-01-11 오후 5.11.52.png)
+      ![스크린샷 2018-01-11 오후 5.11.52](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-01-11%20%EC%98%A4%ED%9B%84%205.11.52.png)
 
       - Background
 
-        ![1월-11-2018 15-21-43](/Users/hyeon/WinterVacation_Project/Image/1월-11-2018 15-21-43.gif)
+        ![1월-11-2018 15-21-43](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-21-43.gif)
 
         - 동영상 (또는 GIF) 을 이용해서 Background 구성
           - 코딩이나 포트폴리오와 관련된 이미지 및 동영상(또는 GIF)
 
       - Effect
 
-        ![1월-11-2018 15-30-54](/Users/hyeon/WinterVacation_Project/Image/1월-11-2018 15-30-54.gif)
+        ![1월-11-2018 15-30-54](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-30-54.gif)
 
         - 무슨 사이트인지 모션(글씨가 써지는, 지워지는)을 이용해 설명
 
 
     - 목표 시안
 
-      ![Intro시안](/Users/hyeon/WinterVacation_Project/Image/Intro시안.png)
+      ![Intro시안](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/Intro%EC%8B%9C%EC%95%88.png)
 
       - 해당 시안보다는 조금 더 깔끔하게 구성할 예정
 
@@ -131,15 +131,15 @@
 
         - **카운트** 애니메이션 이용
 
-          ![1월-11-2018 15-08-32](/Users/hyeon/WinterVacation_Project/Image/1월-11-2018 15-08-32.gif)
+          ![1월-11-2018 15-08-32](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-08-32.gif)
 
-          ![1월-11-2018 15-18-45](/Users/hyeon/WinterVacation_Project/Image/1월-11-2018 15-18-45.gif)
+          ![1월-11-2018 15-18-45](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-18-45.gif)
 
           ​
 
       - 사용자의 Repositories 의 언어타입을 기반으로 능력치를 계산
 
-        ![1월-11-2018 15-10-31](/Users/hyeon/WinterVacation_Project/Image/1월-11-2018 15-10-31.gif)
+        ![1월-11-2018 15-10-31](https://github.com/antaehyeon/WinterVacation_Project/blob/master/Image/1%EC%9B%94-11-2018%2015-10-31.gif)
 
         [출처](https://sandrig.github.io/about.html)
 
@@ -148,7 +148,7 @@
 
 - ### 기타
 
-  - 도메인
+  - 도메인 생성
 
 
 
