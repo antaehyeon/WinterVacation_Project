@@ -2322,14 +2322,13 @@
         - CRUD + Auth - mysql 6 
 
       - #### 글작성+인증(CRUD+Auth) - Orient DB 1
-
         - [CRUD + Auth - Orient DB 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
         - [CRUD + Auth - Orient DB 2 (Auth route)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%202.md)
         - [CRUD + Auth - Orient DB 3 (Auth config)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%203.md)
 
       - #### 글작성+인증(CRUD+Auth) - Orient DB 2
 
-        - CRUD + Auth - Orient DB 4 (crud views)
+        - [CRUD + Auth - Orient DB 4 (crud views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%2BAuth%20:%20orientdb%204.md)
         - CRUD + Auth - Orient DB 5 (Crud routes)
         - CRUD + Auth - Orient DB 6 (final)
 
@@ -2526,8 +2525,6 @@
           - Federation Authentication
             - [x] Server Side JavaScript - Federation authentication 1 : intro
             - [x] Server Side JavaScript - Federation authentication 2 : facebook
-
-
             - [x] Server Side JavaScript - Federation authentication 3
             - [x] Server Side JavaScript - Federation authentication 4
             - [x] Server Side JavaScript - Federation authentication 5
@@ -2592,7 +2589,7 @@
               - [ ] login
               - [ ] federation
             - 글작성+인증 - Orient DB 2 복습
-              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
+              - [x] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
               - [ ] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
               - [ ] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
             - 글작성+인증(CRUD+Auth) - MySQL 1
@@ -2603,15 +2600,13 @@
               - [ ] CRUD + Auth - mysql 4 (CRUD views)
               - [ ] CRUD + Auth - mysql 5 (CRUD route)
               - [ ] CRUD + Auth - mysql 6 
-
-
           - ~~HTML 템플릿~~
             - ~~HTML 코드 공부~~
             - ~~HTML 코드 파악~~
 
         - 알고리즘 (~~2시간~~ 15분)
           - 알고리즘 기초
-            - [ ] 강의 영상+교안 정리하기
+            - [x] 강의 영상+교안 정리하기
 
         - CS (~~2시간~~ 30분)
 
