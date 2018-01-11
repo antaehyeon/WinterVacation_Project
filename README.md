@@ -2525,9 +2525,9 @@
         - 프로젝트 (6시간)
           - Federation Authentication
             - [x] Server Side JavaScript - Federation authentication 1 : intro
-
-
             - [x] Server Side JavaScript - Federation authentication 2 : facebook
+
+
             - [x] Server Side JavaScript - Federation authentication 3
             - [x] Server Side JavaScript - Federation authentication 4
             - [x] Server Side JavaScript - Federation authentication 5

@@ -67,7 +67,7 @@ app.get('/topic/:id/delete', function(req, res) {
     var sql = 'SELECT FROM topic WHERE @rid=:rid';
     db.query(sql, {params:{rid:id}}).then(function(topic) {
         console.log(topic[0]);
-        res.render('delete', {topics: _topics, topic:topic[0]});
+        res.render('topic/delete', {topics: _topics, topic:topic[0]});
     });
   });
 });
@@ -146,5 +146,5 @@ app.post('/topic/:id/delete', function(req, res) {
 });
 
 // set
-app.set('views', './views_orientdb');
+app.set('views', './views/orientdb/');
 app.set('view engine', 'jade');
