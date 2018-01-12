@@ -1,24 +1,10 @@
-var express = require('express');
+var app = require('./config/orientdb/express')();
+
 var OrientDB = require('orientjs');
-var bodyParser = require('body-parser');
-var server = OrientDB({
-   host:       'localhost',
-   port:       2424,
-   username:   'root',
-   password:   '111111'
-});
-var db = server.use('o2');
-var app = express();
-// use
-app.use(bodyParser.urlencoded({ extended: false }));
-app.locals.pretty = true;
-app.use('/user', express.static('uploads'));
-app.set('views', './views/orientdb/');
-app.set('view engine', 'jade');
 
 var passport = require('./config/orientdb/passport')(app);
 
-var auth = require('./routes/orientdb/auth')(passport, db);
+var auth = require('./routes/orientdb/auth')(passport);
 app.use('/auth', auth);
 
 var topic = require('./routes/orientdb/topic')();

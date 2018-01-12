@@ -3,6 +3,16 @@ html
   head
     meta(charset='utf-8')
   body
+    ul#account
+      if user
+        li
+          a(href='/auth/logout') Logout,
+          =user.displayName
+      else
+        li
+          a(href='/auth/login') Login
+        li
+          a(href='/auth/register') Register
     h1
       a(href='/topic') HELLO Server Side JavaScript
     ul

@@ -46,7 +46,7 @@ module.exports = function(){
             res.render('topic/view', {topics: _topics, topic:topic[0]});
         });
       } else {
-          res.render('topic/view', {topics:_topics});
+          res.render('topic/view', {topics:_topics, user:req.user});
       }
     });
   });

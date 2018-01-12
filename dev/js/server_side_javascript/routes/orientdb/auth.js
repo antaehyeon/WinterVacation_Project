@@ -6,18 +6,24 @@ module.exports = function(passport) {
 
   // GET ************************
   route.get('/login', function(req, res) {
-    res.render('auth/login');
+    var sql = 'SELECT FROM topic';
+    db.query(sql).then(function(_topics) {
+      res.render('auth/login', {topics:_topics});
+    })
   });
 
   route.get('/logout', function(req, res) {
     req.logout();
     req.session.save(function() {
-      res.redirect('/welcome');
+      res.redirect('/topic');
     })
   });
 
   route.get('/register', function(req, res) {
-    res.render('auth/register');
+    var sql = 'SELECT FROM topic';
+    db.query(sql).then(function(_topics) {
+      res.render('auth/register', {topics:_topics});
+    })
   })
 
   route.get( // get-facebook
@@ -33,7 +39,7 @@ module.exports = function(passport) {
     passport.authenticate(
       'facebook',
       {
-        successRedirect: '/welcome',
+        successRedirect: '/topic',
         failureRedirect: '/auth/login'
       }
     )
@@ -42,7 +48,7 @@ module.exports = function(passport) {
   // POST **************************
   route.post('/login', passport.authenticate('local',
       {
-        successRedirect: '/welcome',
+        successRedirect: '/topic',
         failureRedirect: '/auth/login',
         failureFlash: false
       }
@@ -64,7 +70,7 @@ module.exports = function(passport) {
       }).then(function(results) {
         req.login(user, function(err) {
           req.session.save(function() {
-            res.redirect('/welcome');
+            res.redirect('/topic');
           });
         });
       }, function(error) {
