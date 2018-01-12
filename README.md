@@ -2590,7 +2590,7 @@
               - [ ] federation
             - 글작성+인증 - Orient DB 2 복습
               - [x] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
-              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
+              - [x] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
               - [ ] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
             - 글작성+인증(CRUD+Auth) - MySQL 1
               - [ ] CRUD + Auth - mysql 1 (Auth views)

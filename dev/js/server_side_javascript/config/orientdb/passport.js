@@ -34,6 +34,7 @@ module.exports = function(app) {
 
   passport.use(new LocalStrategy(
     function(username, password, done) {
+      console.log('************ LOCALSTRATEGY 0 ************');
       var uname = username;
       var pwd = password;
       var sql = 'SELECT * FROM user WHERE authId=:authId';
@@ -46,7 +47,7 @@ module.exports = function(app) {
         return hasher({password:pwd, salt:user.salt},
         function(err, pass, salt, hash){
           if(hash === user.password) {
-            console.log('************ LOCALSTRATEGY ************');
+            console.log('************ LOCALSTRATEGY 1 ************');
             console.log(user);
             done(null, user);
           } else {
