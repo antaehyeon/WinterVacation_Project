@@ -1,7 +1,7 @@
 
 - # WinterVacation Project
 
-  ### 2017.12월 말 ~ 2018.02월 말 까지(방학동안) 진행할 안태현 개인 프로젝트에 대한 내용 및 기타 내용들을 관리할 README 입니다!
+  > ### 2017.12월 말 ~ 2018.02월 말 까지(방학동안) 진행할 안태현 개인 프로젝트에 대한 내용 및 기타 내용들을 관리할 README 입니다!
 
   ```
   스펙, 학교, 영어 큰 의미 없습니다. 
@@ -2192,7 +2192,7 @@
 
     - ### MySQL 소개 및 기본 사용법
 
-      - [MySQL 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C%EA%B0%9C.md)
+      - MySQL 소개
       - MySQL 설치 - 맥 (OSX)
       - MySQL 구조
       - MySQL 사용하기
@@ -2203,12 +2203,12 @@
 
     - ### MySQL로 웹 애플리케이션 구현
 
-      - 글 목록
-      - 글 상세보기 구현
-      - 글 추가기능 구현
-      - 글 편집기능 구현 1
-      - 글 편집기능 구현 2
-      - 글 삭제 구현
+      - [글 목록](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+      - [글 상세보기 구현](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+      - [글 추가기능 구현](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+      - [글 편집기능 구현 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+      - [글 편집기능 구현 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
+      - [글 삭제 구현](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
 
     - ### [http](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/HTTP.md)
 
@@ -2240,7 +2240,7 @@
     - ### Session 3
 
       - [Session store - file](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%208%20:%20session%20store%20-%20file.md)
-      - Session store - mysql
+      - [Session store - mysql](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
       - [Session store - orientdb](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%209%20:%20session%20store%20-%20orientd.md)
 
     - ### Multi user (다중 사용자)
@@ -2283,9 +2283,8 @@
       - [login](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%204%20login.md)
       - [federation auth (타사 인증)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20Auth%20orientdb%205%20:%20federation.md)
 
-    - ### Auth - MySQL
+    - ### Auth - MySQLauthentication MySQL 1
 
-      - authentication MySQL 1
       - Session store
       - register
       - login
@@ -2319,7 +2318,7 @@
 
         - CRUD + Auth - mysql 4 (CRUD views)
         - CRUD + Auth - mysql 5 (CRUD route)
-        - CRUD + Auth - mysql 6 
+        - CRUD + Auth - mysql 6
 
       - #### 글작성+인증(CRUD+Auth) - Orient DB 1
         - [CRUD + Auth - Orient DB 1 (Auth views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%2B%20Auth%20:%20orientdb%201.md)
@@ -2329,8 +2328,8 @@
       - #### 글작성+인증(CRUD+Auth) - Orient DB 2
 
         - [CRUD + Auth - Orient DB 4 (crud views)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%2BAuth%20:%20orientdb%204.md)
-        - CRUD + Auth - Orient DB 5 (Crud routes)
-        - CRUD + Auth - Orient DB 6 (final)
+        - [CRUD + Auth - Orient DB 5 (Crud routes)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%26%20Auth%20:%20orientdb%205.md)
+        - [CRUD + Auth - Orient DB 6 (final)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%26%20Auth%20:%20orientdb%206.md)
 
 
 - # 학습법 및 방향성에 도움되는 글
@@ -2389,6 +2388,14 @@
   - [우아한형제들 기술블로그](http://woowabros.github.io/)
 
   - [오마이랩 웹프론트 (경력직) 채용기준](https://htmlpreview.github.io/?https://github.com/antaehyeon/WinterVacation_Project/blob/master/%EB%A7%81%ED%81%AC%20HTML/%EC%98%A4%EB%A7%88%EC%9D%B4%EB%9E%A9%20%EC%B1%84%EC%9A%A9%EC%A1%B0%EA%B1%B4/Recruit.html)
+
+  - [개발자의 삶 - 행복론](https://okky.kr/article/434480)
+
+  - [개발자의 삶 - 부지런한 개발자, 게으른 개발자 (번역글)](https://okky.kr/article/432322)
+
+  - [개발자의 삶 - 좋아하는 일을 정의하라](https://okky.kr/article/431341)
+
+  - [개발자의 삶 - 사회 초년생들에게](https://okky.kr/article/430042)
 
 
   # 일정기록
@@ -2489,7 +2496,9 @@
 
       - github technical blog - 이슈 관리들을 하고싶어요
 
-      - 프로젝트에 대한 템플릿을 찾는 것 - HTML 공부
+      - ~~프로젝트에 대한 템플릿을 찾는 것 - HTML 공부~~
+
+      - 프로젝트 기획
 
       - #### 2017.01.08(월) : 주간 보고 및 서버 공부
 
@@ -2581,25 +2590,7 @@
         - 프로젝트 (6시간)
 
           - ~~서버 정리 복습~~
-          - 서버강의 -  MySQL 부분
-            - Auth - MySQL
-              - [ ] authentication MySQL 1
-              - [ ] Session store
-              - [ ] register
-              - [ ] login
-              - [ ] federation
-            - 글작성+인증 - Orient DB 2 복습
-              - [x] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
-              - [x] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
-              - [ ] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
-            - 글작성+인증(CRUD+Auth) - MySQL 1
-              - [ ] CRUD + Auth - mysql 1 (Auth views)
-              - [ ] CRUD + Auth - mysql 2 (Auth route)
-              - [ ] CRUD + Auth - mysql 3 (Auth config)
-            - 글작성+인증(CRUD+Auth) - MySQL 2
-              - [ ] CRUD + Auth - mysql 4 (CRUD views)
-              - [ ] CRUD + Auth - mysql 5 (CRUD route)
-              - [ ] CRUD + Auth - mysql 6 
+
           - ~~HTML 템플릿~~
             - ~~HTML 코드 공부~~
             - ~~HTML 코드 파악~~
@@ -2611,31 +2602,71 @@
         - CS (~~2시간~~ 30분)
 
           - [ ] ~~컴퓨터구조론~~
-          - [ ] CS를 왜 해야되는가, 나를 설득할 수 있는 내용들 찾고 정리하기
+          - [x] CS를 왜 해야되는가, 나를 설득할 수 있는 내용들 찾고 정리하기
 
       - #### 2017.01.12(금)
 
-        - 프로젝트 (6시간)
-          - 서버 정리 복습
-          - HTML 템플릿
-            - HTML 코드 공부
-            - HTML 코드 파악
-        - 알고리즘 (2시간)
-          - C++ STL
-        - CS (2시간)
-          - 코딩인터뷰 완전분석
+        - 서버 공부
+          - 서버강의 -  MySQL 부분
+            - Auth - MySQL
+              - [x] authentication MySQL 1
+              - [x] Session store
+              - [x] register
+              - [x] login
+              - [x] federation
+            - 글작성+인증 - Orient DB 2 복습
+              - [x] Server Side JavaScript - CRUD + Auth : orientdb 4 (curd views)
+              - [x] Server Side JavaScript - CRUD + Auth : orientdb 5 (curd routes)
+              - [x] Server Side JavaScript - CRUD + Auth : orientdb 6 (final)
+            - 글작성+인증(CRUD+Auth) - MySQL 1
+              - [x] CRUD + Auth - mysql 1 (Auth views)
+              - [x] CRUD + Auth - mysql 2 (Auth route)
+              - [x] CRUD + Auth - mysql 3 (Auth config)
+            - 글작성+인증(CRUD+Auth) - MySQL 2
+              - [x] CRUD + Auth - mysql 4 (CRUD views)
+              - [x] CRUD + Auth - mysql 5 (CRUD route)
+              - [x] CRUD + Auth - mysql 6 
 
       - #### 2017.01.13(토)
 
         - 미비했던 부분을 채울 시간
+          - [x] [github blog](https://antaehyeon.github.io/) 생성
+          - [x] github blog 만드는 법 글 작성
 
       - #### 2017.01.14(일)
 
         - 미비했던 부분을 채울 시간
+          - [x] github blog - GET/POST 차이점 글 작성
+          - [x] github blog - JAVA와 JavaScript 의 차이점 글 작성
+          - [x] [Roadmap 번역](https://github.com/antaehyeon/developer-roadmap)
 
   - #### 3주차
 
     - 2017.01.15(월) ~ 2017.01.21(일)
+      - 3주차 부터는 월요일 보고가 아닌 프로젝트에 대한 측정이 불명확하므로 1일 보고 및 2일보고를 계획하고 있음
+
+      - 목표
+        - GitHub 포스트 7개 등록하기 (약 3~4시간)
+          - 월, 화, 수, 목, 금, 토, 일
+        - README 관리 끝내기
+        - 프로젝트 GitHub 데이터 Parsing
+        - 기본적인 UI 를 만들고 싶은데 (산출물)
+          - Intro ?  Main Page ?
+        - 술을 절제하자, 다음날까지 영향이 가지 않도록, 책임지기
+
+      - #### 2017.01.15(월)
+
+      - #### 2017.01.16(화)
+
+      - #### 2017.01.17(수)
+
+      - #### 2017.01.18(목)
+
+      - #### 2017.01.19(금)
+
+      - #### 2017.01.20(토)
+
+      - #### 2017.01.21(일)
 
   - #### 4주차
 
@@ -2661,4 +2692,5 @@
   - #### 9주차
 
     - 2017.02.26(월) : 개강일
+    - ​
 
