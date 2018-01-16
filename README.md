@@ -2658,10 +2658,16 @@
       - #### 2017.01.15(월)
 
         - Github 포스트 등록
-          - 신입에게 CS란?
+          - [신입에게 CS란?](https://antaehyeon.github.io/%EC%8B%A0%EC%9E%85%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%94-%EC%99%9C-CS%EB%A5%BC-%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80/)
 
 
       - #### 2017.01.16(화)
+
+        - 프로젝트 기술 조사
+          - [Github Data Parsing](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Github%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%8C%8C%EC%8B%B1%EA%B3%BC%EC%A0%95.md)
+        - Github 포스트 등록
+          - [REST API vs GraphQL](https://antaehyeon.github.io/REST-%EC%99%80-GraphQL-%EB%B9%84%EA%B5%90/)
+          - Github Blog 5분만에 만들기 2
 
       - #### 2017.01.17(수)
 
