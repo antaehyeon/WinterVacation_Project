@@ -93,3 +93,7 @@
          ![](https://i.imgur.com/iuLyXXy.png)
 
       4. 일단 Commit 갯수에 대해서 뿌려주는것은 없는 것 같음, 대신 git의 갯수가 배열로 반환되므로 반복문을 통해 충분히 계산 가능할듯 함
+
+4. ### endPoint
+
+5. ### [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
