@@ -8,11 +8,27 @@ var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
 var request    = require('request');
-request('https://api.github.com', function (error, response, body){
-  console.log('error:', error);
-  console.log('statusCode:', response && response.statusCode);
-  console.log('body:', body);
-});
+
+var options = {
+  url: 'https://api.github.com/users/antaehyeon',
+  headers: {
+    'User-Agent': 'request'
+  }
+};
+
+function callback(error, response, body) {
+  if (!error && response.statusCode == 200) {
+    info = JSON.parse(body);
+
+    // REPOS DATA
+    // console.log(info.stargazers_count + " Stars");
+    // console.log(info.forks_count + " Forks");
+
+    console.log(info.login);
+  }
+}
+
+request(options, callback);
 
 // app에 use할 bodyparser 설정
 // POST 로부터의 데이터를 얻을 수 있도록 함
@@ -40,9 +56,14 @@ router.use(function(req, res, next) {
   next();
 });
 
-// 어떤것이든 동작하는지에 대한 라우트 테스트 (GET localhost:8080/api)
+// GitHub 데이터 처리하는 라우트
 router.get('/', function(req, res) {
+  res.send('name: ' + info.name + ' company: ' + info.company);
 });
+
+router.post('/', function(req, res) {
+  
+})
 
 // API를 위한 라우터 선언부
 // =================================================================
