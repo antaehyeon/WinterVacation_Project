@@ -19,11 +19,6 @@ var options = {
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     info = JSON.parse(body);
-
-    // REPOS DATA
-    // console.log(info.stargazers_count + " Stars");
-    // console.log(info.forks_count + " Forks");
-
     console.log(info.login);
   }
 }
@@ -56,13 +51,16 @@ router.use(function(req, res, next) {
   next();
 });
 
+// api 경로에 대한
 // GitHub 데이터 처리하는 라우트
 router.get('/', function(req, res) {
   res.send('name: ' + info.name + ' company: ' + info.company);
 });
 
+// api 경로에 대한 POST 라우트 처리
+//
 router.post('/', function(req, res) {
-  
+
 })
 
 // API를 위한 라우터 선언부

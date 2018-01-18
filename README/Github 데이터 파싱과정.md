@@ -166,10 +166,88 @@
    7. ### 일단 잠시 스탑! 내가 원하는 방향이 아니였음
 
    - API를 통해서 개발하는 것이므로 다른 방향으로 정보를 검색함
+
    - [Node.js에서 공공API를 활용해서 개발하기](https://www.slideshare.net/inhokwon16/nodejs-api-76200873)
+
    - [REQUEST Module](https://www.npmjs.com/package/request) 을 이용
+
+   - REQUEST 간단하게 사용하는 방법
+
+     ```js
+     var request = require('request');
+     request('http://www.google.com', function (error, response, body) {
+       console.log('error:', error); // Print the error if one occurred
+       console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+       console.log('body:', body); // Print the HTML for the Google homepage.
+     });
+     ```
+
+     이렇게 설정하고 api.github.com 호출하면, 아래와 같은 에러메세지가 출력됨
+
+     ```j
+     Request forbidden by administrative rules.
+     Please make sure your request has a User-Agent header.
+     Check https://developer.github.com for other possible causes.
+     ```
+
+     찾아보니, github에서 api 형식으로 받아오기 위해서는 User-Agent 헤더가 필요함
+
+   - [User-Agent Header](https://www.npmjs.com/package/request#custom-http-headers)
+
+     ```js
+     var request = require('request');
+      
+     var options = {
+       url: 'https://api.github.com/repos/request/request',
+       headers: {
+         'User-Agent': 'request'
+       }
+     };
+      
+     function callback(error, response, body) {
+       if (!error && response.statusCode == 200) {
+         var info = JSON.parse(body);
+         console.log(info.stargazers_count + " Stars");
+         console.log(info.forks_count + " Forks");
+       }
+     }
+      
+     request(options, callback);
+     ```
+
+     위와 같은 코드로 테스트
+
+   - 해당 url 마다 github에서 뿌려주는 데이터가 존재함
+
+   - 각 주소마다 반환되는 데이터를 확인한 후 그에 맞는 데이터를 받으면 됨
+
+   - javaScript에서 전역변수는 앞에 var을 빼면 됨
+
    - ​
 
    ​
 
-   ​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
