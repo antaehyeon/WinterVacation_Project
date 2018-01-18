@@ -98,71 +98,78 @@
 
 5. ### [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
-   6. ### Issue
+6. ### Issue
 
-      - 서버 강의를 다 듣긴했지만, GitHub의 API 서버에서 데이터를 받아와서 웹에 뿌려주어야 하는 일련의 과정 중 무엇부터 시작해야 할지 막막했음
-      - 일단 구조도를 명확히 세워보자 생각해서 그림을 그림
+   - 서버 강의를 다 듣긴했지만, GitHub의 API 서버에서 데이터를 받아와서 웹에 뿌려주어야 하는 일련의 과정 중 무엇부터 시작해야 할지 막막했음
+   - 일단 구조도를 명확히 세워보자 생각해서 그림을 그림
 
-      ![](https://i.imgur.com/yg97m59.png)
+   ![](https://i.imgur.com/yg97m59.png)
 
-      - 나의 서버는 SERVER 및 CLIENT의 역할을 동시에 수행하고 있고
+   - 나의 서버는 SERVER 및 CLIENT의 역할을 동시에 수행하고 있고
 
-      - 첫번 째로 수행해야 할 부분은 나의 node JS 서버에서 GitHub API 에게 데이터를 요청하고 받아오는 부분임을 파악함
+   - 첫번 째로 수행해야 할 부분은 나의 node JS 서버에서 GitHub API 에게 데이터를 요청하고 받아오는 부분임을 파악함
 
-      - 그래서 node JS 와 Express 및 MongoDB, Postman 을 이용한 [자료](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)를 참고하면서 API 부분을 테스트
+   - 그래서 node JS 와 Express 및 MongoDB, Postman 을 이용한 [자료](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)를 참고하면서 API 부분을 테스트
 
-      - #### node js 에 대한 초기 코드
+   - #### node js 에 대한 초기 코드
 
-        ```js
-        // server.js
+     ```js
+     // server.js
 
-        // 초기 셋팅
-        // =================================================================
+     // 초기 셋팅
+     // =================================================================
 
-        // 필요한 패키지 호출
-        var express    = require('express');
-        var app        = express();
-        var bodyParser = require('body-parser');
+     // 필요한 패키지 호출
+     var express    = require('express');
+     var app        = express();
+     var bodyParser = require('body-parser');
 
-        // app에 use할 bodyparser 설정
-        // POST 로부터의 데이터를 얻을 수 있도록 함
-        app.use(bodyParser.urlencoded({ extended: true }));
-        app.use(bodyParser.json());
+     // app에 use할 bodyparser 설정
+     // POST 로부터의 데이터를 얻을 수 있도록 함
+     app.use(bodyParser.urlencoded({ extended: true }));
+     app.use(bodyParser.json());
 
-        var port = process.env.PORT || 8080;          // 포트 설정
+     var port = process.env.PORT || 8080;          // 포트 설정
 
-        // API를 위한 라우트
-        // =================================================================
-        var router = express.Router();                // express 라우트 대신
+     // API를 위한 라우트
+     // =================================================================
+     var router = express.Router();                // express 라우트 대신
 
-        // 어떤것이든 동작하는지에 대한 라우트 테스트 (GET localhost:8080/api)
-        router.get('/', function(req, res) {
-          res.json({ message: 'WELCOME API'});
-        });
+     // 어떤것이든 동작하는지에 대한 라우트 테스트 (GET localhost:8080/api)
+     router.get('/', function(req, res) {
+       res.json({ message: 'WELCOME API'});
+     });
 
-        // API를 위한 라우터 선언부
-        // =================================================================
+     // API를 위한 라우터 선언부
+     // =================================================================
 
-        // 라우터 등록
-        // /api 에 대한 라우트 설정
-        app.use('/api', router);
+     // 라우터 등록
+     // /api 에 대한 라우트 설정
+     app.use('/api', router);
 
-        // 서버 시작
-        // =================================================================
-        app.listen(port);
-        console.log('RUN SERVER on PORT ' + port);
-        ```
+     // 서버 시작
+     // =================================================================
+     app.listen(port);
+     console.log('RUN SERVER on PORT ' + port);
+     ```
 
-      - #### Postman 에서 테스트
+   - #### Postman 에서 테스트
 
-        ![](https://i.imgur.com/p3TMzZZ.png)
+     ![](https://i.imgur.com/p3TMzZZ.png)
 
-         `res.json({ message: 'WELCOME API' })` 코드로 인해서 http://localhost:8080/api/ 에 GET Request를 보냈을 때, `"message": "WELCOME API"` 라는 메세지를 확인할 수 있음 
+      `res.json({ message: 'WELCOME API' })` 코드로 인해서 http://localhost:8080/api/ 에 GET Request를 보냈을 때, `"message": "WELCOME API"` 라는 메세지를 확인할 수 있음 
 
-      - #### mongoDB 설치 (Homebrew)
+   - #### mongoDB 설치 (Homebrew)
 
-        해당내용은 [이곳](https://nesoy.github.io/articles/2017-04/MongoDB) 을 참고하였음!
+     해당내용은 [이곳](https://nesoy.github.io/articles/2017-04/MongoDB) 을 참고하였음!
 
-        ​
+   7. ### 일단 잠시 스탑! 내가 원하는 방향이 아니였음
 
-        ​
+   - API를 통해서 개발하는 것이므로 다른 방향으로 정보를 검색함
+   - [Node.js에서 공공API를 활용해서 개발하기](https://www.slideshare.net/inhokwon16/nodejs-api-76200873)
+   - [REQUEST Module](https://www.npmjs.com/package/request) 을 이용
+   - ​
+
+   ​
+
+   ​
