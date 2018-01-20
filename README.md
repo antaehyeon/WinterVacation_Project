@@ -2670,11 +2670,31 @@
 
       -  #### 2017.01.17(수)
 
+         - 프로젝트 기술조사
+         - Github 포스트 등록
+            - [Github Blog Jekyll 테마 적용해보기](https://antaehyeon.github.io/Github-Blog-Jekyll-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0/)
+
       -  #### 2017.01.18(목)
+
+         - 프로젝트 기술구현
+           - 파싱하는 Server 단 구현
+             - 데이터 파싱 완료 (이름, 회사 데이터 테스트)
+         - Github 포스트 등록
+           - [대학생 개발자를 위한 GitHub Student Pack](https://antaehyeon.github.io/%EB%8C%80%ED%95%99%EC%83%9D-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-GitHub-Student-Pack/)
 
       -  #### 2017.01.19(금)
 
+         - 프로젝트 기술조사
+           - HTML, CSS Framework 조사
+             - Vue.js
+         - Github 포스트 등록
+           - [지극히 평범하고 부족한 대학생 개발자 일대기](https://antaehyeon.github.io/%EC%A7%80%EA%B7%B9%ED%9E%88-%ED%8F%89%EB%B2%94%ED%95%98%EA%B3%A0-%EB%B6%80%EC%A1%B1%ED%95%9C-%EB%8C%80%ED%95%99%EC%83%9D%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%9D%BC%EB%8C%80%EA%B)
+
       -  #### 2017.01.20(토)
+
+         - 프로젝트 기술구현
+         - GitHub 포스트 등록
+            - [웹을 모르는 대학생이 프레임워크를 선택하기까지(미완성)](https://antaehyeon.github.io/%EC%9B%B9%EC%9D%84-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EB%8C%80%ED%95%99%EC%83%9D%EC%9D%B4-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EB%A5%BC-%EC%84%A0%ED%83%9D%ED%95%98%EA%B)
 
       -  #### 2017.01.21(일)
 
