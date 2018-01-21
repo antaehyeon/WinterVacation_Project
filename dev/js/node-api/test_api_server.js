@@ -19,7 +19,7 @@ var options = {
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     info = JSON.parse(body);
-    console.log(info.ㄷㄷlogin);
+    console.log(info.login);
   }
 }
 
@@ -29,6 +29,7 @@ request(options, callback);
 // POST 로부터의 데이터를 얻을 수 있도록 함
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 var port = process.env.PORT || 3000;          // 포트 설정
 
@@ -51,9 +52,14 @@ router.use(function(req, res, next) {
   next();
 });
 
+router.get('/', function(req, res) {
+  res.render('index');
+  // res.render('/index.html')
+});
+
 // api 경로에 대한
 // GitHub 데이터 처리하는 라우트
-router.get('/', function(req, res) {
+router.get('/api', function(req, res) {
   res.send('name: ' + info.name + ' company: ' + info.company);
 });
 
@@ -68,7 +74,7 @@ router.post('/', function(req, res) {
 
 // 라우터 등록
 // /api 에 대한 라우트 설정
-app.use('/api', router);
+app.use('/', router);
 
 // 서버 시작
 // =================================================================
