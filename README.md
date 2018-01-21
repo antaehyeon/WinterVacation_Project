@@ -11,7 +11,7 @@
 
 자료구조, 운영체제, 네트워크, 알고리즘을 잘 알고 있는지 봅니다. 스프링? 그런 것 묻지 않습니다. 
 스프링 잘하는 사람 뽑을거면 경력 사원 뽑지요.
-																																			okky 의 '요즘 IT 신입 안뽑나요??' 댓글 발췌
+												okky 의 '요즘 IT 신입 안뽑나요??' 댓글 발췌
 ```
 
 - ### [Developer Roadmap (한글 번역본)](https://github.com/antaehyeon/developer-roadmap)
@@ -36,13 +36,13 @@
 - ### 학습
 
   - [생활코딩 중 JavaScript (nodejs) 수강](https://opentutorials.org/course/2136)
-    - [서버 측 자바스크립트와 nodejs 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20nodejs%20%EC%86%8C%EA%B0%9C.m)
+    - [서버 측 자바스크립트와 nodejs 소개](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20nodejs%20%EC%86%8C%EA%B0%9C.md)
     - nodejs 설치 및 실행
       - [설치](https://www.youtube.com/watch?v=60zErcCmBfM)
       - [실행](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%8B%A4%ED%96%89.md)
     - 간단한 웹 에플리케이션 만들기
-      - [간단한 웹앱 만들기 1 : 실행](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%9B%B9%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0%201%20:)
-      - [간단한 웹앱 만들기 2 : 인터넷의 동작방법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%9B%B9%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0%202%20:)
+      - [간단한 웹앱 만들기 1 : 실행](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%9B%B9%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0%201%20:%20%EC%8B%A4%ED%96%89.md)
+      - [간단한 웹앱 만들기 2 : 인터넷의 동작방법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%9B%B9%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0%202%20:%20%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%98%20%EB%8F%99%EC%9E%91%EB%B0%A9%EB%B2%95.md)
       - [간단한 웹앱 만들기 3 : 정리](https://www.youtube.com/watch?v=MZAzeKVMMp0)
     - 모듈과 NPM
       - [모듈 1 : 기초](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%AA%A8%EB%93%88%201%20:%20%EA%B8%B0%EC%B4%88.md)
@@ -50,7 +50,7 @@
       - [모듈 3 : NPM 독립적인 앱 설치](https://opentutorials.org/course/2136/11854)
       - [모듈 4 : npm으로 모듈설치](https://opentutorials.org/course/2136/11854)
     - [콜백(callback) 함수](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%BD%9C%EB%B0%B1(callback)%20%ED%95%A8%EC%88%98.md)
-    - [동기와 비동기 프로그래밍](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%ED%94%84%EB%A1%9C%EA%B7%B)
+    - [동기와 비동기 프로그래밍](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
     - Express
       - [도입](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20Express-1.md)
       - [설치](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20Express-1.md)
@@ -64,23 +64,23 @@
         - [사용법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%97%94%EC%A7%84%20(Jade).md)
         - [Jade의 문법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%97%94%EC%A7%84%20(Jade).md)
       - URL을 이용한 정보의 전달
-        - [쿼리 스트링이란?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%E)
-        - [Express의 query 객체의 사용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%E)
-        - [query 객체의 활용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%E)
-        - [의미론적인 URL (semantic url)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%E)
+        - [쿼리 스트링이란?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC.md)
+        - [Express의 query 객체의 사용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC.md)
+        - [query 객체의 활용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC.md)
+        - [의미론적인 URL (semantic url)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20URL%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC.md)
       - POST 방식을 이용한 정보의 전달
-        - [POST 방식을 이용한 정보의 전달 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%)
-        - [POST 방식을 이용한 정보의 전달 2 : form](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%)
-        - [POST 방식을 이용한 정보의 전달 3 : POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%)
-        - [POST 방식을 이용한 정보의 전달 4 : GET과 POST의 용도](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%)
+        - [POST 방식을 이용한 정보의 전달 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC%201.md)
+        - [POST 방식을 이용한 정보의 전달 2 : form](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC%202%20-%20form.md)
+        - [POST 방식을 이용한 정보의 전달 3 : POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC%203%20-%20POST.md)
+        - [POST 방식을 이용한 정보의 전달 4 : GET과 POST의 용도](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20POST%20%EB%B0%A9%EC%8B%9D%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%A0%95%EB%B3%B4%EC%9D%98%20%EC%A0%84%EB%8B%AC%204%20-%20GET%EA%B3%BC%20POST%20%EC%9A%A9%EB%8F%84.md)
     - [팁 - Nodejs를 자동으로 재시작](https://opentutorials.org/course/2136/11951)
     - 웹 애플리케이션 제작
-      - [오리엔테이션](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%9)
-      - [라우팅](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%9)
-      - [본문 저장](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%9)
-      - [글 목록 만들기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%204%20-%20%EA%B8%80%20%EB%AA%A9%EB%A1%9D%20%EB)
-      - [본문 읽기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%205%20-%20%EB%B3%B8%EB%AC%B8%20%EC%9D%BD%EA%B8)
-      - [코드의 개선](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%206%20-%20%EC%BD%94%EB%93%9C%EC%9D%98%20%EA%B0)
+      - [오리엔테이션](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%91%201%2C2%2C3.md)
+      - [라우팅](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%91%201%2C2%2C3.md)
+      - [본문 저장](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%A0%9C%EC%9E%91%201%2C2%2C3.md)
+      - [글 목록 만들기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%204%20-%20%EA%B8%80%20%EB%AA%A9%EB%A1%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+      - [본문 읽기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%205%20-%20%EB%B3%B8%EB%AC%B8%20%EC%9D%BD%EA%B8%B0.md)
+      - [코드의 개선](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EC%9B%B9%EC%95%B1%20%EC%A0%9C%EC%9E%91%206%20-%20%EC%BD%94%EB%93%9C%EC%9D%98%20%EA%B0%9C%EC%84%A0.md)
     - 파일 업로드
       - [소개 및 준비](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
       - [업로드 폼](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
@@ -128,7 +128,7 @@
       - [shopping cart 3](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%205%20:%20shopping%20cart%203.md)
       - [cookie & Security](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/cookie%206%20:%20cookie%20%26%20security.md)
     - Session 1
-      - [intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%84%9C%EB%B2%84%20%EC%B8%A1%20JS%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20-%20MySQL%201%20:%20%EC%86%8C)
+      - [intro](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%201%20:%20intro.md)
       - [counter 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%202%20:%20counter%201.md)
       - [counter 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20session%203%20:%20counter%202.md)
     - Session 2
@@ -203,7 +203,7 @@
         - [CRUD + Auth - Orient DB 5 (Crud routes)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%26%20Auth%20:%20orientdb%205.md)
         - [CRUD + Auth - Orient DB 6 (final)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/Server%20Side%20JavaScript%20-%20CRUD%20%26%20Auth%20:%20orientdb%206.md)
 
-- ### 개발자를 위한 POST
+- ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
-- ### 일정관리
+- ### [일정관리](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC.md)
 
