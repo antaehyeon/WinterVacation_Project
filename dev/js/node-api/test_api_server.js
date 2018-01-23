@@ -48,7 +48,6 @@ var router = express.Router();                // express 라우트 대신
 
 // 모든 요청을 위한 미들웨어 사용
 router.use(function(req, res, next) {
-  console.log('Something is happening.');
   next();
 });
 
