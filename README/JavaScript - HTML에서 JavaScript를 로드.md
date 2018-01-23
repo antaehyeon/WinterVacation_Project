@@ -26,7 +26,7 @@
 
    ​
 
-2. ### Script 태그 이용
+2. # JavaScript - HTML에서 JavaScript를 로드 (2/4) : script 방식
 
    ![](https://i.imgur.com/cicCJIw.png)
 
@@ -54,7 +54,7 @@
      - HTML코드 안에 JavaScript의 코드가 더이상 존재하지 않음
    - inline 방식보다는 확실하게 구분되었지만, 더 분리될 수 있음
 
-3. ### 외부 파일 로드
+3. # JavaScript - HTML에서 JavaScript를 로드 (3/4) : 외부 파일 로드
 
    ```html
    script_separation.html
@@ -84,7 +84,7 @@
      - Cache 기능에 의해서 JS의 코드를 미리 받음
      - 클라이언트와 서버간 HTML의 용량 경량화
 
-4. ### onLoad
+4. # JavaScript - HTML에서 JavaScript를 로드 (4/4) : onload 방식
 
    - script 태그는 head 태그에 위치시키는 것 보다 body가 끝나는 부분에 위치시키는 것이 더 좋음
 
