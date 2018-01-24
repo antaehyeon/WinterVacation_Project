@@ -244,8 +244,8 @@
         - [getElementById](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#getelementbyid)
         - [querySelector](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#queryselector)
       - jQuery
-        - 라이브러리와 jQuery
-        - jQuery 기본 사용법
+        - [라이브러리와 jQuery](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-jquery)
+        - [jQuery 기본 사용법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery.md#jquery-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95)
       - 제어 대상을 찾기 (jQuery)
         - 기본 문법
         - 엘리먼트 제어1
