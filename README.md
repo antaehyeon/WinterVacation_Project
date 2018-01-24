@@ -230,9 +230,9 @@
         - [문서의 주소정보를 알아내기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Location%20객체.md#javascript---location-%EA%B0%9D%EC%B2%B4)
         - [문서의 주소를 변경하기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Location%20%EA%B0%9D%EC%B2%B4.md#%EB%AC%B8%EC%84%9C%EC%9D%98-%EC%A3%BC%EC%86%8C%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%)
       - Navigator 객체
-        - 크로스브라우징이란?
-        - Navigator 객체
-        - 기능 테스트
+        - [크로스브라우징이란?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95cross-browsing)
+        - [Navigator 객체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#navigator-%EA%B0%9D%EC%B2%B4)
+        - [기능 테스트](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#%EA%B8%B0%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8)
       - 창 제어
         - window open
         - 상호 작용
