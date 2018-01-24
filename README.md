@@ -246,11 +246,15 @@
       - jQuery
         - [라이브러리와 jQuery](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-jquery)
         - [jQuery 기본 사용법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery.md#jquery-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95)
-      - 제어 대상을 찾기 (jQuery)
-        - 기본 문법
-        - 엘리먼트 제어1
-        - 엘리먼트 제어2
-        - 엘리먼트 제어3
+      - jQuery 제어 대상 조회
+        - [기본 문법](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95)
+        - [엘리먼트 제어1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EC%97%98%EB%A6%AC%EB%A9%98%ED%8A%B8-%)
+        - [엘리먼트 제어2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EC%97%98%EB%A6%AC%EB%A9%98%ED%8A%B8-%)
+        - [엘리먼트 제어3](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EC%97%98%EB%A6%AC%EB%A9%98%ED%8A%B8-%)
+      - HTML Element
+        - 단수와 복수
+        - HTML Element
+        - DOM Tree
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
