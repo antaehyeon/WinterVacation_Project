@@ -1,4 +1,4 @@
-# JavaScript - 실습방법
+# [JavaScript - 실습방법](https://opentutorials.org/course/1375/6639)
 
 > 크롬 웹브라우저와 Sublime text 를 이용
 

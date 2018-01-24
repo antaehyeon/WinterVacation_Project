@@ -1,4 +1,4 @@
-# JavaScript - JavaScript란?
+# [JavaScript - JavaScript란?](https://opentutorials.org/course/1375/6619)
 
 - HTML, CSS, JS 의 기술들이 유기적으로 결합해서 웹페이지를 만드는 것
 

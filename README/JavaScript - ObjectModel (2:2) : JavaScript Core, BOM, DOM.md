@@ -1,4 +1,4 @@
-# JavaScript - ObjectModel (2/2) : JavaScript Core, BOM, DOM
+# [JavaScript - ObjectModel (2/2) : JavaScript Core, BOM, DOM](https://opentutorials.org/course/1375/6622)
 
 ![](https://i.imgur.com/nStBKeV.png)
 

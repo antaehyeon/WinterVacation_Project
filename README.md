@@ -220,6 +220,23 @@
     - Object Model
       - [객체화란 무엇인가?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20ObjectModel%20(1:2)%20:%20%EA%B0%9D%EC%B2%B4%ED%99%94%EB%9E%80%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%3F.md)
       - JavaScript Core, BOM, DOM
+    - BOM
+      - 전역객체 Window
+      - 사용자와 커뮤니케이션 하기
+        - alert
+        - confirm
+        - prompt
+      - Location 객체
+        - 문서의 주소정보를 알아내기
+        - 문서의 주소를 변경하기
+      - Navigator 객체
+        - 크로스브라우징이란?
+        - Navigator 객체
+        - 기능 테스트
+      - 창 제어
+        - window open
+        - 상호 작용
+        - 보안
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
