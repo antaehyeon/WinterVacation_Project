@@ -227,8 +227,8 @@
         - [confirm](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%99%80%20%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%20%ED%95%98%EA%B8)
         - [prompt](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%99%80%20%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%20%ED%95%98%EA%B8)
       - Location 객체
-        - 문서의 주소정보를 알아내기
-        - 문서의 주소를 변경하기
+        - [문서의 주소정보를 알아내기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Location%20객체.md#javascript---location-%EA%B0%9D%EC%B2%B4)
+        - [문서의 주소를 변경하기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Location%20%EA%B0%9D%EC%B2%B4.md#%EB%AC%B8%EC%84%9C%EC%9D%98-%EC%A3%BC%EC%86%8C%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%)
       - Navigator 객체
         - 크로스브라우징이란?
         - Navigator 객체
