@@ -219,9 +219,9 @@
       - [onload](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTML%EC%97%90%EC%84%9C%20JavaScript%EB%A5%BC%20%EB%A1%9C%EB%93%9C.md#javascript---html%EC%97%90%EC%84%9C-javascript%EB%A5%BC-%EB%A1%9C%EB%93%9C-44--onload-%EB%B0%A9%EC%8B%9D)
     - Object Model
       - [객체화란 무엇인가?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20ObjectModel%20(1:2)%20:%20%EA%B0%9D%EC%B2%B4%ED%99%94%EB%9E%80%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%3F.md)
-      - JavaScript Core, BOM, DOM
+      - [JavaScript Core, BOM, DOM](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20ObjectModel%20(2:2)%20:%20JavaScript%20Core%2C%20BOM%2C%20DOM.md)
     - BOM
-      - 전역객체 Window
+      - [전역객체 Window](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Browser%20Object%20Model.md)
       - 사용자와 커뮤니케이션 하기
         - alert
         - confirm
