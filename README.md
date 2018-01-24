@@ -233,15 +233,24 @@
         - [크로스브라우징이란?](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95cross-browsing)
         - [Navigator 객체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#navigator-%EA%B0%9D%EC%B2%B4)
         - [기능 테스트](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#%EA%B8%B0%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8)
+    - DOM
       - 창 제어
         - [window open](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#window-open)
         - [상호 작용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9)
         - [보안](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#%EB%B3%B4%EC%95%88)
       - 제어 대상을 찾기
-        - getElementsByTagName
-        - getElementsByClassName
-        - getElementById
-        - querySelector
+        - [getElementsByTagName](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#getelementsbytagname)
+        - [getElementsByClassName](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#getelementsbyclassname)
+        - [getElementById](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#getelementbyid)
+        - [querySelector](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A0%9C%EC%96%B4%EB%8C%80%EC%83%81%EC%9D%84%20%EC%B0%BE%EA%B8%B0.md#queryselector)
+      - jQuery
+        - 라이브러리와 jQuery
+        - jQuery 기본 사용법
+      - 제어 대상을 찾기 (jQuery)
+        - 기본 문법
+        - 엘리먼트 제어1
+        - 엘리먼트 제어2
+        - 엘리먼트 제어3
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
