@@ -255,7 +255,7 @@
         - [단수와 복수](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#%EB%8B%A8%EC%88%98%EC%99%80-%EB%B3%B5%EC%88%98)
         - [HTML Element](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#html-element)
         - [DOM Tree](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#dom-tree)
-      - HTMLCollection
+      - [HTMLCollection](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLCollection.md)
       - jQuery 객체
       - Element 객체
         - 식별자 API

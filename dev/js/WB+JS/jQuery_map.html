@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li>JavaScript</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var li = $('li');
+        li.map(function(index, elem){
+            console.log(index, elem);
+            $(elem).css('color', 'red');
+        })
+    </script>
+  </body>
+</html>
