@@ -223,9 +223,9 @@
     - BOM
       - [전역객체 Window](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Browser%20Object%20Model.md)
       - 사용자와 커뮤니케이션 하기
-        - alert
-        - confirm
-        - prompt
+        - [alert](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%99%80%20%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%20%ED%95%98%EA%B8)
+        - [confirm](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%99%80%20%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%20%ED%95%98%EA%B8)
+        - [prompt](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%99%80%20%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%20%ED%95%98%EA%B8)
       - Location 객체
         - 문서의 주소정보를 알아내기
         - 문서의 주소를 변경하기
