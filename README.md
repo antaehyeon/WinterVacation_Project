@@ -252,9 +252,17 @@
         - [엘리먼트 제어2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EC%97%98%EB%A6%AC%EB%A9%98%ED%8A%B8-%)
         - [엘리먼트 제어3](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20%EC%A0%9C%EC%96%B4%20%EB%8C%80%EC%83%81%20%EC%A1%B0%ED%9A%8C.md#%EC%97%98%EB%A6%AC%EB%A9%98%ED%8A%B8-%)
       - HTML Element
-        - 단수와 복수
-        - HTML Element
-        - DOM Tree
+        - [단수와 복수](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#%EB%8B%A8%EC%88%98%EC%99%80-%EB%B3%B5%EC%88%98)
+        - [HTML Element](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#html-element)
+        - [DOM Tree](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#dom-tree)
+      - HTMLCollection
+      - jQuery 객체
+      - Element 객체
+        - 식별자 API
+        - 조회 API
+        - 속성 API
+        - jQuery 속성 제어 API
+        - jQuery 조회 범위 제한
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
