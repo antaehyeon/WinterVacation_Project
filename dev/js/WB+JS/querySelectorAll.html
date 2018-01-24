@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<ol>
+    <li>HTML</li>
+    <li class="active">CSS</li>
+    <li>JavaScript</li>
+</ol>
+
+<script>
+    var lis = document.querySelectorAll('li');
+    for(var name in lis) {
+        lis[name].style.color = 'blue';
+    }
+</script>
+</body>
+</html>

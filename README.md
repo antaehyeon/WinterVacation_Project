@@ -234,9 +234,14 @@
         - [Navigator 객체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#navigator-%EA%B0%9D%EC%B2%B4)
         - [기능 테스트](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Navigator%20%EA%B0%9D%EC%B2%B4.md#%EA%B8%B0%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8)
       - 창 제어
-        - window open
-        - 상호 작용
-        - 보안
+        - [window open](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#window-open)
+        - [상호 작용](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9)
+        - [보안](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%B0%BD%20%EC%A0%9C%EC%96%B4.md#%EB%B3%B4%EC%95%88)
+      - 제어 대상을 찾기
+        - getElementsByTagName
+        - getElementsByClassName
+        - getElementById
+        - querySelector
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
