@@ -1,4 +1,4 @@
-# Element 객체
+# JavaScript - Element 객체
 
 > element를 추상화 한 객체
 
