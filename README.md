@@ -257,6 +257,10 @@
         - [DOM Tree](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLElement.md#dom-tree)
       - [HTMLCollection](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20HTMLCollection.md)
       - jQuery 객체
+        - [특성](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20Object.md#%ED%8A%B9%EC%84%B1)
+        - [엘리먼트 정보](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20Object.md#%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%A0%95%EB%B3%B4)
+        - [.map()](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20Object.md#map)
+        - [API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20Object.md#api)
       - Element 객체
         - 식별자 API
         - 조회 API
