@@ -268,7 +268,7 @@
           - [Element.className](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%8B%9D%EB%B3%84%EC%9E%90%20API.md#elementclassname)
           - [Element.classList](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%8B%9D%EB%B3%84%EC%9E%90%20API.md#elementclasslist)
         - [조회 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%A1%B0%ED%9A%8C%20API.md)
-        - 속성 API
+        - [속성 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%86%8D%EC%84%B1%20API.md)
         - jQuery 속성 제어 API
         - jQuery 조회 범위 제한
 
