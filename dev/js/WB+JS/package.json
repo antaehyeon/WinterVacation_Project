@@ -4,6 +4,7 @@
   },
   "name": "",
   "dependencies": {
+    "date-utils": "^1.2.21",
     "express": "^4.16.2",
     "path": "^0.12.7"
   },
