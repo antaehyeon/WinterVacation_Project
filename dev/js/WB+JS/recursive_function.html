@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body id="start">
+<ul>
+    <li><a href="./532">html</a></li>
+    <li><a href="./533">css</a></li>
+    <li><a href="./534">JavaScript</a>
+        <ul>
+            <li><a href="./535">JavaScript Core</a></li>
+            <li><a href="./536">DOM</a></li>
+            <li><a href="./537">BOM</a></li>
+        </ul>
+    </li>
+</ul>
+<script>
+// function traverse(target, callback){
+//     if(target.nodeType === 1){
+//         //if(target.nodeName === 'A')
+//         callback(target);
+//         var c = target.childNodes;
+//         for(var i=0; i<c.length; i++){
+//             traverse(c[i], callback);
+//         }
+//     }
+// }
+function traverse(target, callback) {
+  if (target.nodeType == Node.ELEMENT_NODE) {
+    if (target.nodeName === 'A')
+      callback(target);
+    var c = target.childNodes;
+    for (var i = 0; i<c.length; i++) {
+      traverse(c[i], callback);
+    }
+  }
+}
+traverse(document.getElementById('start'), function(elem){
+    console.log(elem);
+});
+</script>
+</body>
+</html>

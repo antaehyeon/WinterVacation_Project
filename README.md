@@ -271,9 +271,12 @@
         - [속성 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%86%8D%EC%84%B1%20API.md)
         - jQuery 속성 제어 API
         - jQuery 조회 범위 제한
-      - Node 객체
-        - Node 관계 API
+      - [Node 객체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%20%EA%B0%9D%EC%B2%B4.md)
+        - [Node 관계 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%20%EA%B4%80%EA%B3%84%20API.md)
         - 노드 종류 API
+          - nodeType, nodeName
+          - 재귀함수 1
+          - 재귀함수 2
         - 노드 변경 API
         - jQuery 노드 변경 API
         - 문자열로 노드 제어
