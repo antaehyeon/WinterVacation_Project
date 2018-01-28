@@ -296,6 +296,11 @@
           - [스크롤 제어](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%A0%9C%EC%96%B4)
           - [스크린 크기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%9D%98-%ED%81%AC%EA%B8%B0)
         - 이벤트
+          - 등록방법
+            - [inline 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%EC%9D%B8%EB%9D%BC%EC%9D%B8inline-%EB%B0%A9%EC%8B%9D)
+            - [property Listener 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%A6%AC%EC%8A%A4%EB%84%88-%EB%B0%A9%EC%8B%9D)
+            - [addEventListener 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#addeventlistener-%EB%B0%A9%EC%8B%9D)
+          - 이벤트 전파 (버블링과 캡처링)
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
