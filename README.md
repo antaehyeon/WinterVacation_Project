@@ -300,7 +300,23 @@
             - [inline 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%EC%9D%B8%EB%9D%BC%EC%9D%B8inline-%EB%B0%A9%EC%8B%9D)
             - [property Listener 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%A6%AC%EC%8A%A4%EB%84%88-%EB%B0%A9%EC%8B%9D)
             - [addEventListener 방식](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#addeventlistener-%EB%B0%A9%EC%8B%9D)
-          - 이벤트 전파 (버블링과 캡처링)
+          - [이벤트 전파](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#javascript---%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C)
+            - [캡처링](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#%EC%BA%A1%EC%B2%98%EB%A7%81-capturing)
+            - [버블링](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#%EB%B2%84%EB%B8%94%EB%A7%81-bubbling)
+          - 기본동작의 취소
+          - 이벤트 타입
+            - 폼
+            - 문서로딩
+            - 마우스
+          - jQuery 이벤트
+            - on API 사용법
+          - 네트워크 통신
+            - Ajax
+            - JSON
+            - JQuery Ajax
+          - 활용
+            - Youtube 재생시간 구하기
+            - Word Counter
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 

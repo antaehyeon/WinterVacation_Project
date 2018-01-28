@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    #target {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      margin: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 10px;
+      float: left;
+      width: 200px;
+    }
+
+    td,
+    th {
+      padding: 10px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="target">
+
+  </div>
+  <table>
+    <tr>
+      <th>event type</th>
+      <th>info</th>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td id="elmclick"></td>
+    </tr>
+    <tr>
+      <td>dblclick</td>
+      <td id="elmdblclick"></td>
+    </tr>
+    <tr>
+      <td>mousedown</td>
+      <td id="elmmousedown"></td>
+    </tr>
+    <tr>
+      <td>mouseup</td>
+      <td id="elmmouseup"></td>
+    </tr>
+    <tr>
+      <td>mousemove</td>
+      <td id="elmmousemove"></td>
+    </tr>
+    <tr>
+      <td>mouseover</td>
+      <td id="elmmouseover"></td>
+    </tr>
+    <tr>
+      <td>mouseout</td>
+      <td id="elmmouseout"></td>
+    </tr>
+    <tr>
+      <td>contextmenu</td>
+      <td id="elmcontextmenu"></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>key</th>
+      <th>info</th>
+    </tr>
+    <tr>
+      <td>event.altKey</td>
+      <td id="elmaltkey"></td>
+    </tr>
+    <tr>
+      <td>event.ctrlKey</td>
+      <td id="elmctrlkey"></td>
+    </tr>
+    <tr>
+      <td>event.shiftKey</td>
+      <td id="elmshiftKey"></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>position</th>
+      <th>info</th>
+    </tr>
+    <tr>
+      <td>event.clientX</td>
+      <td id="elemclientx"></td>
+    </tr>
+    <tr>
+      <td>event.clientY</td>
+      <td id="elemclienty"></td>
+    </tr>
+  </table>
+  <script>
+    var t = document.getElementById('target');
+
+    function handler(event) {
+      var info = document.getElementById('elm' + event.type);
+      var time = new Date();
+      var timestr = time.getMilliseconds();
+      info.innerHTML = (timestr);
+      if (event.altKey) {
+        document.getElementById('elmaltkey').innerHTML = timestr;
+      }
+      if (event.ctrlKey) {
+        document.getElementById('elmctrlkey').innerHTML = timestr;
+      }
+      if (event.shiftKey) {
+        document.getElementById('elmshiftKey').innerHTML = timestr;
+      }
+      document.getElementById('elemclientx').innerHTML = event.clientX;
+      document.getElementById('elemclienty').innerHTML = event.clientY;
+    }
+    t.addEventListener('click', handler);
+    t.addEventListener('dblclick', handler);
+    t.addEventListener('mousedown', handler);
+    t.addEventListener('mouseup', handler);
+    t.addEventListener('mousemove', handler);
+    t.addEventListener('mouseover', handler);
+    t.addEventListener('mouseout', handler);
+    t.addEventListener('contextmenu', handler);
+  </script>
+</body>
+
+</html>

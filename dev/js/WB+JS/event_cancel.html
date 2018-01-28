@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p>
+    <label>prevent event on</label><input id="prevent" type="checkbox" name="eventprevent" value="on" />
+  </p>
+  <p>
+    <a href="http://opentutorials.org" onclick="if(document.getElementById('prevent').checked) return false;">opentutorials</a>
+  </p>
+  <p>
+    <form action="http://opentutorials.org" onsubmit="if(document.getElementById('prevent').checked) return false;">
+      <input type="submit" />
+    </form>
+  </p>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p>
+    <label>prevent event on</label><input id="prevent" type="checkbox" name="eventprevent" value="on" />
+  </p>
+  <p>
+    <a href="http://opentutorials.org">opentutorials</a>
+  </p>
+  <p>
+    <form action="http://opentutorials.org">
+      <input type="submit" />
+    </form>
+  </p>
+  <script>
+    document.querySelector('a').onclick = function(event) {
+      if (document.getElementById('prevent').checked)
+        return false;
+    };
+
+    document.querySelector('form').onclick = function(event) {
+      if (document.getElementById('prevent').checked)
+        return false;
+    };
+  </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p>
+    <label>prevent event on</label><input id="prevent" type="checkbox" name="eventprevent" value="on" />
+  </p>
+  <p>
+    <a href="http://opentutorials.org">opentutorials</a>
+  </p>
+  <p>
+    <form action="http://opentutorials.org">
+      <input type="submit" />
+    </form>
+  </p>
+  <script>
+    document.querySelector('a').addEventListener('click', function(event) {
+      if (document.getElementById('prevent').checked)
+        event.preventDefault();
+    });
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+      if (document.getElementById('prevent').checked)
+        event.preventDefault();
+    });
+  </script>
+</body>
+
+</html>
