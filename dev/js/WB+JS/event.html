@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <input type="button" onclick="alert(window.location)" value="alert(window.href)" />
+  <input type="button" onclick="window.open('bom.html')" value="window.open('bom.html')" />
+  <input type="button" id="target" value="button" />
+  <input type="button" id="target2" value="button2" />
+  <script>
+    var t = document.getElementById('target');
+    t.onclick = function() {
+      alert('Hello world');
+    }
+
+    var t2 = document.getElementById('target2');
+    t2.onclick = function(event) {
+      // alert('Hello world, ' + event.target.value);
+      console.dir(event);
+    }
+  </script>
+</body>
+
+</html>

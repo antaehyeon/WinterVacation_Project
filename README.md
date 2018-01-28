@@ -291,6 +291,10 @@
           - [값 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20TEXT%20%EA%B0%9D%EC%B2%B4.md#%EA%B0%92-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%85%B8%EB%93%9C%EC%9D%98-%EA%B0%92%EC%9D%84-%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94-api)
           - [조작 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20TEXT%20%EA%B0%9D%EC%B2%B4.md#%EC%A1%B0%EC%9E%91-api)
         - 문서의 기하학적 특성
+          - [엘리먼트 크기와 위치](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EC%9D%98-%EC%9C%84%EC%B9%98%EC%99%80-%ED%81%AC%EA%B8%B0)
+          - [Viewport](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#viewport)
+          - [스크롤 제어](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%A0%9C%EC%96%B4)
+          - [스크린 크기](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%84%9C%EC%9D%98%20%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%20%ED%8A%B9%EC%84%B1.md#%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%9D%98-%ED%81%AC%EA%B8%B0)
         - 이벤트
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
