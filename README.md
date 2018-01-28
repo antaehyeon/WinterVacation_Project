@@ -303,11 +303,11 @@
           - [이벤트 전파](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#javascript---%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C)
             - [캡처링](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#%EC%BA%A1%EC%B2%98%EB%A7%81-capturing)
             - [버블링](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%A0%84%ED%8C%8C.md#%EB%B2%84%EB%B8%94%EB%A7%81-bubbling)
-          - 기본동작의 취소
+          - [기본동작의 취소](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91%20%EC%B7%A8%EC%86%8C.md)
           - 이벤트 타입
-            - 폼
-            - 문서로딩
-            - 마우스
+            - [폼](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%ED%8F%BC%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#form)
+            - [문서로딩](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%ED%8F%BC%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%EB%AC%B8%EC%84%9C%EB%A1%9C%EB%93%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8)
+            - [마우스](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%ED%8F%BC%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%EB%A7%88%EC%9A%B0%EC%8A%A4)
           - jQuery 이벤트
             - on API 사용법
           - 네트워크 통신

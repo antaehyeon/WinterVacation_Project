@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <input type="button" id="pure" value="pure" />
+  <input type="button" id="jquery" value="jQuery" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    // 순수하게 구현했을 때
+    var target = document.getElementById('pure');
+    if (target.addEventListener) {
+      target.addEventListener('click', function(event) {
+        alert('pure');
+      });
+    } else {
+      target.attachEvent('onclick', function(event) {
+        alert('pure');
+      });
+    }
+
+    // jQuery를 사용했을 때
+    $('#jquery').on('click', function(event) {
+      alert('jQuery');
+    })
+  </script>
+</body>
+
+</html>
