@@ -278,9 +278,9 @@
           - [재귀함수 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%EC%9D%98%20%EC%A2%85%EB%A5%98API.md#%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98-1)
           - [재귀함수 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%EC%9D%98%20%EC%A2%85%EB%A5%98API.md#%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98-2)
         - 노드 변경 API
-          - 노드 추가
-          - 노드 삭제
-          - 노드 교체
+          - [노드 추가](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%85%B8%EB%93%9C%20%EB%B3%80%EA%B2%BD%20API.md#%EB%85%B8%EB%93%9C-%EB%B3%80%EA%B2%BD-api)
+          - [노드 삭제](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%85%B8%EB%93%9C%20%EB%B3%80%EA%B2%BD%20API.md#%EB%85%B8%EB%93%9C-%EC%A0%9C%EA%B1%B0)
+          - [노드 교체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%85%B8%EB%93%9C%20%EB%B3%80%EA%B2%BD%20API.md#%EB%85%B8%EB%93%9C-%EA%B5%90%EC%B2%B4)
         - jQuery 노드 변경 API
         - 문자열로 노드 제어
 

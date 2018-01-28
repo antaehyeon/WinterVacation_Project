@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="target" id="target1">
+    target 1
+  </div>
+
+  <div class="target" id="target2">
+    target 2
+  </div>
+
+  <input type="button" value="replaceAll target 1" id="btn1" />
+  <input type="button" value="replaceWith target 2" id="btn2" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $('#btn1').click(function() {
+      $('<div>replaceAll</div>').replaceAll('#target1');
+    })
+    $('#btn2').click(function() {
+      $('#target2').replaceWith('<div>replaceWith</div>');
+    })
+  </script>
+</body>
+
+</html>
