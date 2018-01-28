@@ -285,7 +285,11 @@
           - [추가](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20node%20%EC%A0%9C%EC%96%B4%20API.md#%EC%B6%94%EA%B0%80)
           - [제거](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20node%20%EC%A0%9C%EC%96%B4%20API.md#%EC%A0%9C%EA%B1%B0)
           - [바꾸기 (교체,복제,이동)](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20jQuery%20node%20%EC%A0%9C%EC%96%B4%20API.md#%EB%B0%94%EA%BE%B8%EA%B8%B0)
-        - 문자열로 노드 제어
+        - [문자열로 노드 제어](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C%20%EB%85%B8%EB%93%9C%EB%B3%80%EA%B2%BD.md)
+        - Document 객체
+        - Text 객체
+          - 값 API
+          - 조작 API
 
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
