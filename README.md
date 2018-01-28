@@ -274,10 +274,13 @@
       - [Node 객체](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%20%EA%B0%9D%EC%B2%B4.md)
         - [Node 관계 API](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%20%EA%B4%80%EA%B3%84%20API.md)
         - 노드 종류 API
-          - nodeType, nodeName
-          - 재귀함수 1
-          - 재귀함수 2
+          - [nodeType, nodeName](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%EC%9D%98%20%EC%A2%85%EB%A5%98API.md#nodetype-nodename)
+          - [재귀함수 1](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%EC%9D%98%20%EC%A2%85%EB%A5%98API.md#%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98-1)
+          - [재귀함수 2](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/JavaScript%20-%20Node%EC%9D%98%20%EC%A2%85%EB%A5%98API.md#%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98-2)
         - 노드 변경 API
+          - 노드 추가
+          - 노드 삭제
+          - 노드 교체
         - jQuery 노드 변경 API
         - 문자열로 노드 제어
 
