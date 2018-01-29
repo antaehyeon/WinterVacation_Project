@@ -8,6 +8,7 @@ var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
 var request    = require('request');
+var path = require('path');
 
 var options = {
   url: 'https://api.github.com/users/antaehyeon',
@@ -30,6 +31,8 @@ request(options, callback);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'html')));
+app.use('views/assets/css', express.static('css'));
 
 var port = process.env.PORT || 3000;          // 포트 설정
 
@@ -52,7 +55,8 @@ router.use(function(req, res, next) {
 });
 
 router.get('/', function(req, res) {
-  res.render('index');
+  res.sendFile(path.join(__dirname, 'index.html'));
+  // res.sendFile(path.join(__dirname, 'window_control_communication.html'));
   // res.render('/index.html')
 });
 

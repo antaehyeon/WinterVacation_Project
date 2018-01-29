@@ -322,6 +322,20 @@
             - Youtube 재생시간 구하기
             - Word Counter
 
+  - jQuery
+
+    - jQuery란?
+    - javaScript vs jQuery
+    - wrapper
+    - 선택자
+    - chain
+    - event
+    - 엘리멘트 제어
+    - 폼
+    - 탐색
+    - 애니메이션
+    - ajax
+
 - ### [개발자를 위한 POST](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20POST.md)
 
 - ### [일정관리](https://github.com/antaehyeon/WinterVacation_Project/blob/master/README/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC.md)
