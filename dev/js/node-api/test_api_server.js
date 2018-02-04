@@ -28,11 +28,11 @@ request(options, callback);
 
 // app에 use할 bodyparser 설정
 // POST 로부터의 데이터를 얻을 수 있도록 함
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, 'html')));
-app.use('views/assets/css', express.static('css'));
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use('views/assets/css', express.static('css'));
 
 var port = process.env.PORT || 3000;          // 포트 설정
 
@@ -50,12 +50,13 @@ var options = {
 var router = express.Router();                // express 라우트 대신
 
 // 모든 요청을 위한 미들웨어 사용
-router.use(function(req, res, next) {
-  next();
-});
+// router.use(function(req, res, next) {
+//   next();
+// });
 
-router.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
+router.get('/public/', function(req, res) {
+  // res.sendFile(path.join(__dirname, 'index.html'));
+  console.log("CONNECT HOMEPAGE");
   // res.sendFile(path.join(__dirname, 'window_control_communication.html'));
   // res.render('/index.html')
 });
@@ -69,7 +70,7 @@ router.get('/api', function(req, res) {
 // api 경로에 대한 POST 라우트 처리
 //
 router.post('/', function(req, res) {
-
+  console.log("POST SUCCESS");
 })
 
 // API를 위한 라우터 선언부
