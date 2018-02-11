@@ -54,11 +54,11 @@ var router = express.Router();                // express 라우트 대신
 //   next();
 // });
 
-router.get('/public/', function(req, res) {
+router.get('/', function(req, res) {
   // res.sendFile(path.join(__dirname, 'index.html'));
   console.log("CONNECT HOMEPAGE");
-  // res.sendFile(path.join(__dirname, 'window_control_communication.html'));
-  // res.render('/index.html')
+  res.sendFile(path.join(__dirname, 'window_control_communication.html'));
+  res.render('/index.html')
 });
 
 // api 경로에 대한
@@ -70,6 +70,10 @@ router.get('/api', function(req, res) {
 // api 경로에 대한 POST 라우트 처리
 //
 router.post('/', function(req, res) {
+  console.log("POST SUCCESS");
+})
+
+router.post('/public', function(req, res) {
   console.log("POST SUCCESS");
 })
 
